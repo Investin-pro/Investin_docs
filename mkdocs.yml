@@ -1,0 +1,62 @@
+site_name: Investin
+
+theme:
+  name: null
+  custom_dir: mkdocs-material/material
+  logo: 'assets/logo.png'
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+  palette:
+    scheme: 'slate'
+    primary: 'dark purple'
+    accent: 'grey'
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: 'assets/logo.png'
+  icon:
+    logo: logo
+
+
+# hide:
+#   - navigation # Hide navigation
+#   - toc        # Hide table of contents
+
+
+repo_name: Investin/contracts
+repo_url: https://github.com/aak-capital/capitalfund_contracts
+
+
+
+extra_css:
+  # - 'stylesheets/extra.css'
+  # - 'stylesheets/monokai.css'
+
+# Navigation
+nav:
+  - Whats Investin: 'index.md'
+  
+  - For manager: 'manager.md'
+  
+  - For investors: 'investor.md'
+  - Deep dive: 'architecture.md'
+  - Tokeneconomics: 'token.md'
+
+  
+
+social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk/

@@ -1,1 +1,30 @@
-# Investin_docs
+Investin documentation
+====================
+
+Investin's documentation is build using [MkDocs](https://www.mkdocs.org/) and the beautiful [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
+In order to create Ludwig's documentation you have to install them:
+
+```
+pip install mkdocs mkdocs-material
+```
+
+Be sure that your installed version of `Markdown>=3.0.1`.
+Then generate `api.md` from source (from the `src` directory):
+
+```
+python code_doc_autogen.py
+```
+
+Test it (from the `src` directory):
+
+```
+mkdocs serve
+```
+
+Finally build the static website (from the `src` directory):
+
+```
+mkdocs build
+```
+
+It will create the static website in `$Investin/docs/`.
