@@ -1,0 +1,831 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/investin.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.3">
+    
+    
+      
+        <title>Tokeneconomics - Investin</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="dark-purple" data-md-color-accent="grey">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#investin-token-ivn" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Investin" class="md-header__button md-logo" aria-label="Investin">
+      
+  <img src="../assets/investin.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Investin
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tokeneconomics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/aak-capital/capitalfund_contracts/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Investin/contracts
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Whats Investin
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../manager/" class="md-tabs__link">
+      For manager
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../investor/" class="md-tabs__link">
+      For investors
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../architecture/" class="md-tabs__link">
+      Deep dive
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Tokeneconomics
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Investin" class="md-nav__button md-logo" aria-label="Investin">
+      
+  <img src="../assets/investin.png" alt="logo">
+
+    </a>
+    Investin
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/aak-capital/capitalfund_contracts/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Investin/contracts
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Whats Investin
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manager/" class="md-nav__link">
+        For manager
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../investor/" class="md-nav__link">
+        For investors
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        Deep dive
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tokeneconomics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Tokeneconomics
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incentives" class="md-nav__link">
+    Incentives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-managerstraders" class="md-nav__link">
+    For managers/traders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-investors" class="md-nav__link">
+    For Investors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ivn-allocation-and-sales" class="md-nav__link">
+    IVN allocation and sales
+  </a>
+  
+    <nav class="md-nav" aria-label="IVN allocation and sales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fund-usage" class="md-nav__link">
+    Fund usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#governance" class="md-nav__link">
+    Governance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deepdive-economics" class="md-nav__link">
+    Deepdive economics
+  </a>
+  
+    <nav class="md-nav" aria-label="Deepdive economics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deflationary-value-explained" class="md-nav__link">
+    Deflationary value explained
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incentives" class="md-nav__link">
+    Incentives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-managerstraders" class="md-nav__link">
+    For managers/traders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-investors" class="md-nav__link">
+    For Investors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ivn-allocation-and-sales" class="md-nav__link">
+    IVN allocation and sales
+  </a>
+  
+    <nav class="md-nav" aria-label="IVN allocation and sales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fund-usage" class="md-nav__link">
+    Fund usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#governance" class="md-nav__link">
+    Governance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deepdive-economics" class="md-nav__link">
+    Deepdive economics
+  </a>
+  
+    <nav class="md-nav" aria-label="Deepdive economics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deflationary-value-explained" class="md-nav__link">
+    Deflationary value explained
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/aak-capital/capitalfund_contracts/edit/master/docs/token.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="investin-token-ivn">Investin Token (IVN)<a class="headerlink" href="#investin-token-ivn" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><img align="right" alt="Placeholder" src="../assets/logo.png" /></p>
+<p>IVN is an ERC 20 token built on openzepplin standards, its native token of the protocol which will be used both to capture value from the protocol and allow holders to participate in governance. Without users any protocol is worthless and IVN token represents ownership in the protocol and is architecured in a way that as the protocol's total value under management grows the further it will be owned by managers running funds on it.</p>
+<p><code>Investin's most important stake holders are its Managers/Traders</code></p>
+<p>Investin's growth is directly proportional to its users success hence the tokeconomics is deeply baked into making users the rightful owners of protocol so that they can capture most value out of it.</p>
+<p>The protocol captures on an average <code>1.4%</code> of total value under management as fee on each successful cycle of manager meeting their set return of investment and collecting performance fee. Hence manager's success in markets is directly proportional to protocol's growth and to insure the longevity of the relation, 50% of total fee accured by the protocol will be distributed among the managers based on meeting the minimum <a href="https://pages.github.com/">criteria</a> and rest 50% to development team to make sure both the parties move in a smooth linear growth. 
+And as the growth accelerates there will be a tier based reduction on fee distributed to developers and subsequent increment to the fee distributed to managers.</p>
+<h2 id="incentives">Incentives<a class="headerlink" href="#incentives" title="Permanent link">&para;</a></h2>
+<p>The goal of any decentralize protocol is to ultimately give ownership to its users and incentivize them enough to align paths on achieveing maximum profitibilty for all parties involved.</p>
+<h2 id="for-managerstraders">For managers/traders<a class="headerlink" href="#for-managerstraders" title="Permanent link">&para;</a></h2>
+<p>Managers/traders running funds on investin and staking IVN tokens will capture the 50% fee as elloborated below: </p>
+<table>
+<thead>
+<tr>
+<th align="center">Tokens staked</th>
+<th align="center">Fee captured</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">100</td>
+<td align="center">20%</td>
+</tr>
+<tr>
+<td align="center">200</td>
+<td align="center">40%</td>
+</tr>
+<tr>
+<td align="center">400</td>
+<td align="center">60%</td>
+</tr>
+<tr>
+<td align="center">800</td>
+<td align="center">80%</td>
+</tr>
+<tr>
+<td align="center">1000</td>
+<td align="center">100%</td>
+</tr>
+</tbody>
+</table>
+<p>The managers should increase their staked tokens as the total fee collected by protocol increases, the rate of increment is fixed at a 50% increment rate to capture same percentage of fee at each increment of 100% on total fee protocol makes. The value captured by ivn tokens will be diluted if managers dont increase their staked tokens.</p>
+<p>As discussed the fee will gradually increase for managers on a tier based system which are determined by total value generated by Investin's managers.</p>
+<table>
+<thead>
+<tr>
+<th>Protocol earnings</th>
+<th>Managers Fee %</th>
+<th>Developers Fee%</th>
+<th>Fee used to burn tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100k</td>
+<td>50%</td>
+<td>50%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>200k</td>
+<td>55%</td>
+<td>40%</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>400k</td>
+<td>59%</td>
+<td>32%</td>
+<td>9%</td>
+</tr>
+<tr>
+<td>800k</td>
+<td>65.4%</td>
+<td>25.6%</td>
+<td>12.2%</td>
+</tr>
+<tr>
+<td>1m</td>
+<td>67.96%</td>
+<td>20.48%</td>
+<td>17.96%</td>
+</tr>
+<tr>
+<td>2m</td>
+<td>67.96%</td>
+<td>20.48%</td>
+<td>17.96%</td>
+</tr>
+</tbody>
+</table>
+<p>The dev team has decided to use 20% of profits accured from developer fee% to buy back IVN tokens and burn to further align goals with protocol growth.
+Incase the managers dont stake to capture total fee, the fee will be used to by back IVN and burn. </p>
+<p>Furthermore incentives are planned to be given to managers handling top performing funds, funds with high aum, funds with greater than 100 investors and much more....</p>
+<h2 id="for-investors">For Investors<a class="headerlink" href="#for-investors" title="Permanent link">&para;</a></h2>
+<p>Investin's key liquidity providers are expected to actively engage with protocol to find the best performing fund for their investment and get a 50% reduction on holding IVN token in their wallet while they are invested in Investin funds.
+The ivn holdings in order to get 50% fee reduction in management fee is elaborated below. The investors are expected to increase their ivn holdings to get the same benefits at each increment in fee captured by the protocol.</p>
+<table>
+<thead>
+<tr>
+<th>Fees captured</th>
+<th>IVN holding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100k</td>
+<td>100</td>
+</tr>
+<tr>
+<td>200k</td>
+<td>200</td>
+</tr>
+<tr>
+<td>800k</td>
+<td>400</td>
+</tr>
+<tr>
+<td>1m</td>
+<td>800</td>
+</tr>
+<tr>
+<td>2m</td>
+<td>1200</td>
+</tr>
+</tbody>
+</table>
+<p>The investors will be airdropped IVN for certain criteria's and are expected to be protected from maximum drawdowns in highly unlike scenarios which will be covered by the treasury which is locked to safegaurd investin's key liquidity providers interests.
+10% of IVN are locked as insurance for investor funds and as total value under management grows this treasury will be replineshed with a basket of different assets to protect all user's interests. </p>
+<h2 id="ivn-allocation-and-sales">IVN allocation and sales<a class="headerlink" href="#ivn-allocation-and-sales" title="Permanent link">&para;</a></h2>
+<p>A total supply of 9,000,000 IVN tokens are minted with no further minting planned inline with current tokenecomics structure. This can be changed with governance takeover as future of decentralized protocols evolve.</p>
+<p><img align="center" alt="Placeholder" src="../assets/ivn.svg" /></p>
+<p>A total of 30% of tokens will be sold on ethereum and binance smart chain, we believe the future of decentralized protocol is to be multi chain hence investin will distribute the fee collected over both chains equally among all users.</p>
+<ul>
+<li>The pre sale is price at 0.2 USD per token</li>
+<li>The seed was raised at 0.12 USD per token and is vested over 3 years with 10% scheduled release every quarter</li>
+<li>Core team's tokens are vested for 4 years with 10% scheduled release every quarter.</li>
+<li>The advisory tokens are unallocated at the moment and once advisors are onboarded the tokens would be vested for 1 year.</li>
+</ul>
+<p>The treasury is used to incentivize users and make them part owners of Investin, there will be scheduled air drops to top performing funds, funds managing high aum consistently and to investors committed on building investin. 
+In rare cases of manager duping fund performance the treasury will be used to compensate investor losses.</p>
+<h3 id="fund-usage">Fund usage<a class="headerlink" href="#fund-usage" title="Permanent link">&para;</a></h3>
+<ul>
+<li>50% of the funds will be used to build the Investin protocol and perform upgrades to the existing arcitecture/UI, which includes team recruits and R&amp;D on layer 2 solutions.</li>
+<li>35% will be used to perform security upgrades and bug bounties. Investin being fund management protocol have to put fund security as its top priority.</li>
+<li>15% will be kept in reserve to cope with emergency or unexpected situations </li>
+</ul>
+<h2 id="governance">Governance<a class="headerlink" href="#governance" title="Permanent link">&para;</a></h2>
+<p>We believe alignment between token holders and protocol stakeholders is crucial for successful decentralized governance. More explicitly, we believe IVN tokens are the vehicle to drive alignment and participation in the protocol. IVN token holders should be people who interact with the protocol in some way, are committed to its future development, and want a seat at the governance table.</p>
+<p>We expect token holders to help guide the protocol to its fullest potential through experimentation and active participation. For example, implementing new functionality, deploying the protocol on additional smart contract blockchains beyond Ethereum, using layer 2 solutions for scaling, introducing changes to protocol level fee, etc. Anything contentious will certainly go to the IVN token holders for review</p>
+<h2 id="deepdive-economics">Deepdive economics<a class="headerlink" href="#deepdive-economics" title="Permanent link">&para;</a></h2>
+<h3 id="deflationary-value-explained">Deflationary value explained<a class="headerlink" href="#deflationary-value-explained" title="Permanent link">&para;</a></h3>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../architecture/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Deep dive
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 - 2021 Investin
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/aak-capital" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/Investin_pro" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://medium.com/investin-pro" target="_blank" rel="noopener" title="medium.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://t.me/Investin_pro1" target="_blank" rel="noopener" title="t.me" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://t.me/Investin_pro1" target="_blank" rel="noopener" title="t.me" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.52a6371e.min.js"></script>
+      
+    
+  </body>
+</html>
