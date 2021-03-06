@@ -1,6 +1,6 @@
 # Overview
 
-Investin is a decentralized fund management protocol that facilitates trustless interactions between prospecting investors and aspiring traders, the protocol provides a open market for investors and trader to exchange their offering in a trustless and non custodial environment i.e. both the parties need not worry about custody of assets or management.
+Investin is a decentralized fund management protocol that facilitates trustless interactions between prospecting investors and aspiring traders, the protocol provides a open market for investors and traders to exchange their offering in a trustless and non custodial environment i.e. both the parties need not worry about custody of assets or management.
 
 ## Protocol Users
 
