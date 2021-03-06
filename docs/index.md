@@ -1,6 +1,6 @@
 # Overview
 
-Investin is a decentralized fund management protocol that facilitates trustless interactions between prospecting investors and aspiring traders, the protocol provides a open market for investors and traders to exchange their offering in a trustless and non custodial environment i.e. both the parties need not worry about custody of assets or management.
+Investin is a decentralized fund management protocol that facilitates trustless interactions between prospecting investors and aspiring traders, the protocol provides an open market for investors and traders to exchange their offering in a trustless and non-custodial environment i.e. both parties need not worry about custody of assets or management.
 
 ## Protocol Users
 
@@ -10,7 +10,7 @@ The driving force and future owners of the protocol that run funds to attract as
 
 * Investors 
 
-The liquidity providers for the protocol who can choose from wide array of funds available on Investin and can always swap investments between funds. The protocol insures fund security and total ownership to the investors while providing a minimum downside risk 
+The liquidity providers for the protocol, who can choose from a wide array of funds available on Investin and can always swap investments between funds. The protocol ensures fund security and total ownership to the investors while providing a minimum downside risk 
 
 
 ## Decentralized protocols integrated
@@ -18,8 +18,11 @@ The liquidity providers for the protocol who can choose from wide array of funds
 Investin is built using multiple protocols and available on ethereum & binance blockchain, soon on optimism rollups 
 
 1. Uniswap
-2. Sushiswap
-3. Pancakeswap
+2. Pancakeswap
+
+### Future integrations: 
+
+3. Sushiswap
 3. Chainlink
 4. Loopring
 5. Deversifi
