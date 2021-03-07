@@ -2,7 +2,7 @@ Investin documentation
 ====================
 
 Investin's documentation is build using [MkDocs](https://www.mkdocs.org/) and the beautiful [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
-In order to create Ludwig's documentation you have to install them:
+In order to create Investin's documentation you have to install them:
 
 ```
 pip install mkdocs mkdocs-material
