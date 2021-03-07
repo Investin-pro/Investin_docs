@@ -39,12 +39,13 @@ As discussed the fee will gradually increase for managers on a tier-based system
 | 100k       | 50%|           50%      |  0% |
 |   200k       | 55%|             40%  | 5% |
 | 400k    | 59% |         32%         | 9% |
-| 800k    | 65.4% |         25.6%         | 12.2% |
-| 1m    | 67.96% |        20.48%         |17.96% |
-| 2m    | 67.96% |        20.48%         |17.96% |
+| 800k    | 62.2% |         25.6%         | 12.2% |
+| 1m    | 64.76% |        20.48%         |14.76% |
+| 2m    | 66.76% |        16.38%         |16.76% |
 
 The dev team has decided to use 20% of profits accrued from developer fee% to buy back IVN tokens and burn to further align goals with protocol growth.
 Incase the managers don't stake to capture the total fee, the fee will be used to by back IVN and burn. 
+The burning will stop when 50% of tokens are burnt and in subsequent phase the fee would be added to managers earning pool.
 
 Additional incentives are planned to be given to managers handling top performing funds, funds with high aum, funds with greater than 100 investors and much more...
 
