@@ -74,9 +74,9 @@ A total supply of 9,000,000 IVN tokens are minted with no further minting planne
 
 
 
-A total of 30% of tokens will be sold on ethereum and binance smart chain, we believe the future of decentralized protocol is to be multi-chain hence investin will distribute the fee collected over both chains equally among all users.
+A total of 40% of tokens will be sold on ethereum and binance smart chain, we believe the future of decentralized protocol is to be multi-chain hence investin will distribute the fee collected over both chains equally among all users.
 
-* The pre-sale is priced at 0.2 USD per token
+* The token sale is priced at 0.2 USD per token
 * The seed was raised at 0.12 USD per token and is vested over 3 years with a 10% scheduled release every quarter
 * Core team's tokens are vested for 4 years with 10% scheduled release every quarter.
 * The advisory tokens are unallocated at the moment and once advisors are onboarded the tokens would be vested for 1 year.
