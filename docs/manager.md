@@ -70,7 +70,6 @@ Investin aims to offer multiple avenues of trading to its managers/traders and i
     ```
  
     
-The swap functions on investin does not require approvals since the amm contract is inherited and the call will be between contract accounts. 
 
 ### Trading pairs
 
