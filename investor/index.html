@@ -350,8 +350,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ivn-token" class="md-nav__link">
-    IVN token
+  <a href="#ivnt-token" class="md-nav__link">
+    IVNT token
   </a>
   
 </li>
@@ -467,8 +467,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ivn-token" class="md-nav__link">
-    IVN token
+  <a href="#ivnt-token" class="md-nav__link">
+    IVNT token
   </a>
   
 </li>
@@ -539,8 +539,18 @@ We use a different approach at solving the fund management system by using the E
 </code></pre></div>
 </div>
 </div>
-<h3 id="ivn-token">IVN token<a class="headerlink" href="#ivn-token" title="Permanent link">&para;</a></h3>
-<p>IVN is a non-fungible token based on OpenZeppelin's ERC 721 standard, this token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund. This token cannot be transferred between addresses and can only be sent back to Investin's router contract to retrieve funds. <code>Beware the loss of access to the address holding IVN token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.</code>  </p>
+<h3 id="ivnt-token">IVNT token<a class="headerlink" href="#ivnt-token" title="Permanent link">&para;</a></h3>
+<p>IVNT is a non-fungible token based on OpenZeppelin's ERC 721 standard, this token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund.<code>Beware the loss of access to the address holding IVNT token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.</code>  </p>
+<ul>
+<li>
+<p>Advantages of using nft: </p>
+<ol>
+<li>Once minted investor can use the same token in the wallet to interact with the protocol at almost 40% less gas expense since the protocol will know details about the investor, token acts as a marker.</li>
+<li>We plan to integrate lending for IVNT nft holders i.e. investors can get stables by staking their IVNT token as collateral</li>
+<li>Assets can be added to existing allocation in any fund and partial assets can be withdrawn as well</li>
+</ol>
+</li>
+</ul>
 <h3 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h3>
 <p>The performance on invested amount can be queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price hence the performance will be subject to an error &plusmn;2% but upon ending investment the asset calculation done by contracts will be final and true to the exact decimal at all times. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Layer 1</label><div class="tabbed-content">
@@ -554,7 +564,7 @@ We use a different approach at solving the fund management system by using the E
 </div>
 </div>
 <h2 id="end-investment">End Investment<a class="headerlink" href="#end-investment" title="Permanent link">&para;</a></h2>
-<p>This function can only be called by investor's holding ivn token and consists of two sub-functions which requires investor's to first call the end investment function which calculates performance for investor and accordingly sells the share of investor's assets in proportion to get the exact base token that is to be returned according to fund's performance during the investment period. The second function call requires the sending of ivn token back to the router which will in turn release investor's tokens back to their address.
+<p>This function can only be called by investor's holding IVNT token and consists of two sub-functions which requires investor's to first call the end investment function which calculates performance for investor and accordingly sells the share of investor's assets in proportion to get the exact base token that is to be returned according to fund's performance during the investment period. The second function call requires the sending of IVNT token back to the router which will in turn release investor's tokens back to their address.
 <code>There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.</code></p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Layer 1</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (string calldata _fundName, uint _minAmount,</span> 
@@ -577,11 +587,6 @@ We use a different approach at solving the fund management system by using the E
 <p>The managers can only collect their performance fee if they reach the minimum return on investment they set, this minimum ROI is range bound and can be anywhere between 5-50%. If the manager makes less than the ROI they set, the investors won't be charged any performance fee and can withdraw at any time. This system of reaching minimum ROI thereby only encourages managers to make more profits and creates a positive feedback loop.</p>
 </li>
 </ul>
-<h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Investors can withdraw funds from the router without incurring any fee if the withdrawal is done before the manager moves tokens to fund contract</li>
-<li>There is a possibility investment made to a fund hasnt been moved to fund contract which means the investment will be in a inactive state and no performance made by the relevant fund will be reflect on such investment. The state of investment can be checked through state function on ivn contract </li>
-</ul>
 <div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Layer 1</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (string calldata _fundName, uint _minAmount,</span> 
 <span class="l l-Scalar l-Scalar-Plain">uint256 _minReturn, uint _performanceFeePercentage) external returns(address)</span>
@@ -592,6 +597,11 @@ We use a different approach at solving the fund management system by using the E
 </code></pre></div>
 </div>
 </div>
+<h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Investors can withdraw funds from the router without incurring any fee if the withdrawal is done before the manager moves tokens to fund contract</li>
+<li>There is a possibility investment made to a fund hasnt been moved to fund contract which means the investment will be in a inactive state and no performance made by the relevant fund will be reflected on such investment. The state of investment can be checked through state function on IVNT contract </li>
+</ul>
                 
               
               
