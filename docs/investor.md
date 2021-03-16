@@ -24,9 +24,15 @@ We use a different approach at solving the fund management system by using the E
     ```
 
 
-### IVN token
+### IVNT token
 
-IVN is a non-fungible token based on OpenZeppelin's ERC 721 standard, this token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund. This token cannot be transferred between addresses and can only be sent back to Investin's router contract to retrieve funds. `Beware the loss of access to the address holding IVN token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.`  
+IVNT is a non-fungible token based on OpenZeppelin's ERC 721 standard, this token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund.`Beware the loss of access to the address holding IVNT token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.`  
+
+* Advantages of using nft: 
+
+    1. Once minted investor can use the same token in the wallet to interact with the protocol at almost 40% less gas expense since the protocol will know details about the investor, token acts as a marker.
+    2. We plan to integrate lending for IVNT nft holders i.e. investors can get stables by staking their IVNT token as collateral
+    3. Assets can be added to existing allocation in any fund and partial assets can be withdrawn as well
 
 ### Performance
 
@@ -47,7 +53,7 @@ The performance on invested amount can be queried on-chain and the smart contrac
 
 ## End Investment
 
-This function can only be called by investor's holding ivn token and consists of two sub-functions which requires investor's to first call the end investment function which calculates performance for investor and accordingly sells the share of investor's assets in proportion to get the exact base token that is to be returned according to fund's performance during the investment period. The second function call requires the sending of ivn token back to the router which will in turn release investor's tokens back to their address.
+This function can only be called by investor's holding IVNT token and consists of two sub-functions which requires investor's to first call the end investment function which calculates performance for investor and accordingly sells the share of investor's assets in proportion to get the exact base token that is to be returned according to fund's performance during the investment period. The second function call requires the sending of IVNT token back to the router which will in turn release investor's tokens back to their address.
 `There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.`
 
 === "Layer 1"
@@ -73,11 +79,6 @@ This function can only be called by investor's holding ivn token and consists of
 
     The managers can only collect their performance fee if they reach the minimum return on investment they set, this minimum ROI is range bound and can be anywhere between 5-50%. If the manager makes less than the ROI they set, the investors won't be charged any performance fee and can withdraw at any time. This system of reaching minimum ROI thereby only encourages managers to make more profits and creates a positive feedback loop.
 
-
-## Miscellaneous 
-
-* Investors can withdraw funds from the router without incurring any fee if the withdrawal is done before the manager moves tokens to fund contract
-* There is a possibility investment made to a fund hasnt been moved to fund contract which means the investment will be in a inactive state and no performance made by the relevant fund will be reflect on such investment. The state of investment can be checked through state function on ivn contract 
 === "Layer 1"
     
     ``` yaml
@@ -90,3 +91,8 @@ This function can only be called by investor's holding ivn token and consists of
     ```yaml
     comming soon on a rollup near you
     ```
+
+## Miscellaneous 
+
+* Investors can withdraw funds from the router without incurring any fee if the withdrawal is done before the manager moves tokens to fund contract
+* There is a possibility investment made to a fund hasnt been moved to fund contract which means the investment will be in a inactive state and no performance made by the relevant fund will be reflected on such investment. The state of investment can be checked through state function on IVNT contract 

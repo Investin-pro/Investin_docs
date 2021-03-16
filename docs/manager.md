@@ -88,9 +88,19 @@ Manager are entitled to collect fees over the investments to insure longetivity 
 
 ### Management fee
 
-A fixed 1.5% management fees has been set in the smart contracts which managers can collect when they move the funds from router to their fund contracts. This amount will be shown on manager dashboard interface. 
+A fixed 2% management fees has been set in the smart contracts which managers can collect when they move the funds from router to their fund contracts. This amount will be shown on manager dashboard interface. 
+
+### Swap fee
+
+The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation they will be allowed to collect the fee they spent on swapping. `Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets`
 
 ### Performance fee
 
-As discussed earlier manager will be entitiled to collect the performance fee on meeting the criteria they reach the minimum return they set for themselves during deploying funds. This feature insures managers meet certain targets of profits before collecting any performance fee.
+As discussed earlier manager will be entitiled to collect the performance fee on meeting the criteria they reach the minimum return they set for themselves during deploying funds. This feature insures managers meet certain targets of profits before collecting any performance fee. `Manager is expected to keep the performance fee in base token of fund, they wont be able to collect the fee in case the funds are invested in other assets`
+
+
+### Miscellaneous
+
+* We expect manager's to create a group for all their investors or ask them to join the relevant discord channel to explain their investment philosophy, they can also add a short thesis on investin's UI and add their socials link. 
+* To minimize end investment fee incurred on withdrawal by investors and to create a long term alliance, managers are expected to set intervals of redemption by keeping the majority of funds in base token for ease of withdrawals. 
 
