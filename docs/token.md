@@ -70,11 +70,11 @@ The investors will be airdropped IVN for certain criteria's and are expected to 
 
 A total supply of 9,000,000 IVN tokens are minted with no further minting planned in line with the current tokeneconomics structure. This can be changed with governance takeover as the future of decentralized protocols evolve.
 
-![Placeholder](assets/ivn2.svg){: align=center }
+![Placeholder](assets/ivnbsc.svg){: align=center }
 
 
 
-A total of 40% of tokens will be sold on ethereum and binance smart chain, we believe the future of decentralized protocol is to be multi-chain hence investin will distribute the fee collected over both chains equally among all users.
+A total of 20% of tokens will be sold on binance smart chain and 20% will be used to add liquidity to AMM, since we dont have a significant backing or farming intiatives we will be providing liquiidty for a indefinite time. We believe the future of decentralized protocol is to be multi-chain hence investin will also launch on ethereum soon.
 
 * The token sale is priced at 0.2 USD per token
 * The seed was raised at 0.12 USD per token and is vested over 3 years with a 10% scheduled release every quarter
@@ -95,7 +95,7 @@ In rare cases of manager duping fund performance, the treasury will be used to c
 
 We believe alignment between token holders and protocol stakeholders is crucial for successful decentralized governance. More explicitly, we believe IVN tokens are the vehicle to drive alignment and participation in the protocol. IVN token holders should be people who interact with the protocol in some way, are committed to its future development, and want a seat at the governance table.
 
-We expect token holders to help guide the protocol to its fullest potential through experimentation and active participation. For example, implementing new functionality, deploying the protocol on additional smart contract blockchains beyond Ethereum, using layer 2 solutions for scaling, introducing changes to protocol level fee, etc. Anything contentious will certainly go to the IVN token holders for review
+We expect token holders to help guide the protocol to its fullest potential through experimentation and active participation. For example, implementing new functionality, deploying the protocol on additional smart contract blockchains beyond Bsc and Ethereum, using layer 2 solutions for scaling, introducing changes to protocol level fee, etc. Anything contentious will certainly go to the IVN token holders for review
 
 
 ## Deepdive economics
