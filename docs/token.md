@@ -74,7 +74,7 @@ A total supply of 9,000,000 IVN tokens are minted with no further minting planne
 
 
 
-A total of 20% of tokens will be sold on binance smart chain and 20% will be used to add liquidity to AMM, since we dont have a significant backing or farming intiatives we will be providing liquiidty for a indefinite time. We believe the future of decentralized protocol is to be multi-chain hence investin will also launch on ethereum soon.
+A total of 20% of tokens will be sold on binance smart chain and 20% will be used to add liquidity to AMM, since we dont have a significant backing we will be providing liquiidty for a indefinite time. We would be soon announcing more details on farming intiatives for protocol users.
 
 * The token sale is priced at 0.2 USD per token
 * The seed was raised at 0.12 USD per token and is vested over 3 years with a 10% scheduled release every quarter
