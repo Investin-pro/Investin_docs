@@ -350,8 +350,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ivnt-token" class="md-nav__link">
-    IVNT token
+  <a href="#ivny-token" class="md-nav__link">
+    IVNy token
   </a>
   
 </li>
@@ -467,8 +467,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ivnt-token" class="md-nav__link">
-    IVNT token
+  <a href="#ivny-token" class="md-nav__link">
+    IVNy token
   </a>
   
 </li>
@@ -530,8 +530,7 @@
 <p>Investors are required to interact with the router contract and give approval of the base token with which they would like to invest in any fund. After the approval investors can proceed to call the make investment function which mints an ERC 721 token and send it to the caller's address while transferring the said amount of approved tokens to the router.
 We use a different approach at solving the fund management system by using the ERC 721 standard to identify investors on blockchain.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Layer 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (string calldata _fundName, uint _minAmount,</span> 
-<span class="l l-Scalar l-Scalar-Plain">uint256 _minReturn, uint _performanceFeePercentage) external returns(address)</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function makeInvestment(uint amount) external returns(uint256)</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Layer 2</label><div class="tabbed-content">
@@ -539,14 +538,14 @@ We use a different approach at solving the fund management system by using the E
 </code></pre></div>
 </div>
 </div>
-<h3 id="ivnt-token">IVNT token<a class="headerlink" href="#ivnt-token" title="Permanent link">&para;</a></h3>
-<p>IVNT is a non-fungible token based on OpenZeppelin's ERC 721 standard, this token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund.<code>Beware the loss of access to the address holding IVNT token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.</code>  </p>
+<h3 id="ivny-token">IVNy token<a class="headerlink" href="#ivny-token" title="Permanent link">&para;</a></h3>
+<p>IVNy is a non-fungible token based on OpenZeppelin's ERC 721 standard, this token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund.<code>Beware the loss of access to the address holding IVNy token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.</code> </p>
 <ul>
 <li>
 <p>Advantages of using nft: </p>
 <ol>
 <li>Once minted investor can use the same token in the wallet to interact with the protocol at almost 40% less gas expense since the protocol will know details about the investor, token acts as a marker.</li>
-<li>We plan to integrate lending for IVNT nft holders i.e. investors can get stables by staking their IVNT token as collateral</li>
+<li><mark>We plan to integrate lending feature for IVNy nft holders i.e. investors can get stables by staking their IVNy token as collateral.</mark></li>
 <li>Assets can be added to existing allocation in any fund and partial assets can be withdrawn as well</li>
 </ol>
 </li>
@@ -554,8 +553,11 @@ We use a different approach at solving the fund management system by using the E
 <h3 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h3>
 <p>The performance on invested amount can be queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price hence the performance will be subject to an error &plusmn;2% but upon ending investment the asset calculation done by contracts will be final and true to the exact decimal at all times. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Layer 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (string calldata _fundName, uint _minAmount,</span> 
-<span class="l l-Scalar l-Scalar-Plain">uint256 _minReturn, uint _performanceFeePercentage) external returns(address)</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function getInvestmentDetails(uint tokenId) external view returns</span>
+<span class="l l-Scalar l-Scalar-Plain">(uint128 investedAmount,</span> 
+<span class="l l-Scalar l-Scalar-Plain">uint128 startPerformance,</span> 
+<span class="l l-Scalar l-Scalar-Plain">uint128 currentPerformance,</span> 
+<span class="l l-Scalar l-Scalar-Plain">uint128 currentReturns)</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Layer 2</label><div class="tabbed-content">
@@ -564,11 +566,11 @@ We use a different approach at solving the fund management system by using the E
 </div>
 </div>
 <h2 id="end-investment">End Investment<a class="headerlink" href="#end-investment" title="Permanent link">&para;</a></h2>
-<p>This function can only be called by investor's holding IVNT token and consists of two sub-functions which requires investor's to first call the end investment function which calculates performance for investor and accordingly sells the share of investor's assets in proportion to get the exact base token that is to be returned according to fund's performance during the investment period. The second function call requires the sending of IVNT token back to the router which will in turn release investor's tokens back to their address.
+<p>This function can only be called by investor's holding IVNy token and consists of two sub-functions which gives investor's the option to either collect 100% of their investment or make a partial withdrawal to book profits on invested amount.</p>
+<p>The investors have the option to recieve their investment according to fund allocation which is the cheapest option to withdraw or they can provide the token in which they would like to get their investment withdrawn from fund.
 <code>There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.</code></p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Layer 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (string calldata _fundName, uint _minAmount,</span> 
-<span class="l l-Scalar l-Scalar-Plain">uint256 _minReturn, uint _performanceFeePercentage) external returns(address)</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function partialWithdraw(uint _tokenId, uint128 _amount, bool allTokens) external</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Layer 2</label><div class="tabbed-content">
@@ -588,8 +590,12 @@ We use a different approach at solving the fund management system by using the E
 </li>
 </ul>
 <div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Layer 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (string calldata _fundName, uint _minAmount,</span> 
-<span class="l l-Scalar l-Scalar-Plain">uint256 _minReturn, uint _performanceFeePercentage) external returns(address)</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function getFundDetails() external view returns</span>
+<span class="l l-Scalar l-Scalar-Plain">(Fund name,</span> 
+<span class="l l-Scalar l-Scalar-Plain">manager_address,</span> 
+<span class="l l-Scalar l-Scalar-Plain">min_amount,</span> 
+<span class="l l-Scalar l-Scalar-Plain">min_return,</span> 
+<span class="l l-Scalar l-Scalar-Plain">perf_fee)</span> 
 </code></pre></div>
 </div>
 <input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Layer 2</label><div class="tabbed-content">
@@ -600,7 +606,7 @@ We use a different approach at solving the fund management system by using the E
 <h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Investors can withdraw funds from the router without incurring any fee if the withdrawal is done before the manager moves tokens to fund contract</li>
-<li>There is a possibility investment made to a fund hasnt been moved to fund contract which means the investment will be in a inactive state and no performance made by the relevant fund will be reflected on such investment. The state of investment can be checked through state function on IVNT contract </li>
+<li>There is a possibility investment made to a fund hasnt been moved to fund contract which means the investment will be in a inactive state and no performance made by the relevant fund will be reflected on such investment. The state of investment can be checked through state function on IVNy contract </li>
 </ul>
                 
               
@@ -707,7 +713,7 @@ We use a different approach at solving the fund management system by using the E
         
         
       
-      <a href="https://t.me/Investin_pro1" target="_blank" rel="noopener" title="t.me" class="md-footer-social__link">
+      <a href="https://discord.com/invite/Yf54h9B" target="_blank" rel="noopener" title="discord.com" class="md-footer-social__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg>
       </a>
     
