@@ -101,6 +101,6 @@ As discussed earlier manager will be entitiled to collect the performance fee on
 
 ### Miscellaneous
 
-* We expect manager's to create a group for all their investors or ask them to join the relevant discord channel to explain their investment philosophy, they can also add a short thesis on investin's UI and add their socials link. 
+* We expect manager's to create a discord/telegram groups for all their investors or ask them to join the relevant discord channel to explain their investment philosophy, they can also add a short thesis on investin's UI and add their socials link. 
 * To minimize end investment fee incurred on withdrawal by investors and to create a long term alliance, managers are expected to set intervals of redemption by keeping the majority of funds in base token for ease of withdrawals. 
 

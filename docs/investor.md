@@ -13,8 +13,7 @@ We use a different approach at solving the fund management system by using the E
 === "Layer 1"
     
     ``` yaml
-    function createFund (string calldata _fundName, uint _minAmount, 
-    uint256 _minReturn, uint _performanceFeePercentage) external returns(address)
+    function makeInvestment(uint amount) external returns(uint256)
     ```
 
 === "Layer 2"
@@ -24,14 +23,14 @@ We use a different approach at solving the fund management system by using the E
     ```
 
 
-### IVNT token
+### IVNy token
 
-IVNT is a non-fungible token based on OpenZeppelin's ERC 721 standard, this token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund.`Beware the loss of access to the address holding IVNT token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.`  
+IVNy is a non-fungible token based on OpenZeppelin's ERC 721 standard, this token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund.`Beware the loss of access to the address holding IVNy token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.` 
 
 * Advantages of using nft: 
 
     1. Once minted investor can use the same token in the wallet to interact with the protocol at almost 40% less gas expense since the protocol will know details about the investor, token acts as a marker.
-    2. We plan to integrate lending for IVNT nft holders i.e. investors can get stables by staking their IVNT token as collateral
+    2. ==We plan to integrate lending feature for IVNy nft holders i.e. investors can get stables by staking their IVNy token as collateral.==
     3. Assets can be added to existing allocation in any fund and partial assets can be withdrawn as well
 
 ### Performance
@@ -41,8 +40,11 @@ The performance on invested amount can be queried on-chain and the smart contrac
 === "Layer 1"
     
     ``` yaml
-    function createFund (string calldata _fundName, uint _minAmount, 
-    uint256 _minReturn, uint _performanceFeePercentage) external returns(address)
+    function getInvestmentDetails(uint tokenId) external view returns
+    (uint128 investedAmount, 
+    uint128 startPerformance, 
+    uint128 currentPerformance, 
+    uint128 currentReturns)
     ```
 
 === "Layer 2"
@@ -53,14 +55,15 @@ The performance on invested amount can be queried on-chain and the smart contrac
 
 ## End Investment
 
-This function can only be called by investor's holding IVNT token and consists of two sub-functions which requires investor's to first call the end investment function which calculates performance for investor and accordingly sells the share of investor's assets in proportion to get the exact base token that is to be returned according to fund's performance during the investment period. The second function call requires the sending of IVNT token back to the router which will in turn release investor's tokens back to their address.
+This function can only be called by investor's holding IVNy token and consists of two sub-functions which gives investor's the option to either collect 100% of their investment or make a partial withdrawal to book profits on invested amount.
+
+The investors have the option to recieve their investment according to fund allocation which is the cheapest option to withdraw or they can provide the token in which they would like to get their investment withdrawn from fund.
 `There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.`
 
 === "Layer 1"
     
     ``` yaml
-    function createFund (string calldata _fundName, uint _minAmount, 
-    uint256 _minReturn, uint _performanceFeePercentage) external returns(address)
+    function partialWithdraw(uint _tokenId, uint128 _amount, bool allTokens) external
     ```
 
 === "Layer 2"
@@ -82,8 +85,12 @@ This function can only be called by investor's holding IVNT token and consists o
 === "Layer 1"
     
     ``` yaml
-    function createFund (string calldata _fundName, uint _minAmount, 
-    uint256 _minReturn, uint _performanceFeePercentage) external returns(address)
+    function getFundDetails() external view returns
+    (Fund name, 
+    manager_address, 
+    min_amount, 
+    min_return, 
+    perf_fee) 
     ```
 
 === "Layer 2"
@@ -95,4 +102,4 @@ This function can only be called by investor's holding IVNT token and consists o
 ## Miscellaneous 
 
 * Investors can withdraw funds from the router without incurring any fee if the withdrawal is done before the manager moves tokens to fund contract
-* There is a possibility investment made to a fund hasnt been moved to fund contract which means the investment will be in a inactive state and no performance made by the relevant fund will be reflected on such investment. The state of investment can be checked through state function on IVNT contract 
+* There is a possibility investment made to a fund hasnt been moved to fund contract which means the investment will be in a inactive state and no performance made by the relevant fund will be reflected on such investment. The state of investment can be checked through state function on IVNy contract 
