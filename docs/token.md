@@ -29,11 +29,11 @@ The fee distribution to manager pool will gradually increase on a tier-based sys
 | Protocol earnings| Managers Fee %|Developers Fee%| Fee used to burn tokens |
 | ----------- | -------------- | -------------- | -------------- |
 | 100k       | 50%|           50%      |  0% |
-|   200k       | 55%|             40%  | 5% |
-| 400k    | 59% |         32%         | 9% |
-| 800k    | 62.2% |         25.6%         | 12.2% |
-| 1m    | 64.76% |        20.48%         |14.76% |
-| 2m    | 66.76% |        16.38%         |16.76% |
+|   400k       | 55%|             42.5%  | 2.5% |
+| 800k    | 59% |         36%         | 4% |
+| 1.6m    | 62.2% |         31.7%         | 6.1% |
+| 6.4m    | 64.76% |        27.86%         |7.38% |
+| 25.6m    | 66.76% |        24.76%         |8.38% |
 
 The dev team has decided to use 20% of profits accrued from developer fee% to buy back IVN tokens and burn to further align goals with protocol growth.
 Incase the manager's don't stake to capture the total fee, the fee will be used to by back IVN and burn. 
@@ -74,7 +74,8 @@ A total of 20% of tokens will be sold on binance smart chain and 5% will be used
 * The advisory tokens are unallocated at the moment and once advisors are onboarded the tokens would be vested for 1 year.
 
 The treasury is used to incentivize users and make them part owners of Investin, there will be scheduled airdrops to top performing funds, funds managing high aum consistently and to investors committed to building investin. 
-In rare cases of manager duping fund performance, the treasury will be used to compensate investor losses.
+In rare cases when a [white-listed][2] token gets hacked and fund performance crashes, the treasury will be used to compensate investor losses as it's investin's job to maintain rug proof tokens white listed that funds can trade on.
+[2]: https://investin-pro.github.io/Investin_docs/manager/#trading-pairs
 
 
 ### Fund usage 
