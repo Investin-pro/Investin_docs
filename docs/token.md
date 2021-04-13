@@ -60,7 +60,8 @@ The investors will be airdropped IVN for certain criteria's and in a highly unli
 
 ## IVN allocation and sales 
 
-A total supply of 9,000,000 IVN tokens are minted with no further minting planned in line with the current tokeneconomics structure. This can be changed with governance takeover as the future of decentralized protocols evolve.
+
+A total supply of 9,000,000 IVN tokens are minted with no further minting possible as the contract has no minting functionality. 
 
 ![Placeholder](assets/ivnbsc3.svg){: align=center }
 
