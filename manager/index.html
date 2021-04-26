@@ -383,18 +383,24 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#swap-fee" class="md-nav__link">
-    Swap fee
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#performance-fee" class="md-nav__link">
     Performance fee
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staking-revenue-sharing" class="md-nav__link">
+    Staking (revenue sharing)
+  </a>
+  
+    <nav class="md-nav" aria-label="Staking (revenue sharing)">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#miscellaneous" class="md-nav__link">
@@ -549,18 +555,24 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#swap-fee" class="md-nav__link">
-    Swap fee
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#performance-fee" class="md-nav__link">
     Performance fee
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staking-revenue-sharing" class="md-nav__link">
+    Staking (revenue sharing)
+  </a>
+  
+    <nav class="md-nav" aria-label="Staking (revenue sharing)">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#miscellaneous" class="md-nav__link">
@@ -595,7 +607,7 @@
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>The future owners of protocol on whose success the experiment of running a decentralized fund management protocol can be made possible in a truly trustless and non custodial way. The protocol has been keenly designed to incentivize traders who provide their expertise on crypto markets to benefit both the users of protocol.</p>
 <h2 id="fund-creation">Fund creation<a class="headerlink" href="#fund-creation" title="Permanent link">&para;</a></h2>
-<p>Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 500,000 gwei</p>
+<p>Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 350,000 gwei. Only one fund can be created per address.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Layer 1</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (string calldata _fundName, uint _minAmount,</span> 
 <span class="l l-Scalar l-Scalar-Plain">uint256 _minReturn, uint _performanceFeePercentage) external returns(address)</span>
@@ -646,10 +658,14 @@
 <p>Manager are entitled to collect fees over the investments to insure longetivity in relations between them and investors</p>
 <h3 id="management-fee">Management fee<a class="headerlink" href="#management-fee" title="Permanent link">&para;</a></h3>
 <p>A fixed 2% management fees has been set in the smart contracts which managers can collect when they move the funds from router to their fund contracts. This amount will be shown on manager dashboard interface. </p>
-<h3 id="swap-fee">Swap fee<a class="headerlink" href="#swap-fee" title="Permanent link">&para;</a></h3>
-<p>The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation they will be allowed to collect the fee they spent on swapping. <code>Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets</code></p>
+<!-- ### Swap fee
+
+The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation they will be allowed to collect the fee they spent on swapping. `Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets` -->
+
 <h3 id="performance-fee">Performance fee<a class="headerlink" href="#performance-fee" title="Permanent link">&para;</a></h3>
 <p>As discussed earlier manager will be entitiled to collect the performance fee on meeting the criteria they reach the minimum return they set for themselves during deploying funds. This feature insures managers meet certain targets of profits before collecting any performance fee. <code>Manager is expected to keep the performance fee in base token of fund, they wont be able to collect the fee in case the funds are invested in other assets</code></p>
+<h2 id="staking-revenue-sharing">Staking (revenue sharing)<a class="headerlink" href="#staking-revenue-sharing" title="Permanent link">&para;</a></h2>
+<p>Details will be added soon..</p>
 <h3 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h3>
 <ul>
 <li>We expect manager's to create a discord/telegram groups for all their investors or ask them to join the relevant discord channel to explain their investment philosophy, they can also add a short thesis on investin's UI and add their socials link. </li>
