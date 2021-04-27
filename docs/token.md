@@ -20,7 +20,7 @@ The goal of any decentralize protocol is to ultimately give ownership to its use
 
 ## For managers/traders
 
-Managers/traders running funds on investin and staking IVN tokens will capture the accured fee earned by staking IVN in staking contract which will mint IVNx tokens that represent their share in the fee distribution pool. 
+Managers/traders running funds on investin and staking IVN tokens will capture the accured fee earned by staking IVN in staking contract which will mint `IVNx` tokens that represent their share in the fee distribution pool. 
 
 `You will come with less IVN tokens only to leave with more.`
 
@@ -43,7 +43,8 @@ Additional incentives are planned to be given to managers handling top performin
 
 ## For Investors
 
-Investin's key liquidity providers are expected to actively engage with protocol to find the best performing fund for their investment and get a 50% reduction on holding IVN token in their wallet while they are invested in Investin funds.
+Investin's key liquidity providers are expected to actively engage with protocol to find the best performing fund for their investment. 
+<!-- and get a 50% reduction on holding IVN token in their wallet while they are invested in Investin funds.
 The ivn holdings to get 50% fee reduction in management fee is elaborated below. The investors are expected to increase their ivn holdings to get the same benefits at each increment in fee captured by the protocol.
 
 | Fees captured| IVN holding |
@@ -52,7 +53,7 @@ The ivn holdings to get 50% fee reduction in management fee is elaborated below.
 |   200k       | 200|      
 | 800k    | 400 |         
 | 1m    | 800 |        
-| 2m    | 1200 |        
+| 2m    | 1200 |         -->
 
 The investors will be airdropped IVN for certain criteria's and in a highly unlike scenario where fund's hit maximum drawdown due to technical breakdown investors can expect the losses to be covered by the treasury which is locked to safeguard investin's key liquidity providers interests.
 10% of IVN are locked as insurance for investor funds and as the total value under management grows this treasury will be replenished with a basket of different assets to protect all user's interests. 
@@ -63,11 +64,11 @@ The investors will be airdropped IVN for certain criteria's and in a highly unli
 
 A total supply of 9,000,000 IVN tokens are minted with no further minting possible as the contract has no minting functionality. 
 
-![Placeholder](assets/ivnbsc3.svg){: align=center }
+![Placeholder](assets/ivnbsc1.svg){: align=center }
 
 
 
-A total of 20% of tokens will be sold on binance smart chain and 5% will be used to add liquidity to AMM, since we dont have a significant backing we will be providing liquiidty for a indefinite time. We would be announcing more details on liquidity farming intiatives for protocol users soon.
+A total of 20% of tokens will be sold on binance smart chain and 10% will be used to add liquidity to AMM, since we dont have a significant backing we will be providing liquiidty for a indefinite time. We would be announcing more details on liquidity farming intiatives for protocol users soon.
 
 * The token sale is priced at 0.2 USD per token
 * The seed was raised at 0.12 USD per token and is vested over 3 years with a 8% scheduled release every quarter

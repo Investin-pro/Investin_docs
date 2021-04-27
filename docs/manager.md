@@ -7,7 +7,7 @@ The future owners of protocol on whose success the experiment of running a decen
 
 ## Fund creation
 
-Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 500,000 gwei
+Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 350,000 gwei. Only one fund can be created per address.
 === "Layer 1"
     
     ``` yaml
@@ -90,13 +90,18 @@ Manager are entitled to collect fees over the investments to insure longetivity 
 
 A fixed 2% management fees has been set in the smart contracts which managers can collect when they move the funds from router to their fund contracts. This amount will be shown on manager dashboard interface. 
 
-### Swap fee
+<!-- ### Swap fee
 
-The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation they will be allowed to collect the fee they spent on swapping. `Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets`
+The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation they will be allowed to collect the fee they spent on swapping. `Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets` -->
 
 ### Performance fee
 
 As discussed earlier manager will be entitiled to collect the performance fee on meeting the criteria they reach the minimum return they set for themselves during deploying funds. This feature insures managers meet certain targets of profits before collecting any performance fee. `Manager is expected to keep the performance fee in base token of fund, they wont be able to collect the fee in case the funds are invested in other assets`
+
+
+## Staking (revenue sharing)
+
+Details will be added soon..
 
 
 ### Miscellaneous

@@ -30,12 +30,12 @@ IVNy is a non-fungible token based on OpenZeppelin's ERC 721 standard, this toke
 * Advantages of using nft: 
 
     1. Once minted investor can use the same token in the wallet to interact with the protocol at almost 40% less gas expense since the protocol will know details about the investor, token acts as a marker.
-    2. ==We plan to integrate lending feature for IVNy nft holders i.e. investors can get stables by staking their IVNy token as collateral.==
+    2. ==We plan to integrate lending feature for IVNy nft holders i.e. investors can borrow by staking their IVNy token as collateral.==
     3. Assets can be added to existing allocation in any fund and partial assets can be withdrawn as well
 
 ### Performance
 
-The performance on invested amount can be queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price hence the performance will be subject to an error +/-2% but upon ending investment the asset calculation done by contracts will be final and true to the exact decimal at all times. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.
+The performance on invested amount can be queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price hence the performance will be subject to an error +/-2% but upon ending investment the asset evaluation done by contracts will be final and true to the exact decimal at all times. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.
 
 === "Layer 1"
     
