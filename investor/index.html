@@ -529,12 +529,12 @@
 <h2 id="make-investment">Make investment<a class="headerlink" href="#make-investment" title="Permanent link">&para;</a></h2>
 <p>Investors are required to interact with the router contract and give approval of the base token with which they would like to invest in any fund. After the approval investors can proceed to call the make investment function which mints an ERC 721 token and send it to the caller's address while transferring the said amount of approved tokens to the router.
 We use a different approach at solving the fund management system by using the ERC 721 standard to identify investors on blockchain.</p>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Layer 1</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solidity</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function makeInvestment(uint amount) external returns(uint256)</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Layer 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">comming soon on a rollup near you</span>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Solana</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">coming soon</span> 
 </code></pre></div>
 </div>
 </div>
@@ -552,7 +552,7 @@ We use a different approach at solving the fund management system by using the E
 </ul>
 <h3 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h3>
 <p>The performance on invested amount can be queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price hence the performance will be subject to an error &plusmn;2% but upon ending investment the asset evaluation done by contracts will be final and true to the exact decimal at all times. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.</p>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Layer 1</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solidity</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function getInvestmentDetails(uint tokenId) external view returns</span>
 <span class="l l-Scalar l-Scalar-Plain">(uint128 investedAmount,</span> 
 <span class="l l-Scalar l-Scalar-Plain">uint128 startPerformance,</span> 
@@ -560,8 +560,8 @@ We use a different approach at solving the fund management system by using the E
 <span class="l l-Scalar l-Scalar-Plain">uint128 currentReturns)</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Layer 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">comming soon on a rollup near you</span>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Solana</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">coming soon</span> 
 </code></pre></div>
 </div>
 </div>
@@ -569,12 +569,12 @@ We use a different approach at solving the fund management system by using the E
 <p>This function can only be called by investor's holding IVNy token and consists of two sub-functions which gives investor's the option to either collect 100% of their investment or make a partial withdrawal to book profits on invested amount.</p>
 <p>The investors have the option to recieve their investment according to fund allocation which is the cheapest option to withdraw or they can provide the token in which they would like to get their investment withdrawn from fund.
 <code>There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.</code></p>
-<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Layer 1</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Solidity</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function partialWithdraw(uint _tokenId, uint128 _amount, bool allTokens) external</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Layer 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">comming soon on a rollup near you</span>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Solana</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">coming soon</span> 
 </code></pre></div>
 </div>
 </div>
@@ -589,7 +589,7 @@ We use a different approach at solving the fund management system by using the E
 <p>The managers can only collect their performance fee if they reach the minimum return on investment they set, this minimum ROI is range bound and can be anywhere between 5-50%. If the manager makes less than the ROI they set, the investors won't be charged any performance fee and can withdraw at any time. This system of reaching minimum ROI thereby only encourages managers to make more profits and creates a positive feedback loop.</p>
 </li>
 </ul>
-<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Layer 1</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Solidity</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function getFundDetails() external view returns</span>
 <span class="l l-Scalar l-Scalar-Plain">(Fund name,</span> 
 <span class="l l-Scalar l-Scalar-Plain">manager_address,</span> 
@@ -598,8 +598,8 @@ We use a different approach at solving the fund management system by using the E
 <span class="l l-Scalar l-Scalar-Plain">perf_fee)</span> 
 </code></pre></div>
 </div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Layer 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">comming soon on a rollup near you</span>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Solana</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">coming soon</span> 
 </code></pre></div>
 </div>
 </div>
