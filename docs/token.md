@@ -35,8 +35,8 @@ The fee distribution to manager pool will gradually increase on a tier-based sys
 | 6.4m    | 64.76% |        27.86%         |7.38% |
 | 25.6m    | 66.76% |        24.76%         |8.38% |
 
-The dev team has decided to use 20% of profits accrued from developer fee% to buy back IVN tokens and burn to further align goals with protocol growth.
-Incase the manager's don't stake to capture the total fee, the fee will be used to by back IVN and burn. 
+The dev team has decided to use 20% of profits accrued from developer fee% to buyback IVN tokens and burn to further align goals with protocol growth.
+Incase the manager's don't stake to capture the total fee, the fee will be used to buyback IVN and burn. 
 The burning will stop when 50% of tokens are burnt and in subsequent phase the fee would be added to managers earning pool.
 
 Additional incentives are planned to be given to managers handling top performing funds, funds with high aum, funds with greater than 100 investors and much more...
@@ -70,7 +70,7 @@ A total supply of 9,000,000 IVN tokens are minted with no further minting possib
 
 A total of 20% of tokens will be sold on binance smart chain and 10% will be used to add liquidity to AMM, since we dont have a significant backing we will be providing liquiidty for a indefinite time. We would be announcing more details on liquidity farming intiatives for protocol users soon.
 
-* The token sale is priced at 0.2 USD per token
+* The token sale is priced at 1 BNB = 2400 IVN. 
 * The seed was raised at 0.12 USD per token and is vested over 3 years with a 8% scheduled release every quarter
 * Core team's tokens are vested for 3 years with 8% scheduled release every quarter.
 * The advisory tokens are unallocated at the moment and once advisors are onboarded the tokens would be vested for 1 year.
@@ -90,7 +90,7 @@ In rare cases when a [white-listed][2] token gets hacked and fund performance cr
 
 We believe alignment between token holders and protocol stakeholders is crucial for successful decentralized governance. More explicitly, we believe IVN tokens are the vehicle to drive alignment and participation in the protocol. IVN token holders should be people who interact with the protocol in some way, are committed to its future development, and want a seat at the governance table.
 
-We expect token holders to help guide the protocol to its fullest potential through experimentation and active participation. For example, implementing new functionality, deploying the protocol on additional smart contract blockchains beyond Bsc and Ethereum, using layer 2 solutions for scaling, introducing changes to protocol level fee, etc. Anything contentious will certainly go to the IVN token holders for review
+We expect token holders to help guide the protocol to its fullest potential through experimentation and active participation. For example, implementing new functionality, introducing changes to protocol level fee, etc. Anything contentious will certainly go to the IVN token holders for review.
 
 
 ## Deepdive economics

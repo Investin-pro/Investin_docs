@@ -32,10 +32,8 @@ theme:
 #   - toc        # Hide table of contents
 
 
-repo_name: Investin/contracts
-repo_url: https://github.com/aak-capital/capitalfund_contracts
-
-
+repo_name: Investin/docs
+repo_url: https://github.com/Investin-pro/Investin_docs
 
 extra_css:
    # - 'stylesheets/tt.css'

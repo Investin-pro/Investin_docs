@@ -10,16 +10,16 @@ We see investors as key liquidity providers of the platform whose success in mar
 Investors are required to interact with the router contract and give approval of the base token with which they would like to invest in any fund. After the approval investors can proceed to call the make investment function which mints an ERC 721 token and send it to the caller's address while transferring the said amount of approved tokens to the router.
 We use a different approach at solving the fund management system by using the ERC 721 standard to identify investors on blockchain.
 
-=== "Layer 1"
+=== "Solidity"
     
     ``` yaml
     function makeInvestment(uint amount) external returns(uint256)
     ```
 
-=== "Layer 2"
+=== "Solana"
     
     ```yaml
-    comming soon on a rollup near you
+    coming soon 
     ```
 
 
@@ -37,7 +37,7 @@ IVNy is a non-fungible token based on OpenZeppelin's ERC 721 standard, this toke
 
 The performance on invested amount can be queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price hence the performance will be subject to an error +/-2% but upon ending investment the asset evaluation done by contracts will be final and true to the exact decimal at all times. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.
 
-=== "Layer 1"
+=== "Solidity"
     
     ``` yaml
     function getInvestmentDetails(uint tokenId) external view returns
@@ -47,10 +47,10 @@ The performance on invested amount can be queried on-chain and the smart contrac
     uint128 currentReturns)
     ```
 
-=== "Layer 2"
+=== "Solana"
     
     ```yaml
-    comming soon on a rollup near you
+    coming soon 
     ```
 
 ## End Investment
@@ -60,29 +60,29 @@ This function can only be called by investor's holding IVNy token and consists o
 The investors have the option to recieve their investment according to fund allocation which is the cheapest option to withdraw or they can provide the token in which they would like to get their investment withdrawn from fund.
 `There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.`
 
-=== "Layer 1"
+=== "Solidity"
     
     ``` yaml
     function partialWithdraw(uint _tokenId, uint128 _amount, bool allTokens) external
     ```
 
-=== "Layer 2"
+=== "Solana"
     
     ```yaml
-    comming soon on a rollup near you
+    coming soon 
     ```
 
 ## Fees
 
 * Management fee
 
-    A 2% upfront management fee is deducted on each successful investment which is given to the manager who uses the fees to manage expenses of running the fund which includes transferring tokens to fund contract and calling swap functions to trade using amm's. The management fee won't be deducted if the investor withdraws their investment before the manager moves tokens to their fund contract. 
+    A 2% upfront management fee is deducted on each successful investment out of which 1% s given to the manager who uses the fees to manage expenses of running the fund which includes transferring tokens to fund contract and calling swap functions to trade using amm's. The management fee won't be deducted if the investor withdraws their investment before the manager moves tokens to their fund contract. 
 
 * Performance fee
 
     The managers can only collect their performance fee if they reach the minimum return on investment they set, this minimum ROI is range bound and can be anywhere between 5-50%. If the manager makes less than the ROI they set, the investors won't be charged any performance fee and can withdraw at any time. This system of reaching minimum ROI thereby only encourages managers to make more profits and creates a positive feedback loop.
 
-=== "Layer 1"
+=== "Solidity"
     
     ``` yaml
     function getFundDetails() external view returns
@@ -93,10 +93,10 @@ The investors have the option to recieve their investment according to fund allo
     perf_fee) 
     ```
 
-=== "Layer 2"
+=== "Solana"
     
     ```yaml
-    comming soon on a rollup near you
+    coming soon 
     ```
 
 ## Miscellaneous 

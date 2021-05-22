@@ -8,17 +8,17 @@ The future owners of protocol on whose success the experiment of running a decen
 ## Fund creation
 
 Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 350,000 gwei. Only one fund can be created per address.
-=== "Layer 1"
+=== "Solidity"
     
     ``` yaml
     function createFund (string calldata _fundName, uint _minAmount, 
     uint256 _minReturn, uint _performanceFeePercentage) external returns(address)
     ```
 
-=== "Layer 2"
+=== "Solana"
     
     ```yaml
-    comming soon on a rollup near you
+    coming soon 
     ```
 
 As the intialization function call can be seen above the manager is expected to provide certain paramters as:
@@ -55,7 +55,7 @@ Investin aims to offer multiple avenues of trading to its managers/traders and i
 
 ### Swap 
 
-=== "Layer 1"
+=== "Solidity"
     
     ``` yaml
     function swap (address tokenIn, address tokenOut, uint amountIn) 
@@ -63,10 +63,10 @@ Investin aims to offer multiple avenues of trading to its managers/traders and i
 
     ```
 
-=== "Layer 2"
+=== "Solana"
     
     ```yaml
-    comming soon on a rollup near you
+    coming soon 
     ```
  
     
@@ -88,7 +88,7 @@ Manager are entitled to collect fees over the investments to insure longetivity 
 
 ### Management fee
 
-A fixed 2% management fees has been set in the smart contracts which managers can collect when they move the funds from router to their fund contracts. This amount will be shown on manager dashboard interface. 
+A fixed 1% management fees has been set in the smart contracts which managers can collect when they move the funds from router to their fund contracts. This amount will be shown on manager dashboard interface. 
 
 <!-- ### Swap fee
 

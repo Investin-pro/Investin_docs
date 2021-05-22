@@ -15,15 +15,15 @@ The liquidity providers for the protocol, who can choose from a wide array of fu
 
 ## Decentralized protocols integrated
 
-Investin is built using multiple protocols and available on ethereum & binance blockchain, soon on optimism rollups 
+Investin is built using multiple protocols and available binance blockchain soon on Solana
 
-1. Uniswap
-2. Pancakeswap
+1. Pancakeswap
+2. Waultswap
 
 ### Future integrations: 
 
+3. Raydium
 3. Sushiswap
-3. Chainlink
 4. Loopring
 5. Deversifi
 6. Hop exchange 
