@@ -24,14 +24,14 @@ The strategy adapter contracts allow Investin funds to interact with multiple pr
 Fund managers can collect the performance fee on the investments for which the minimum returns is reached. The dashboard will show the relevent fee the manager can collect, `the fee that is to be collected should be in the base token of the fund`. This feature incentivizes managers to set short term protfitboiltu goals and earn fee on meeting the profit targets. This feature compliments to investor stoploss. 
 
 
-
-### Dao funds (coming soon)
+==Coming soon (DAO funds, Quant funds, Investor stoploss and limit/stoploss orders)==
+<!-- ### Dao funds (coming soon)
 
 
 ### Quant funds (coming soon)
 
 ### Investor stoploss (coming soon)
 
-### Limit/stoploss orders (coming soon)
+### Limit/stoploss orders (coming soon) -->
 
 
