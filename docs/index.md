@@ -19,10 +19,10 @@ Investin is built using multiple protocols and available binance blockchain soon
 
 1. Pancakeswap
 2. Waultswap
+3. Raydium
 
 ### Future integrations: 
 
-3. Raydium
 3. Sushiswap
 4. Loopring
 5. Deversifi
