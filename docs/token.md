@@ -64,7 +64,7 @@ The investors will be airdropped IVN for certain criteria's and in a highly unli
 
 A total supply of 9,000,000 IVN tokens are minted with no further minting possible as the contract has no minting functionality. 
 
-![Placeholder](assets/ivnbsc1.svg){: align=center }
+![Placeholder](assets/IVNall.svg){: align=center }
 
 
 

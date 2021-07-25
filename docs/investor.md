@@ -19,7 +19,7 @@ We use a different approach at solving the fund management system by using the E
 === "Solana"
     
     ```yaml
-    coming soon 
+    FundInstruction::InvestorDeposit { amount }
     ```
 
 
@@ -69,7 +69,7 @@ The investors have the option to recieve their investment according to fund allo
 === "Solana"
     
     ```yaml
-    coming soon 
+    FundInstruction::InvestorWithdraw { amount }
     ```
 
 ## Fees

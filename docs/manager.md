@@ -11,21 +11,18 @@ Managers are required to interact with Investin smart contracts to create funds.
 === "Solidity"
     
     ``` yaml
-    function createFund (string calldata _fundName, uint _minAmount, 
+    function createFund (uint _minAmount, 
     uint256 _minReturn, uint _performanceFeePercentage) external returns(address)
     ```
 
 === "Solana"
     
     ```yaml
-    coming soon 
+    FundInstruction::Initialize { min_amount, min_return, performance_fee_percentage }
     ```
 
 As the intialization function call can be seen above the manager is expected to provide certain paramters as:
 
-* Fund name 
-
-    The name of the fund which acts the identifier of the fund and can only be set during intialization of fund, choose wisely and a attractive name that sets the fund apart from others.
 
 * Minimum amount
 
@@ -48,10 +45,11 @@ As the intialization function call can be seen above the manager is expected to 
 
 ## Trading
 
-Investin aims to offer multiple avenues of trading to its managers/traders and is always looking forward at making the cost of trading bare minimum to maximize trader's profits. Currently we offer trading on [uniswap][1] and [pancakeswap][2] 
+Investin aims to offer multiple avenues of trading to its managers/traders and is always looking forward at making the cost of trading bare minimum to maximize trader's profits. Currently we offer trading on [pancakeswap][1] and [raydium][2] soon on [sushiswap][3]
 
-[1]: https://pages.github.com/
-[2]: https://pages.github.com/
+[1]: https://exchange.pancakeswap.finance/#/swap
+[2]: hhttps://raydium.io/swap/
+[3]: https://app.sushi.com/swap
 
 ### Swap 
 
@@ -66,7 +64,7 @@ Investin aims to offer multiple avenues of trading to its managers/traders and i
 === "Solana"
     
     ```yaml
-    coming soon 
+    FundInstruction::Swap { instr, amount_in, min_amount_out}
     ```
  
     
