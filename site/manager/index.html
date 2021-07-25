@@ -6,11 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentation about Investin, the decentralized fund management protocol ">
       
       
       
-      <link rel="icon" href="assets/investin.png">
-      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
+        <meta name="author" content="aak">
+      
+      
+        <link rel="canonical" href="https://investin-pro.github.io/Investin_docs/manager/">
+      
+      <link rel="icon" href="../assets/investin.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.2.0">
     
     
       
@@ -18,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe914879.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ba0d045b.min.css">
         
           
           
@@ -43,6 +49,14 @@
     
       
 
+  
+
+
+  
+
+  
+
+
 
     
     
@@ -57,7 +71,7 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="dark-purple" data-md-color-accent="grey">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -76,9 +90,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="Investin" class="md-header__button md-logo" aria-label="Investin" data-md-component="logo">
+    <a href=".." title="Investin" class="md-header__button md-logo" aria-label="Investin" data-md-component="logo">
       
-  <img src="assets/investin.png" alt="logo">
+  <img src="../assets/investin.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,14 +125,20 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -165,7 +185,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="index.html" class="md-tabs__link">
+    <a href=".." class="md-tabs__link">
       Whats Investin
     </a>
   </li>
@@ -179,7 +199,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="manager.html" class="md-tabs__link md-tabs__link--active">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       For manager
     </a>
   </li>
@@ -191,7 +211,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="investor.html" class="md-tabs__link">
+    <a href="../investor/" class="md-tabs__link">
       For investors
     </a>
   </li>
@@ -203,8 +223,8 @@
 
 
   <li class="md-tabs__item">
-    <a href="architecture.html" class="md-tabs__link">
-      Deep dive
+    <a href="../features/" class="md-tabs__link">
+      Features
     </a>
   </li>
 
@@ -215,7 +235,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="token.html" class="md-tabs__link">
+    <a href="../token/" class="md-tabs__link">
       Tokeneconomics
     </a>
   </li>
@@ -241,9 +261,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="Investin" class="md-nav__button md-logo" aria-label="Investin" data-md-component="logo">
+    <a href=".." title="Investin" class="md-nav__button md-logo" aria-label="Investin" data-md-component="logo">
       
-  <img src="assets/investin.png" alt="logo">
+  <img src="../assets/investin.png" alt="logo">
 
     </a>
     Investin
@@ -272,7 +292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html" class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Whats Investin
       </a>
     </li>
@@ -301,7 +321,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="manager.html" class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         For manager
       </a>
       
@@ -430,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="investor.html" class="md-nav__link">
+      <a href="../investor/" class="md-nav__link">
         For investors
       </a>
     </li>
@@ -445,8 +465,8 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture.html" class="md-nav__link">
-        Deep dive
+      <a href="../features/" class="md-nav__link">
+        Features
       </a>
     </li>
   
@@ -460,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="token.html" class="md-nav__link">
+      <a href="../token/" class="md-nav__link">
         Tokeneconomics
       </a>
     </li>
@@ -683,6 +703,11 @@ The contract will keep a count of swaps done by the manager and if the fund's pe
           </div>
         </div>
         
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
       </main>
       
         
@@ -691,7 +716,7 @@ The contract will keep a count of swaps done by the manager and if the fund's pe
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Whats Investin" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Whats Investin" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -707,7 +732,7 @@ The contract will keep a count of swaps done by the manager and if the fund's pe
       
       
         
-        <a href="investor.html" class="md-footer__link md-footer__link--next" aria-label="Next: For investors" rel="next">
+        <a href="../investor/" class="md-footer__link md-footer__link--next" aria-label="Next: For investors" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -795,10 +820,10 @@ The contract will keep a count of swaps done by the manager and if the fund's pe
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.sections", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.00c949be.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.82b56eb2.min.js"></script>
+      <script src="../assets/javascripts/bundle.716f8af4.min.js"></script>
       
     
   </body>
