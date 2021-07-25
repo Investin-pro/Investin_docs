@@ -1,5 +1,8 @@
 site_name: Investin
-
+site_url: https://investin-pro.github.io/Investin_docs/
+site_author: aak
+site_description: >-
+  Documentation about Investin, the decentralized fund management protocol 
 theme:
   name: null
   custom_dir: mkdocs-material/material
@@ -15,6 +18,8 @@ theme:
     - navigation.instant
     - navigation.sections
     - navigation.tabs
+    - navigation.top
+    - search.suggest
   palette:
     scheme: 'slate'
     primary: 'dark purple'
@@ -83,13 +88,17 @@ nav:
   - For manager: 'manager.md'
   
   - For investors: 'investor.md'
-  - Deep dive: 'architecture.md'
+  - Features: 'features.md'
   - Tokeneconomics: 'token.md'
 
 copyright: Copyright &copy; 2020 - 2021 Investin
 
-extra:
-  social:
+extra:  
+  analytics:
+    provider: google
+    property: !ENV 280301977
+
+  social: 
       - icon: fontawesome/brands/github
         link: https://github.com/Investin-pro
       - icon: fontawesome/brands/twitter
@@ -100,3 +109,4 @@ extra:
         link: https://t.me/Investin_pro1
       - icon: fontawesome/brands/discord
         link: https://discord.com/invite/Yf54h9B
+    
