@@ -630,21 +630,17 @@
 <h2 id="fund-creation">Fund creation<a class="headerlink" href="#fund-creation" title="Permanent link">&para;</a></h2>
 <p>Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 350,000 gwei. Only one fund can be created per address.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solidity</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (string calldata _fundName, uint _minAmount,</span> 
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (uint _minAmount,</span> 
 <span class="l l-Scalar l-Scalar-Plain">uint256 _minReturn, uint _performanceFeePercentage) external returns(address)</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Solana</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">coming soon</span> 
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::Initialize { min_amount, min_return, performance_fee_percentage }</span>
 </code></pre></div>
 </div>
 </div>
 <p>As the intialization function call can be seen above the manager is expected to provide certain paramters as:</p>
 <ul>
-<li>
-<p>Fund name </p>
-<p>The name of the fund which acts the identifier of the fund and can only be set during intialization of fund, choose wisely and a attractive name that sets the fund apart from others.</p>
-</li>
 <li>
 <p>Minimum amount</p>
 <p>This refers to minimum investable amount that an investor can invest in the fund. The manager can set this according to their criteria of investment strategy to attract their niche level of investors.</p>
@@ -659,7 +655,7 @@
 </li>
 </ul>
 <h2 id="trading">Trading<a class="headerlink" href="#trading" title="Permanent link">&para;</a></h2>
-<p>Investin aims to offer multiple avenues of trading to its managers/traders and is always looking forward at making the cost of trading bare minimum to maximize trader's profits. Currently we offer trading on <a href="https://pages.github.com/">uniswap</a> and <a href="https://pages.github.com/">pancakeswap</a> </p>
+<p>Investin aims to offer multiple avenues of trading to its managers/traders and is always looking forward at making the cost of trading bare minimum to maximize trader's profits. Currently we offer trading on <a href="https://exchange.pancakeswap.finance/#/swap">pancakeswap</a> and <a href="hhttps://raydium.io/swap/">raydium</a> soon on <a href="https://app.sushi.com/swap">sushiswap</a></p>
 <h3 id="swap">Swap<a class="headerlink" href="#swap" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solidity</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function swap (address tokenIn, address tokenOut, uint amountIn)</span> 
@@ -667,7 +663,7 @@
 </code></pre></div>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Solana</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">coming soon</span> 
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::Swap { instr, amount_in, min_amount_out}</span>
 </code></pre></div>
 </div>
 </div>
