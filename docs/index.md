@@ -15,7 +15,7 @@ The liquidity providers for the protocol, who can choose from a wide array of fu
 
 ## Decentralized protocols integrated
 
-Investin is built using multiple protocols and available binance blockchain soon on Solana
+Investin is built using multiple protocols and currently deployed on solana blockchain and binance smart chain soon on ethereum.
 
 1. Pancakeswap
 2. Waultswap
@@ -23,7 +23,9 @@ Investin is built using multiple protocols and available binance blockchain soon
 
 ### Future integrations: 
 
-3. Sushiswap
-4. Loopring
-5. Deversifi
-6. Hop exchange 
+4. Mango markets
+5. Project Serum
+6. Sushiswap
+7. Uniswap
+8. Solfarm
+9. Curve finance
