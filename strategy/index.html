@@ -383,15 +383,75 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pancake-swap-farms" class="md-nav__link">
-    Pancake swap farms
+  <a href="#pancakewault-swap-farms" class="md-nav__link">
+    Pancake/Wault swap farms
   </a>
+  
+    <nav class="md-nav" aria-label="Pancake/Wault swap farms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployed-strategies-for-pairs" class="md-nav__link">
+    Deployed strategies for pairs
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployed strategies for pairs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pcs" class="md-nav__link">
+    PCS:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wswap" class="md-nav__link">
+    Wswap:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#belt-finance-strategy" class="md-nav__link">
     Belt finance strategy
+  </a>
+  
+    <nav class="md-nav" aria-label="Belt finance strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployed-vaults" class="md-nav__link">
+    Deployed vaults
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alpha-hamora-strategy" class="md-nav__link">
+    Alpha hamora strategy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-farm-strategy" class="md-nav__link">
+    Auto farm strategy
   </a>
   
 </li>
@@ -414,21 +474,55 @@
                 
                 
                 <h1 id="strategies-overview">Strategies Overview<a class="headerlink" href="#strategies-overview" title="Permanent link">&para;</a></h1>
-<h3 id="pancake-swap-farms">Pancake swap farms<a class="headerlink" href="#pancake-swap-farms" title="Permanent link">&para;</a></h3>
-<p>These strategies allow depositors to provide liquidity in the token-pair the strategy is deployed and farm cake token by staking the lp tokens in Masterchef tokens. We use Alpha hamora's formula to exactly estimate the position size when adding liquidity to the pool </p>
-<p>These strategies adds liquidity in the token-pair the strategy is deployed and stake lp tokens in Masterchef tokens on behalf of the depositors and issue ERC-20 tokens that represent share of each depositor, the assets are handled in a non custodial way and can be redeemed by holder of strategy  cake token by staking the lp tokens in Masterchef tokens.</p>
-<p>Deployed strategies for pairs:</p>
-<p>BNB/BUSD
-WEX/BNB
-CAKE/BUSD
-CAKE/BNB</p>
+<h2 id="pancakewault-swap-farms">Pancake/Wault swap farms<a class="headerlink" href="#pancakewault-swap-farms" title="Permanent link">&para;</a></h2>
+<!-- These strategies allow depositors to provide liquidity in the token-pair the strategy is deployed and farm cake token by staking the lp tokens in Masterchef tokens. We use Alpha hamora's formula to exactly estimate the position size when adding liquidity to the pool  -->
+
+<p>These strategies add liquidity in the pair defined by strategy contracts and stake lp tokens in Masterchef contract on behalf of  funds/depositors and issue ERC-20 tokens that represent share of each fund/depositor, the assets are handled in a non custodial manner and can be redeemed by token holders, the formula used is illustrated below which estimates exact position sizing when selling tokens to add liquidity in pools.</p>
+<p><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>$$
+\frac{\sqrt{2(1−f)((2−f)⋅resA)2+4(1−f)⋅amtA⋅resA}−(2−f)⋅resA}{2(1-f)}<br />
+$$ </p>
+<ul>
+<li>f = lp fee</li>
+<li>amtA = deposit amount</li>
+<li>resA = pool amount of asset </li>
+</ul>
+<h3 id="deployed-strategies-for-pairs">Deployed strategies for pairs<a class="headerlink" href="#deployed-strategies-for-pairs" title="Permanent link">&para;</a></h3>
+<h4 id="pcs">PCS:<a class="headerlink" href="#pcs" title="Permanent link">&para;</a></h4>
+<p>BNB/BUSD,
+WEX/BNB,
+CAKE/BUSD,
+CAKE/BNB,
+BTCB/BUSD</p>
 <p>Stable farms:</p>
-<p>BTCB/BUSD
-USDC/USDT
-USDT/BUSD
-TUSD/BUSD
+<p>USDC/USDT,
+USDT/BUSD,
+TUSD/BUSD,
 AMPL/BUSD</p>
-<h3 id="belt-finance-strategy">Belt finance strategy<a class="headerlink" href="#belt-finance-strategy" title="Permanent link">&para;</a></h3>
+<h4 id="wswap">Wswap:<a class="headerlink" href="#wswap" title="Permanent link">&para;</a></h4>
+<p>WEX,
+IVN/BNB,
+WEX/BNB,
+WEX/USDT,
+BTCB/BUSD,
+ETH/BUSD, 
+BNB/USDC</p>
+<p>Stable farms:</p>
+<p>USDT/BUSD,
+DAI/BUSD</p>
+<h2 id="belt-finance-strategy">Belt finance strategy<a class="headerlink" href="#belt-finance-strategy" title="Permanent link">&para;</a></h2>
+<p>This strategy allows funds/depositors to stake in belt vaults that lend assets in multiple protocol to enhance yeilds for the staked asset, allowing funds/depositors to have a position in the asset all the while getting a increased yeild by lending asset in multiple protocols. </p>
+<h4 id="deployed-vaults">Deployed vaults<a class="headerlink" href="#deployed-vaults" title="Permanent link">&para;</a></h4>
+<p>BNB</p>
+<h2 id="alpha-hamora-strategy">Alpha hamora strategy<a class="headerlink" href="#alpha-hamora-strategy" title="Permanent link">&para;</a></h2>
+<h2 id="auto-farm-strategy">Auto farm strategy<a class="headerlink" href="#auto-farm-strategy" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Improved &amp; derived from <a href="https://blog.alphafinance.io/onesideduniswap/">https://blog.alphafinance.io/onesideduniswap/</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
               
               
@@ -526,6 +620,12 @@ AMPL/BUSD</p>
     
     
       <script src="../assets/javascripts/bundle.716f8af4.min.js"></script>
+      
+        <script src="../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
