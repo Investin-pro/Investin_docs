@@ -479,10 +479,11 @@
 
 <p>These strategies add liquidity in the pair defined by strategy contracts and stake lp tokens in Masterchef contract on behalf of  funds/depositors and issue ERC-20 tokens that represent share of each fund/depositor, the assets are handled in a non custodial manner and can be redeemed by token holders, the formula used is illustrated below which estimates exact position sizing when selling tokens to add liquidity in pools.</p>
 <p><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>$$
-\frac{\sqrt{2(1−f)((2−f)⋅resA)2+4(1−f)⋅amtA⋅resA}−(2−f)⋅resA}{2(1-f)}<br />
+\frac{\sqrt{((2−f)⋅resA)^2+4(1−f)(1-h)⋅amtA⋅resA}−(2−f)⋅resA}{2(1-f)(1-h)}<br />
 $$ </p>
 <ul>
-<li>f = lp fee</li>
+<li>f = swap fee</li>
+<li>h = protocol fee</li>
 <li>amtA = deposit amount</li>
 <li>resA = pool amount of asset </li>
 </ul>
