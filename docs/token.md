@@ -70,15 +70,18 @@ A total supply of 9,000,000 IVN tokens are minted with no further minting possib
 
 A total of 20% of tokens will be sold on binance smart chain and 10% will be used to add liquidity to AMM, since we dont have a significant backing we will be providing liquiidty for a indefinite time. We would be announcing more details on liquidity farming intiatives for protocol users soon.
 
-* The token sale is priced at 1 BNB = 2400 IVN. 
-* The seed was raised at 0.12 USD per token and is vested over 3 years with a 8% scheduled release every quarter
-* Core team's tokens are vested for 3 years with 8% scheduled release every quarter.
+* The token sale was priced at 1 BNB = 2400 IVN. Raised [$72,000][3] through [Wault IDO][4] 
+* The seed was raised at 0.12 USD per token and is vested over 3 years with a 8% scheduled release every quarter. [contract address][5]
+* Core team's tokens are vested for 3 years with 8% scheduled release every quarter. [contract address][6]
 * The advisory tokens are unallocated at the moment and once advisors are onboarded the tokens would be vested for 1 year.
 
 The treasury is used to incentivize users and make them part owners of Investin, there will be scheduled airdrops to top performing funds, funds managing high aum consistently and to investors committed to building investin. 
 In rare cases when a [white-listed][2] token gets hacked and fund performance crashes, the treasury will be used to compensate investor losses as it's investin's job to maintain rug proof tokens white listed that funds can trade on.
 [2]: https://investin-pro.github.io/Investin_docs/manager/#trading-pairs
-
+[3]: https://bscscan.com/tx/0xb7ef325b3c544a7c31ca18409dfdcccf00647d482959aa11876ede2667196f80
+[4]: https://medium.com/waultfinance/announcing-another-launchpad-presale-investin-pro-42cef4bfac24
+[5]: https://bscscan.com/address/0x99e3c36dd8d9a054d193b279f8646056038e4c4d#code
+[6]: https://bscscan.com/address/0x2db49020cbd3ae111fcae5d3424c803c248530e0#code
 
 ### Fund usage 
 

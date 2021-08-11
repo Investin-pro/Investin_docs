@@ -8,6 +8,7 @@ theme:
   custom_dir: mkdocs-material/material
   logo: 'assets/investin.png'
 
+
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
@@ -81,6 +82,12 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+
+
+
+
 # Navigation
 nav:
   - Whats Investin: 'index.md'
@@ -92,11 +99,16 @@ nav:
   - Tokeneconomics: 'token.md'
 
 copyright: Copyright &copy; 2020 - 2021 Investin
+extra_javascript:
+    - javascripts/config.js
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:  
   analytics:
     provider: google
     property: !ENV 280301977
+
 
   social: 
       - icon: fontawesome/brands/github
