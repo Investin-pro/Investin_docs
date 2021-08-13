@@ -21,6 +21,7 @@ theme:
     - navigation.tabs
     - navigation.top
     - search.suggest
+    - content.tabs.link
   palette:
     scheme: 'slate'
     primary: 'dark purple'
@@ -95,8 +96,10 @@ nav:
   - For manager: 'manager.md'
   
   - For investors: 'investor.md'
+  - Integerations: 'integeration.md'
   - Features: 'features.md'
   - Tokeneconomics: 'token.md'
+  
 
 copyright: Copyright &copy; 2020 - 2021 Investin
 extra_javascript:

@@ -56,7 +56,7 @@ DAI/BUSD
 This strategy allows funds/depositors to stake in belt vaults that lend assets in multiple protocol to enhance yeilds for the staked asset, allowing funds/depositors to have a position in the asset all the while getting a increased yeild by lending asset in multiple protocols. 
 
 #### Deployed vaults
-BNB
+BNB, USDT, BUSD, USDC
 
 
 ## Alpha hamora strategy
@@ -64,3 +64,5 @@ BNB
 
 
 ## Auto farm strategy 
+
+
