@@ -7,19 +7,22 @@ The future owners of protocol on whose success the experiment of running a decen
 
 ## Fund creation
 
-Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 350,000 gwei. Only one fund can be created per address.
-=== "Solidity"
-    
+=== "Solana"
+    Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay fee which estimates to around 0.0144 Sol. Only one fund can be created per address.
+
+    ```yaml
+    FundInstruction::Initialize { min_amount, min_return, performance_fee_percentage }
+    ```
+
+
+=== "EVM"
+    Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 250,000 gwei. Only one fund can be created per address.
     ``` yaml
     function createFund (uint _minAmount, 
     uint256 _minReturn, uint _performanceFeePercentage) external returns(address)
     ```
 
-=== "Solana"
-    
-    ```yaml
-    FundInstruction::Initialize { min_amount, min_return, performance_fee_percentage }
-    ```
+
 
 As the intialization function call can be seen above the manager is expected to provide certain paramters as:
 
@@ -53,25 +56,25 @@ Investin aims to offer multiple avenues of trading to its managers/traders and i
 
 ### Swap 
 
-=== "Solidity"
-    
-    ``` yaml
-    function swap (address tokenIn, address tokenOut, uint amountIn) 
-    public returns (uint[] memory _amounts)
-
-    ```
 
 === "Solana"
     
     ```yaml
     FundInstruction::Swap { instr, amount_in, min_amount_out}
     ```
+=== "EVM"
+    
+    ``` yaml
+    function swap (address tokenIn, address tokenOut, uint amountIn) 
+    public returns (uint[] memory _amounts)
+
+    ```
  
     
 
 ### Trading pairs
 
-Investin factory contract will maintain a whitelist of trading pairs approved for trading through the protocol. This whitelist can be updated through community voting.
+Investin factory contract maintains a whitelist of trading pairs approved for trading through the protocol. This whitelist can be updated through community voting.
 
 
 ### Drawdowns

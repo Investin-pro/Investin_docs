@@ -27,5 +27,5 @@ Investin is built using multiple protocols and currently deployed on solana bloc
 5. Project Serum
 6. Sushiswap
 7. Uniswap
-8. Solfarm
+8. Perpetual protocol 
 9. Curve finance
