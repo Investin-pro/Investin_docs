@@ -576,13 +576,13 @@
 <p>We see investors as key liquidity providers of the platform whose success in markets would determine Investin's future. The protocol will fail if both the users are not well incentivized to conduct a trustless exchange of offering, while managers have a good idea of markets and can sail well, investors need a particular kind of help and best in class UI with safety standards built in to protect capital at all costs. </p>
 <h2 id="make-investment">Make investment<a class="headerlink" href="#make-investment" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
-<p>Investors are required to interact with the fund contract and deposit in the base token of the fund, this amount is stored in the router vault under a global PDA and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment. </p>
+<p>Investors are required to interact with the program and deposit in the base token of the fund, this amount is initially stored in the router vault under a PDA and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment. </p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::InvestorDeposit { amount }</span>
 </code></pre></div>
 <p>The investor receipt allows Investin protocol to provide features like:</p>
 <ol>
 <li>Investor stoploss i.e. investors can define the percentage of profit or loss at which they want to withdraw.</li>
-<li>Enables fund PDA's to be composable since the receipt can be used as debt receipt for each investor account </li>
+<li>Enables fund PDA's to be composable since the receipt can be used as debt receipt for each investor account.</li>
 </ol>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">EVM</label><div class="tabbed-content">
@@ -614,7 +614,7 @@ We use a different approach at solving the fund management system by using the E
 <h3 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h3>
 <p>The performance on invested amount can be queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price hence the performance will be subject to an error &plusmn;2% but upon ending investment the asset evaluation done by contracts will be final and true to the exact decimal at all times. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solana</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">the fund is a program derived account(PDA)</span> 
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">the fund is a program derived address(PDA)</span> 
 </code></pre></div>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Solidity</label><div class="tabbed-content">
@@ -628,14 +628,14 @@ We use a different approach at solving the fund management system by using the E
 </div>
 <h2 id="end-investment">End Investment<a class="headerlink" href="#end-investment" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Solana</label><div class="tabbed-content">
-<p>This instruction can only be called by investor address and consists of multiple transactions to overcome the current limitation of 25 accounts and 300,000 compute limit per transaction. To achieve the composablilty into Investin's architecute we handle the withdrawal process in multiple steps in each step the specific updates on investor account(receipt) is handled. <code>There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.</code></p>
+<p>This instruction can only be called by investor address and consists of multiple transactions to overcome the current limitation of 35 accounts and 200,000 compute limit per transaction. To achieve the composablilty into Investin's architecute we handle the withdrawal process in multiple steps in each step the specific updates on investor account(receipt) is handled. <code>There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.</code></p>
 <p>Example flow:</p>
 <p>A fund having position in 4 assets that are swapped from Raydium and 2 margin positions open on mango markets is handled in the following transaction flows:</p>
 <ol>
-<li>The investor ratio is calculated on the total fund AUM and a debt position is created on fund. The debt liable to investor is stored on investor account (receipt)</li>
-<li>The dues on raydium assets are settled and sent to investor address after reading from investor acccount</li>
-<li>The borrows are settled on both margin positions and according investors ratio the positions are closed, the health of margin account remains same only the margin amount is changed.</li>
-<li>The dues on margin positions are settled by withdrawing from mango account and sending directly to investor address </li>
+<li>The investor share is calculated on the total fund AUM. The assets owed by fund are accounted in this stage.</li>
+<li>The dues on fund assets are settled and sent to investor wallet address</li>
+<li>The borrows are settled on both margin positions and according to investors' share, the positions are closed. Is is important to note here that the health of margin account remains same, only the margin amount is changed.</li>
+<li>The dues on margin positions are settled by withdrawing from mango account and sending directly to investor address</li>
 </ol>
 </div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Solidity</label><div class="tabbed-content">

@@ -17,15 +17,21 @@ The liquidity providers for the protocol, who can choose from a wide array of fu
 
 Investin is built using multiple protocols and currently deployed on solana blockchain and binance smart chain soon on ethereum.
 
-1. Pancakeswap
-2. Waultswap
-3. Raydium
+
+=== "Solana"
+    1. Raydium                 
+    2. Mango markets 
+      
+
+=== "EVM"
+    1. Pancakeswap
+    2. Waultswap
 
 ### Future integrations: 
 
-4. Mango markets
 5. Project Serum
 6. Sushiswap
 7. Uniswap
-8. Perpetual protocol 
-9. Curve finance
+8. Saber
+9. Perpetual protocol 
+10. Curve finance

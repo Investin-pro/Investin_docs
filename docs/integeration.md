@@ -1,18 +1,18 @@
 
-Investin protocol has one of the most composable contract architecure, allowing funds to interact with almost any DeFi protocol on-chain.
+Investin protocol has one of the most composable contract architecture, allowing funds to interact with almost any DeFi protocol on-chain.
 
 
 ### Swap
 === "Solana"
-    Enabling funds to trade in muliple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:
+    Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:
 
-    1. Raydium protocol: All tokens listed on Raydium can be traded through Investin funds but to prevent malicious actors from exploiting the funds by listing and trading into fake/valueless tokens we maintain an expandable token whitelist, mandated accross all our funds.
+    1. Raydium protocol: All tokens listed on Raydium can be traded through Investin funds but to prevent malicious actors from exploiting the funds by listing and trading into fake/valueless tokens we maintain an expandable token whitelist, mandated across all our funds.
     2. Project Serum (...soon) 
 
 
 
 === "EVM"
-    Enabling funds to trade in muliple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:
+    Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:
 
     1. Pancakeswap
     2. WaultSwap
@@ -58,14 +58,14 @@ Investin protocol has one of the most composable contract architecure, allowing 
 
 ### Farming
 === "Solana"
-    Providing liquidity on AMMs to earn LP fee and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to makrets all the time. Farming powered by: 
+    Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: 
     
     1. SolFarm (...soon)
 
 
 
 === "EVM"
-    Providing liquidity on AMMs to earn LP fee and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to makrets all the time. Farming powered by: 
+    Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: 
     
     1. WaultSwap Farms
     2. PancakeSwap Farms

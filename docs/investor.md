@@ -2,7 +2,7 @@
 
 ## Overview
 
-We see investors as key liquidity providers of the platform whose success and satisfaction would determine Investin's future. The protocol shall ensure both sets users are well incentivized to conduct a trustless exchange of offerings, while managers are given access to almost all possible market activities with the fund assets, investors are provided with best in class UI with safety standards built-in to protect capital at all costs. 
+We see investors as key liquidity providers of the platform whose success and satisfaction would determine Investin's future. The protocol shall ensure both the users are well incentivized to conduct a trustless exchange of offerings, while managers are given access to almost all possible market activities with the fund assets, investors are provided with best in class UI with safety standards built-in to protect capital at all costs. 
 
 
 ## Make investment
