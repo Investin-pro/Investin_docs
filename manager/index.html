@@ -13,7 +13,7 @@
         <meta name="author" content="aak">
       
       
-        <link rel="canonical" href="https://investin-pro.github.io/Investin_docs_sol/manager/">
+        <link rel="canonical" href="https://investin-pro.github.io/Investin_docs/manager/">
       
       <link rel="icon" href="../assets/investin.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.2.0">
@@ -213,6 +213,18 @@
   <li class="md-tabs__item">
     <a href="../investor/" class="md-tabs__link">
       For investors
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../integeration/" class="md-tabs__link">
+      Integerations
     </a>
   </li>
 
@@ -465,6 +477,21 @@
   
   
     <li class="md-nav__item">
+      <a href="../integeration/" class="md-nav__link">
+        Integerations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../features/" class="md-nav__link">
         Features
       </a>
@@ -628,15 +655,16 @@
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>The future owners of protocol on whose success the experiment of running a decentralized fund management protocol can be made possible in a truly trustless and non custodial way. The protocol has been keenly designed to incentivize traders who provide their expertise on crypto markets to benefit both the users of protocol.</p>
 <h2 id="fund-creation">Fund creation<a class="headerlink" href="#fund-creation" title="Permanent link">&para;</a></h2>
-<p>Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 350,000 gwei. Only one fund can be created per address.</p>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solidity</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (uint _minAmount,</span> 
-<span class="l l-Scalar l-Scalar-Plain">uint256 _minReturn, uint _performanceFeePercentage) external returns(address)</span>
-</code></pre></div>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Solana</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
+<p>Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay fee which estimates to around 0.0144 Sol. Only one fund can be created per address.</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::Initialize { min_amount, min_return, performance_fee_percentage }</span>
 </code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">EVM</label><div class="tabbed-content">
+<p>Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay gas which estimates to around 250,000 gwei. Only one fund can be created per address.
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function createFund (uint _minAmount,</span> 
+<span class="l l-Scalar l-Scalar-Plain">uint256 _minReturn, uint _performanceFeePercentage) external returns(address)</span>
+</code></pre></div></p>
 </div>
 </div>
 <p>As the intialization function call can be seen above the manager is expected to provide certain paramters as:</p>
@@ -657,18 +685,18 @@
 <h2 id="trading">Trading<a class="headerlink" href="#trading" title="Permanent link">&para;</a></h2>
 <p>Investin aims to offer multiple avenues of trading to its managers/traders and is always looking forward at making the cost of trading bare minimum to maximize trader's profits. Currently we offer trading on <a href="https://exchange.pancakeswap.finance/#/swap">pancakeswap</a> and <a href="hhttps://raydium.io/swap/">raydium</a> soon on <a href="https://app.sushi.com/swap">sushiswap</a></p>
 <h3 id="swap">Swap<a class="headerlink" href="#swap" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solidity</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solana</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::Swap { instr, amount_in, min_amount_out}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">EVM</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function swap (address tokenIn, address tokenOut, uint amountIn)</span> 
 <span class="l l-Scalar l-Scalar-Plain">public returns (uint[] memory _amounts)</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Solana</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::Swap { instr, amount_in, min_amount_out}</span>
-</code></pre></div>
-</div>
 </div>
 <h3 id="trading-pairs">Trading pairs<a class="headerlink" href="#trading-pairs" title="Permanent link">&para;</a></h3>
-<p>Investin factory contract will maintain a whitelist of trading pairs approved for trading through the protocol. This whitelist can be updated through community voting.</p>
+<p>Investin factory contract maintains a whitelist of trading pairs approved for trading through the protocol. This whitelist can be updated through community voting.</p>
 <h3 id="drawdowns">Drawdowns<a class="headerlink" href="#drawdowns" title="Permanent link">&para;</a></h3>
 <p>Investin holds the discretionary power to dissolve any fund if the performance of any fund is very poor and investors are being rugged. This has been included to safeguard investors and promote a healthy community around the protocol.</p>
 <h2 id="fees">Fees<a class="headerlink" href="#fees" title="Permanent link">&para;</a></h2>
@@ -816,7 +844,7 @@ The contract will keep a count of swaps done by the manager and if the fund's pe
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "search.suggest", "content.tabs.link"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.716f8af4.min.js"></script>
