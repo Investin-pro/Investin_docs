@@ -8,7 +8,7 @@ The future owners of protocol on whose success the experiment of running a decen
 ## Fund creation
 
 === "Solana"
-    Managers are required to interact with Investin smart contracts to create funds. Since the function call is a interaction with on chain contracts managers are required to pay fee which estimates to around 0.0144 Sol. Only one fund can be created per address.
+    Managers are required to interact with the Investin Program to create funds. Unique PDAs are created for each fund which would hold custody of the assets. The cost of creating funds is around ~0.02 Sol which is primarily the rent of the Fund Account to account the state of the Fund. Only one fund can be created per address.
 
     ```yaml
     FundInstruction::Initialize { min_amount, min_return, performance_fee_percentage }

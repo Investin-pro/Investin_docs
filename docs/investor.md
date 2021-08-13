@@ -10,7 +10,7 @@ We see investors as key liquidity providers of the platform whose success in mar
 
 === "Solana"
 
-    Investors are required to interact with the fund contract and deposit in the base token of the fund, this amount is stored in the router vault under a global PDA and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment. 
+    Investors are required to interact with the program and deposit in the base token of the fund, this amount is initially stored in the router vault under a PDA and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment. 
 
     ```yaml
     FundInstruction::InvestorDeposit { amount }
@@ -19,7 +19,7 @@ We see investors as key liquidity providers of the platform whose success in mar
     The investor receipt allows Investin protocol to provide features like:
     
     1. Investor stoploss i.e. investors can define the percentage of profit or loss at which they want to withdraw.
-    2. Enables fund PDA's to be composable since the receipt can be used as debt receipt for each investor account 
+    2. Enables fund PDA's to be composable since the receipt can be used as debt receipt for each investor account.
 
 === "EVM"
 
@@ -68,7 +68,7 @@ The performance on invested amount can be queried on-chain and the smart contrac
 === "Solana"
     
     ```yaml
-    the fund is a program derived account(PDA) 
+    the fund is a program derived address(PDA) 
     ```
 
 === "Solidity"
@@ -87,16 +87,16 @@ The performance on invested amount can be queried on-chain and the smart contrac
 
 === "Solana"
 
-    This instruction can only be called by investor address and consists of multiple transactions to overcome the current limitation of 25 accounts and 300,000 compute limit per transaction. To achieve the composablilty into Investin's architecute we handle the withdrawal process in multiple steps in each step the specific updates on investor account(receipt) is handled. `There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.`
+    This instruction can only be called by investor address and consists of multiple transactions to overcome the current limitation of 35 accounts and 200,000 compute limit per transaction. To achieve the composablilty into Investin's architecute we handle the withdrawal process in multiple steps in each step the specific updates on investor account(receipt) is handled. `There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.`
 
     Example flow:
     
     A fund having position in 4 assets that are swapped from Raydium and 2 margin positions open on mango markets is handled in the following transaction flows:
     
-    1. The investor ratio is calculated on the total fund AUM and a debt position is created on fund. The debt liable to investor is stored on investor account (receipt)
-    2. The dues on raydium assets are settled and sent to investor address after reading from investor acccount
-    3. The borrows are settled on both margin positions and according investors ratio the positions are closed, the health of margin account remains same only the margin amount is changed.
-    4. The dues on margin positions are settled by withdrawing from mango account and sending directly to investor address 
+    1. The investor share is calculated on the total fund AUM. The assets owed by fund are accounted in this stage.
+    2. The dues on fund assets are settled and sent to investor wallet address
+    3. The borrows are settled on both margin positions and according to investors' share, the positions are closed. Is is important to note here that the health of margin account remains same, only the margin amount is changed.
+    4. The dues on margin positions are settled by withdrawing from mango account and sending directly to investor address
 
 === "Solidity"
 
