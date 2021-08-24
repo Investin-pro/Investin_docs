@@ -60,7 +60,8 @@ Investin protocol has one of the most composable contract architecture, allowing
 === "Solana"
     Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: 
     
-    1. SolFarm (...soon)
+    1. Saber (...soon)
+    2. SolFarm (...soon)
 
 
 
