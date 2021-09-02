@@ -50,6 +50,15 @@ USDT/BUSD,
 DAI/BUSD
 
 
+## Alpaca finance strategy
+
+This strategy allows funds/depositors to deposit into lending vaults on Alpaca finance and earn passive yields on the assets. This strategy mints 1:1 shares in the from Bep-20 tokens that represents each deposit, the tokens are backed by the IB tokens minted and accure yields. 
+
+The implementation have been validated by the Alpaca finance dev team and you can find the tests [here] [2]
+[2]:https://github.com/Investin-pro/bsc-alpaca-contract/tree/integration/investin-strategies
+
+#### Deployed vaults
+BNB, USDT, BUSD
 
 ## Belt finance strategy
 
@@ -59,7 +68,8 @@ This strategy allows funds/depositors to stake in belt vaults that lend assets i
 BNB, USDT, BUSD, USDC
 
 
-## Alpha hamora strategy
+
+
 
 
 

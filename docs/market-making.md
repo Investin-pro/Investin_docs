@@ -57,13 +57,14 @@ Steps:
     virtualenv -p /usr/bin/python3 venv
     source venv/bin/activate 
     pip install -r requirements.txt
+    make sure to check python location by using (which python) and put that in place of /usr/bin/python3
+    sudo ln -s /usr/bin/python3 /usr/bin/pyston3
     ```
+    
 
-* Run the marketmaking bot
+* To run the marketmaking bot
       ```yaml
-      ./bin/marketmaker --name "Investin MM" --market BTC-PERP --oracle-provider pyth --position-size-ratio 0.2  
-      --existing-order-tolerance 0.0001 --pulse-interval 5 --order-type POST_ONLY --confidence-interval-level 0.05  --cluster-name 
-      mainnet --cluster-url https://mango.rpcpool.com --group-name mainnet.1 --investin investin.json 
+      ./bin/marketmaker --name "Investin MM" --market BTC-PERP --oracle-provider pyth --position-size-ratio 0.2  --existing-order-tolerance 0.0001 --pulse-interval 5 --order-type POST_ONLY --confidence-interval-level 0.05  --cluster-name mainnet --cluster-url https://mango.rpcpool.com --group-name mainnet.1 --investin mainnet-investin.json
       ```
 
 * If everything goes well you will see something like this on terminal 
