@@ -71,7 +71,7 @@ A total supply of 9,000,000 IVN tokens are minted with no further minting possib
 A total of 20% of tokens will be sold on binance smart chain and 10% will be used to add liquidity to AMM, since we dont have a significant backing we will be providing liquiidty for a indefinite time. We would be announcing more details on liquidity farming intiatives for protocol users soon.
 
 * The token sale was priced at 1 BNB = 2400 IVN. Raised [$72,000][3] through [Wault IDO][4] 
-* The seed was raised at 0.12 USD per token and is vested over 3 years with a 8% scheduled release every quarter. [contract address][5]
+* Since the project was bootstrapped by founders the seed tokens are unallocated and vested over 3 years with a 8% scheduled release every quarter. [contract address][5]
 * Core team's tokens are vested for 3 years with 8% scheduled release every quarter. [contract address][6]
 * The advisory tokens are unallocated at the moment and once advisors are onboarded the tokens would be vested for 1 year.
 
