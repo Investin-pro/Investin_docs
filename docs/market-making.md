@@ -18,7 +18,25 @@ Here, we provide a step-by-step guide on to create a market making fund and conn
 ![Placeholder](assets/11.png){: align=center }
 
 * Select market making from type of fund selection and click on create fund
-* These funds will have a fixed 2% management fee collected on deposits and 20% performance fee collected from $MNGO tokens earned through market making.
+* Add minimum deposit, performance fee %: Share of mngo accrued which goes to the manager as performance reward. On top of that, manager would earn the usual performance fees if the fund performance goes above the minimum return percentage
+* After create fund, generate a new keypair using: solana-keygen new --outfile <id.json>
+* Fund the newly created address with some SOL
+* Clone repo: https://github.com/MuneebMohammed/mango-explorer/tree/investin_mm
+* Click show config button on dashboard page, copy it to a file: investin.json
+* Setup the marketmaking bot in a python virtualenv:
+Requirements: Python v3.8
+Setup environment
+``` pip install virtualenv
+    virtualenv venv
+    virtualenv -p /usr/bin/python3 venv
+    source venv/bin/activate 
+    pip install -r requirements.txt```
+
+Run the marketmaking bot
+```./bin/marketmaker --name "Investin MM" --market BTC-PERP --oracle-provider pyth --position-size-ratio 0.2  --existing-order-tolerance 0.0001 --pulse-interval 5 --order-type POST_ONLY --confidence-interval-level 0.05  --cluster-name mainnet --cluster-url https://mango.rpcpool.com --group-name mainnet.1 --investin investin.json ```
+
+
+* 
 
     ![Placeholder](assets/113.png){: width="300" align=center }
 
