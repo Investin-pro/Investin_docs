@@ -13,14 +13,14 @@
         <meta name="author" content="aak">
       
       
-        <link rel="canonical" href="https://investin-pro.github.io/Investin_docs/integeration/">
+        <link rel="canonical" href="https://investin-pro.github.io/Investin_docs/whitelist/">
       
       <link rel="icon" href="../assets/investin.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.2.0">
     
     
       
-        <title>Integerations - Investin</title>
+        <title>Token Whitelist - Investin</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#swap" class="md-skip">
+        <a href="#token-whitelist" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Integerations
+              Token Whitelist
             
           </span>
         </div>
@@ -218,12 +218,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../integeration/" class="md-tabs__link">
       Integerations
     </a>
   </li>
@@ -347,68 +345,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Integerations
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../integeration/" class="md-nav__link">
         Integerations
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#swap" class="md-nav__link">
-    Swap
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#margin-trade" class="md-nav__link">
-    Margin trade
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lending" class="md-nav__link">
-    Lending
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#farming" class="md-nav__link">
-    Farming
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -459,42 +400,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#swap" class="md-nav__link">
-    Swap
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#margin-trade" class="md-nav__link">
-    Margin trade
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lending" class="md-nav__link">
-    Lending
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#farming" class="md-nav__link">
-    Farming
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -506,77 +413,49 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Investin-pro/Investin_docs/edit/master/docs/integeration.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Investin-pro/Investin_docs/edit/master/docs/whitelist.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Integerations</h1>
-                
-                <p>Investin protocol has one of the most composable contract architecture, allowing funds to interact with almost any DeFi protocol on-chain.</p>
-<h3 id="swap">Swap<a class="headerlink" href="#swap" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
-<p>Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:</p>
-<ol>
-<li>Raydium protocol: All tokens listed on Raydium can be traded through Investin funds but to prevent malicious actors from exploiting the funds by listing and trading into fake/valueless tokens we maintain an expandable token whitelist, mandated across all our funds.</li>
-<li>Project Serum (...soon) </li>
-</ol>
+                <h1 id="token-whitelist">Token Whitelist<a class="headerlink" href="#token-whitelist" title="Permanent link">&para;</a></h1>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Pancakeswap</label><div class="tabbed-content">
+<p>BTCB, 
+ETH,
+BNB,
+CAKE,
+XVS,
+YFI,
+ALPHA,
+SXP,
+CTK,
+REEF,
+DODO,
+BUNNY,
+LINK,
+WAULTX,
+WEX,
+ALPACA,
+EPS,
+NRV,
+LTC,
+UNI,
+BAND,
+DOT,
+FIL,
+XRP,
+ADA,
+ELE</p>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">EVM</label><div class="tabbed-content">
-<p>Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:</p>
-<ol>
-<li>Pancakeswap</li>
-<li>WaultSwap</li>
-<li>Sushi (...soon)</li>
-</ol>
-</div>
-</div>
-<h3 id="margin-trade">Margin trade<a class="headerlink" href="#margin-trade" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solana</label><div class="tabbed-content">
-<p>Allowing funds the ability to leverage long or short tokens to hedge against downside risks. Margin trades powered by:</p>
-<ol>
-<li>Mango Markets</li>
-</ol>
-</div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">EVM</label><div class="tabbed-content">
-<p>Allowing funds the ability to leverage long or short tokens to hedge against downside risks. Margin trades powered by:</p>
-<ol>
-<li>WowSwap (..soon)</li>
-</ol>
-</div>
-</div>
-<h3 id="lending">Lending<a class="headerlink" href="#lending" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Solana</label><div class="tabbed-content">
-<p>Empowering funds with the capability to lend tokens on the most promising lending and leverage trading/farming protocols out there to hedge downside risks. Lending powered by:</p>
-<ol>
-<li>Mango Markets (..soon)</li>
-</ol>
-</div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">EVM</label><div class="tabbed-content">
-<p>Empowering funds with the capability to lend tokens on the most promising lending and leverage trading/farming protocols out there to hedge downside risks. Lending powered by:</p>
-<ol>
-<li>Alpaca Finance</li>
-<li>Belt Finance</li>
-<li>Ellipsis (..soon)</li>
-<li>Venus (..soon)</li>
-<li>Fortube (..soon)</li>
-</ol>
-</div>
-</div>
-<h3 id="farming">Farming<a class="headerlink" href="#farming" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Solana</label><div class="tabbed-content">
-<p>Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: </p>
-<ol>
-<li>Saber (...soon)</li>
-<li>SolFarm (...soon)</li>
-</ol>
-</div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">EVM</label><div class="tabbed-content">
-<p>Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: </p>
-<ol>
-<li>WaultSwap Farms</li>
-<li>PancakeSwap Farms</li>
-</ol>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Raydium</label><div class="tabbed-content">
+<p>BTC,
+RAY,
+MNGO,
+COPE,
+FTT,
+SNY,
+TULIP,
+SRM</p>
 </div>
 </div>
                 
@@ -599,41 +478,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../investor/" class="md-footer__link md-footer__link--prev" aria-label="Previous: For investors" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              For investors
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../features/" class="md-footer__link md-footer__link--next" aria-label="Next: Features" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Features
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

@@ -13,14 +13,14 @@
         <meta name="author" content="aak">
       
       
-        <link rel="canonical" href="https://investin-pro.github.io/Investin_docs/integeration/">
+        <link rel="canonical" href="https://investin-pro.github.io/Investin_docs/market-making/">
       
       <link rel="icon" href="../assets/investin.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.2.0">
     
     
       
-        <title>Integerations - Investin</title>
+        <title>Market making funds - Investin</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#swap" class="md-skip">
+        <a href="#market-making-funds" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Integerations
+              Market making funds
             
           </span>
         </div>
@@ -218,12 +218,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../integeration/" class="md-tabs__link">
       Integerations
     </a>
   </li>
@@ -347,68 +345,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Integerations
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../integeration/" class="md-nav__link">
         Integerations
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#swap" class="md-nav__link">
-    Swap
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#margin-trade" class="md-nav__link">
-    Margin trade
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lending" class="md-nav__link">
-    Lending
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#farming" class="md-nav__link">
-    Farming
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -459,6 +400,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -467,29 +410,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#swap" class="md-nav__link">
-    Swap
+  <a href="#create-fund" class="md-nav__link">
+    Create fund
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#margin-trade" class="md-nav__link">
-    Margin trade
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lending" class="md-nav__link">
-    Lending
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#farming" class="md-nav__link">
-    Farming
+  <a href="#basic-market-making-bot" class="md-nav__link">
+    Basic market making bot
   </a>
   
 </li>
@@ -506,79 +435,73 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Investin-pro/Investin_docs/edit/master/docs/integeration.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Investin-pro/Investin_docs/edit/master/docs/market-making.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Integerations</h1>
-                
-                <p>Investin protocol has one of the most composable contract architecture, allowing funds to interact with almost any DeFi protocol on-chain.</p>
-<h3 id="swap">Swap<a class="headerlink" href="#swap" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
-<p>Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:</p>
+                <h1 id="market-making-funds">Market making funds<a class="headerlink" href="#market-making-funds" title="Permanent link">&para;</a></h1>
+<p>Here, we provide a step-by-step guide to create a market making fund and connect it to a bot running locally or on the cloud.</p>
+<p>Basic requirements:</p>
+<ul>
+<li>Python v3.8</li>
+<li>pip v20 </li>
+</ul>
+<p>Steps:</p>
 <ol>
-<li>Raydium protocol: All tokens listed on Raydium can be traded through Investin funds but to prevent malicious actors from exploiting the funds by listing and trading into fake/valueless tokens we maintain an expandable token whitelist, mandated across all our funds.</li>
-<li>Project Serum (...soon) </li>
+<li>Create fund and set an delegate address for sending instructions</li>
+<li>Invest USDC in fund and have some SOL in delegate address</li>
+<li>Clone basic market making bot <a href="https://github.com/Investin-pro/mango-explorer.git">repo</a></li>
+<li>Set the bot on cloud and add in delegate address private keys</li>
+<li>Check the positions through manager dashboard and claim performance fee i.e $MNGO tokens </li>
 </ol>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">EVM</label><div class="tabbed-content">
-<p>Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:</p>
-<ol>
-<li>Pancakeswap</li>
-<li>WaultSwap</li>
-<li>Sushi (...soon)</li>
-</ol>
-</div>
-</div>
-<h3 id="margin-trade">Margin trade<a class="headerlink" href="#margin-trade" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solana</label><div class="tabbed-content">
-<p>Allowing funds the ability to leverage long or short tokens to hedge against downside risks. Margin trades powered by:</p>
-<ol>
-<li>Mango Markets</li>
-</ol>
-</div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">EVM</label><div class="tabbed-content">
-<p>Allowing funds the ability to leverage long or short tokens to hedge against downside risks. Margin trades powered by:</p>
-<ol>
-<li>WowSwap (..soon)</li>
-</ol>
-</div>
-</div>
-<h3 id="lending">Lending<a class="headerlink" href="#lending" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Solana</label><div class="tabbed-content">
-<p>Empowering funds with the capability to lend tokens on the most promising lending and leverage trading/farming protocols out there to hedge downside risks. Lending powered by:</p>
-<ol>
-<li>Mango Markets (..soon)</li>
-</ol>
-</div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">EVM</label><div class="tabbed-content">
-<p>Empowering funds with the capability to lend tokens on the most promising lending and leverage trading/farming protocols out there to hedge downside risks. Lending powered by:</p>
-<ol>
-<li>Alpaca Finance</li>
-<li>Belt Finance</li>
-<li>Ellipsis (..soon)</li>
-<li>Venus (..soon)</li>
-<li>Fortube (..soon)</li>
-</ol>
-</div>
-</div>
-<h3 id="farming">Farming<a class="headerlink" href="#farming" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Solana</label><div class="tabbed-content">
-<p>Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: </p>
-<ol>
-<li>Saber (...soon)</li>
-<li>SolFarm (...soon)</li>
-</ol>
-</div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">EVM</label><div class="tabbed-content">
-<p>Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: </p>
-<ol>
-<li>WaultSwap Farms</li>
-<li>PancakeSwap Farms</li>
-</ol>
-</div>
-</div>
+<h3 id="create-fund">Create fund<a class="headerlink" href="#create-fund" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Visit <a href="https://sol.beta.investin.pro/user/dashboard">Investin</a> dashboard and click on start fund</li>
+</ul>
+<p><img align="center" alt="Placeholder" src="../assets/11.png" /></p>
+<ul>
+<li>Select market making from type of fund selection and Add minimum deposit, performance fee % i.e. <code>(Share of $mngo accrued which goes to the manager as performance reward)</code>and manager would earn the usual performance fees if the fund performance goes above the minimum return percentage.</li>
+</ul>
+<p>___________________________<img align="center" alt="Placeholder" src="../assets/22.png" width="300" />________________________</p>
+<ul>
+<li>After the fund is created, create a new wallet and set it as the delegate address using the manager dashboard (you can also use manager address with which fund was created)</li>
+<li>Fund the newly created address with $sol </li>
+</ul>
+<h3 id="basic-market-making-bot">Basic market making bot<a class="headerlink" href="#basic-market-making-bot" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Clone repo: <a href="https://github.com/Investin-pro/mango-explorer.git">https://github.com/Investin-pro/mango-explorer.git</a></li>
+<li>Click open config button on dashboard page, copy it and paste in the cloned repo to the file: mainnet-investin.json</li>
+<li>
+<p>In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address.
+    <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">touch id.json</span>
+<span class="l l-Scalar l-Scalar-Plain">cat &gt; id.json</span> 
+<span class="l l-Scalar l-Scalar-Plain">enter &quot;your private key&quot;</span>   
+<span class="l l-Scalar l-Scalar-Plain">press ctrl+D</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Setup the marketmaking bot in a python virtualenv:</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">pip install virtualenv</span>
+<span class="l l-Scalar l-Scalar-Plain">virtualenv venv</span>
+<span class="l l-Scalar l-Scalar-Plain">virtualenv -p /usr/bin/python3 venv</span>
+<span class="l l-Scalar l-Scalar-Plain">source venv/bin/activate</span> 
+<span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span>
+<span class="l l-Scalar l-Scalar-Plain">make sure to check python location by using (which python) and put that in place of /usr/bin/python3</span>
+<span class="l l-Scalar l-Scalar-Plain">sudo ln -s /usr/bin/python3 /usr/bin/pyston3</span>
+</code></pre></div>
+</li>
+<li>
+<p>To run the marketmaking bot
+      <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">./bin/marketmaker --name &quot;Investin MM&quot; --market BTC-PERP --oracle-provider pyth --position-size-ratio 0.2  --existing-order-tolerance 0.0001 --pulse-interval 5 --order-type POST_ONLY --confidence-interval-level 0.05  --cluster-name mainnet --cluster-url https://mango.rpcpool.com --group-name mainnet.1 --investin mainnet-investin.json</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>If everything goes well you will see something like this on terminal </p>
+</li>
+</ul>
+<p><img align="center" alt="Placeholder" src="../assets/112.png" /></p>
+<p>Have any doubts or stuck at any step please join our <a href="https://discord.gg/jk9bmbwh74">discord</a> for assitance</p>
                 
               
               
@@ -599,41 +522,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../investor/" class="md-footer__link md-footer__link--prev" aria-label="Previous: For investors" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              For investors
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../features/" class="md-footer__link md-footer__link--next" aria-label="Next: Features" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Features
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
