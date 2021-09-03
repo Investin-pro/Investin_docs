@@ -423,6 +423,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#apy" class="md-nav__link">
+    APY
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -473,12 +480,14 @@
 <li>Clone repo: <a href="https://github.com/Investin-pro/mango-explorer.git">https://github.com/Investin-pro/mango-explorer.git</a></li>
 <li>Click open config button on dashboard page, copy it and paste in the cloned repo to the file: mainnet-investin.json</li>
 <li>
-<p>In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address.
-    <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">touch id.json</span>
+<p>In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address. The private key should look something like this </p>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">[</span><span class="nv">110</span><span class="p p-Indicator">,</span><span class="nv">49</span><span class="p p-Indicator">,</span><span class="nv">211</span><span class="p p-Indicator">,</span><span class="nv">169</span><span class="p p-Indicator">,</span><span class="nv">16</span><span class="p p-Indicator">,</span><span class="nv">1</span><span class="p p-Indicator">,</span><span class="nv">52</span><span class="p p-Indicator">,</span><span class="nv">50</span><span class="p p-Indicator">,</span><span class="nv">225</span><span class="p p-Indicator">,</span><span class="nv">133</span><span class="p p-Indicator">,</span><span class="nv">73</span><span class="p p-Indicator">,</span><span class="nv">175</span><span class="p p-Indicator">,</span><span class="nv">67</span><span class="p p-Indicator">,</span><span class="nv">185</span><span class="p p-Indicator">,</span><span class="nv">69</span><span class="p p-Indicator">,</span><span class="nv">124</span><span class="p p-Indicator">,</span><span class="nv">79</span><span class="p p-Indicator">,</span><span class="nv">194</span><span class="p p-Indicator">,</span><span class="nv">153</span><span class="p p-Indicator">,</span><span class="nv">3</span><span class="p p-Indicator">,</span><span class="nv">53</span><span class="p p-Indicator">,</span><span class="nv">41</span><span class="p p-Indicator">,</span><span class="nv">204</span><span class="p p-Indicator">,</span><span class="nv">180</span><span class="p p-Indicator">,</span><span class="nv">255</span><span class="p p-Indicator">,</span><span class="nv">80</span><span class="p p-Indicator">,</span><span class="nv">44</span><span class="p p-Indicator">,</span><span class="nv">140</span><span class="p p-Indicator">,</span><span class="nv">43</span><span class="p p-Indicator">,</span><span class="nv">222</span><span class="p p-Indicator">,</span><span class="nv">6</span><span class="p p-Indicator">,</span><span class="nv">53</span><span class="p p-Indicator">,</span><span class="nv">13</span><span class="p p-Indicator">,</span><span class="nv">114</span><span class="p p-Indicator">,</span><span class="nv">16</span><span class="p p-Indicator">,</span><span class="nv">218</span><span class="p p-Indicator">,</span><span class="nv">159</span><span class="p p-Indicator">,</span><span class="nv">70</span><span class="p p-Indicator">,</span><span class="nv">85</span><span class="p p-Indicator">,</span><span class="nv">72</span><span class="p p-Indicator">,</span><span class="nv">57</span><span class="p p-Indicator">,</span><span class="nv">243</span><span class="p p-Indicator">,</span><span class="nv">132</span><span class="p p-Indicator">,</span><span class="nv">149</span><span class="p p-Indicator">,</span><span class="nv">4</span><span class="p p-Indicator">,</span><span class="nv">117</span><span class="p p-Indicator">,</span><span class="nv">23</span><span class="p p-Indicator">,</span><span class="nv">61</span><span class="p p-Indicator">,</span><span class="nv">10</span><span class="p p-Indicator">,</span><span class="nv">101</span><span class="p p-Indicator">,</span><span class="nv">43</span><span class="p p-Indicator">,</span><span class="nv">62</span><span class="p p-Indicator">,</span><span class="nv">61</span><span class="p p-Indicator">,</span><span class="nv">1</span><span class="p p-Indicator">,</span><span class="nv">216</span><span class="p p-Indicator">,</span><span class="nv">197</span><span class="p p-Indicator">,</span><span class="nv">55</span><span class="p p-Indicator">,</span><span class="nv">59</span><span class="p p-Indicator">,</span><span class="nv">237</span><span class="p p-Indicator">,</span><span class="nv">8</span><span class="p p-Indicator">,</span><span class="nv">106</span><span class="p p-Indicator">,</span><span class="nv">171</span><span class="p p-Indicator">,</span><span class="nv">135</span><span class="p p-Indicator">,</span><span class="nv">60</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">touch id.json</span>
 <span class="l l-Scalar l-Scalar-Plain">cat &gt; id.json</span> 
 <span class="l l-Scalar l-Scalar-Plain">enter &quot;your private key&quot;</span>   
 <span class="l l-Scalar l-Scalar-Plain">press ctrl+D</span>
-</code></pre></div></p>
+</code></pre></div>
 </li>
 <li>
 <p>Setup the marketmaking bot in a python virtualenv:</p>
@@ -501,6 +510,14 @@
 </li>
 </ul>
 <p><img align="center" alt="Placeholder" src="../assets/112.png" /></p>
+<h3 id="apy">APY<a class="headerlink" href="#apy" title="Permanent link">&para;</a></h3>
+<p>To estimate the APY for mango rewards earned by market making fund over a time period we use the following formula:</p>
+<div class="arithmatex">\[
+(mngoPerShare[T] - mngoPerShare[T-12])*mngoPrice*100*2*365
+\]</div>
+<ul>
+<li>T = time period</li>
+</ul>
 <p>Have any doubts or stuck at any step please join our <a href="https://discord.gg/jk9bmbwh74">discord</a> for assitance</p>
                 
               
