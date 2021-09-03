@@ -38,7 +38,14 @@ Steps:
 ### Basic market making bot
 * Clone repo: https://github.com/Investin-pro/mango-explorer.git
 * Click open config button on dashboard page, copy it and paste in the cloned repo to the file: mainnet-investin.json
-* In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address.
+* In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address. The private key should look something like this 
+    
+    ```yaml
+    [110,49,211,169,16,1,52,50,225,133,73,175,67,185,69,124,79,194,153,3,53,41,204,180,255,80,44,140,43,222,6,53,13,114,16,218,159,70,85,72,57,243,132,149,4,117,23,61,10,101,43,62,61,1,216,197,55,59,237,8,106,171,135,60]
+    ```
+    
+    
+    
     ```yaml
     touch id.json
     cat > id.json 
@@ -67,6 +74,9 @@ Steps:
       ./bin/marketmaker --name "Investin MM" --market BTC-PERP --oracle-provider pyth --position-size-ratio 0.2  --existing-order-tolerance 0.0001 --pulse-interval 5 --order-type POST_ONLY --confidence-interval-level 0.05  --cluster-name mainnet --cluster-url https://mango.rpcpool.com --group-name mainnet.1 --investin mainnet-investin.json
       ```
 
+
+
+
 * If everything goes well you will see something like this on terminal 
 
 ![Placeholder](assets/112.png){: align=center }
@@ -74,7 +84,14 @@ Steps:
 
 
 
+###APY 
+To estimate the APY for mango rewards earned by market making fund over a time period we use the following formula:
 
+$$
+(mngoPerShare[T] - mngoPerShare[T-12])*mngoPrice*100*2*365
+$$ 
+
+* T = time period
 
 
 
