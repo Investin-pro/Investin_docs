@@ -1,6 +1,6 @@
 # Overview
 
-Investin is a decentralized fund management protocol that facilitates trustless interactions between prospecting investors and aspiring traders, the protocol provides an open market for investors and traders to exchange their offering in a trustless and non-custodial environment i.e. both parties need not worry about custody of assets or management.
+Investin is the first decentralized fund management protocol live on Solana and Binance smart chain that facilitates trustless interactions between prospecting investors and aspiring traders, the protocol provides an open market for investors and traders to exchange their offering in a trustless and non-custodial environment i.e. both parties need not worry about custody of assets or management.
 
 ## Protocol Users
 
@@ -15,17 +15,23 @@ The liquidity providers for the protocol, who can choose from a wide array of fu
 
 ## Decentralized protocols integrated
 
-Investin is built using multiple protocols and currently deployed on solana blockchain and binance smart chain soon on ethereum.
+Investin is built using multiple protocols and currently deployed on Solana blockchain and binance smart chain soon on ethereum.
 
 
 === "Solana"
+    Integerated protocols
+
     1. Raydium                 
     2. Mango markets 
       
 
 === "EVM"
+    Integerated protocols
+
     1. Pancakeswap
     2. Waultswap
+    3. Alpaca Finance
+    4. Belt Finance
 
 ### Future integrations: 
 
@@ -33,5 +39,6 @@ Investin is built using multiple protocols and currently deployed on solana bloc
 6. Sushiswap
 7. Uniswap
 8. Saber
-9. Perpetual protocol 
-10. Curve finance
+9. Synthetify 
+10. Perpetual protocol 
+11. Curve finance

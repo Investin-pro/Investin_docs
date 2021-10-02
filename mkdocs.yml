@@ -1,6 +1,6 @@
 site_name: Investin
 site_url: https://investin-pro.github.io/Investin_docs/
-site_author: aak
+site_author: 
 site_description: >-
   Documentation about Investin, the decentralized fund management protocol 
 theme:
@@ -85,6 +85,9 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
 
 
 
@@ -96,8 +99,9 @@ nav:
   - For manager: 'manager.md'
   
   - For investors: 'investor.md'
-  - Integerations: 'integeration.md'
+  - Integrations: 'integeration.md'
   - Features: 'features.md'
+  - Market Making: 'marketmaking.md'
   - Tokeneconomics: 'token.md'
   
 

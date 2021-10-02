@@ -14,14 +14,14 @@ Steps:
 1. Create fund and set an delegate address for sending instructions
 2. Invest USDC in fund and have some SOL in delegate address
 2. Clone basic market making bot [repo][2]
-[2]:https://github.com/Investin-pro/mango-explorer.git
+[2]:https://github.com/Investin-pro/mango-explorer/tree/investin_mm
 3. Set the bot on cloud and add in delegate address private keys
 4. Check the positions through manager dashboard and claim performance fee i.e $MNGO tokens 
 
 
 ### Create fund 
 * Visit [Investin][1] dashboard and click on start fund
-[1]:https://sol.beta.investin.pro/user/dashboard
+[1]:https://qa.sol.investin.pro/user/dashboard
 
 ![Placeholder](assets/11.png){: align=center }
 
@@ -36,7 +36,8 @@ Steps:
 * After the fund is created, create a new wallet and set it as the delegate address using the manager dashboard (you can also use manager address with which fund was created)
 * Fund the newly created address with $sol 
 ### Basic market making bot
-* Clone repo: https://github.com/Investin-pro/mango-explorer.git
+* Clone repo: https://github.com/Investin-pro/mango-explorer/tree/investin_mm
+* git checkout investin_mm
 * Click open config button on dashboard page, copy it and paste in the cloned repo to the file: mainnet-investin.json
 * In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address. The private key should look something like this 
     
@@ -92,6 +93,14 @@ $$
 $$ 
 
 * T = time period
+
+
+###Performance Fee
+The performance fee is collected on all the mango rewards accured by market making and is set by manager on fund creation. The same percentage is also used to collect performance fee if the USDC evaluation of fund goes above the minimum return percentage.
+
+
+
+
 
 
 
