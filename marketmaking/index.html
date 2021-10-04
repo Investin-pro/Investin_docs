@@ -573,7 +573,7 @@
 <h3 id="basic-market-making-bot">Basic market making bot<a class="headerlink" href="#basic-market-making-bot" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Clone repo: <a href="https://github.com/Investin-pro/mango-explorer/tree/investin_mm">https://github.com/Investin-pro/mango-explorer/tree/investin_mm</a></li>
-<li>git checkout investin_mm</li>
+<li>git checkout sol-perp</li>
 <li>Click open config button on dashboard page, copy it and paste in the cloned repo to the file: mainnet-investin.json</li>
 <li>
 <p>In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address. The private key should look something like this </p>
@@ -598,12 +598,14 @@
 </li>
 <li>
 <p>To run the marketmaking bot
-      <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">./bin/marketmaker --name &quot;Investin MM&quot; --market BTC-PERP --oracle-provider pyth --position-size-ratio 0.2  --existing-order-tolerance 0.0001 --pulse-interval 5 --order-type POST_ONLY --confidence-interval-level 0.05  --cluster-name mainnet --cluster-url https://mango.rpcpool.com --group-name mainnet.1 --investin mainnet-investin.json</span>
+      <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">./bin/marketmaker --name &quot;Investin MM&quot; --market SOL-PERP --oracle-provider pyth  --existing-order-tolerance 0.0001 --pulse-interval 10 --order-type POST_ONLY --chain ratios --ratios-spread 0.006 --chain fixedpositionsize --fixedpositionsize-value 0.2  --cluster-name mainnet --cluster-url https://solana-api.projectserum.com --group-name mainnet.1 --id-file id.json --investin mainnet-investin.json</span> 
 </code></pre></div></p>
 </li>
-<li>
-<p>If everything goes well you will see something like this on terminal </p>
-</li>
+</ul>
+<p>./bin/marketmaker --name "Investin MM" --market SOL-PERP --oracle-provider pyth  --existing-order-tolerance 0.0001 --pulse-interval 10 --ord
+er-type POST_ONLY --chain ratios --ratios-spread 0.006 --chain fixedpositionsize --fixedpositionsize-value 0.2  --cluster-name mainnet --cluster-url <a href="https://solana-api.projectserum.com">https://solana-api.projectserum.com</a> --group-name mainnet.1 --id-file id.json --investin mainnet-investin.json </p>
+<ul>
+<li>If everything goes well you will see something like this on terminal </li>
 </ul>
 <p><img align="center" alt="Placeholder" src="../assets/112.png" /></p>
 <h3 id="apy">APY<a class="headerlink" href="#apy" title="Permanent link">&para;</a></h3>
