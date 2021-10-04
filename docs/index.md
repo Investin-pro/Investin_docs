@@ -1,16 +1,16 @@
 # Overview
 
-Investin is the first decentralized fund management protocol live on Solana and Binance smart chain that facilitates trustless interactions between prospecting investors and aspiring traders, the protocol provides an open market for investors and traders to exchange their offering in a trustless and non-custodial environment i.e. both parties need not worry about custody of assets or management.
+Investin is the first decentralized fund management protocol live on Solana and Binance Smart Chain that facilitates trustless interactions between prospecting investors and aspiring traders, the protocol provides an open market for investors and traders to exchange their offering in a trustless and non-custodial environment i.e. investors keep custody of their assets at all times, while traders make investment decisions and manage assets with the goal of producing a return for both parties.
 
 ## Protocol Users
 
-* Managers/traders:
+* Managers/Traders:
 
 The driving force and future owners of the protocol that run funds to attract as many investors to their funds to generate a stable income for both parties. 
 
 * Investors 
 
-The liquidity providers for the protocol, who can choose from a wide array of funds available on Investin and can always swap investments between funds. The protocol ensures fund security and total ownership to the investors while providing a minimum downside risk 
+The liquidity providers for the protocol, investors can choose from a wide selection of funds and have the flexibility to swap their investment between funds. The protocol ensures fund security and total ownership to the investors while providing a minimum downside risk.
 
 
 ## Decentralized protocols integrated
