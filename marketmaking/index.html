@@ -563,7 +563,12 @@
 </ul>
 <p><img align="center" alt="Placeholder" src="../assets/11.png" /></p>
 <ul>
-<li>Select market making from type of fund selection and Add minimum deposit, performance fee % i.e. <code>(Share of $mngo accrued which goes to the manager as performance reward)</code>and manager would earn the usual performance fees if the fund performance goes above the minimum return percentage.</li>
+<li>
+<p>Select market making from type of fund selection and Add minimum deposit, performance fee % i.e. <code>(Share of $mngo accrued which goes to the manager as performance reward)</code>and manager would earn the usual performance fees if the fund performance goes above the minimum return percentage.</p>
+</li>
+<li>
+<p>Select the perp market, currently we have BTC-PERP &amp; SOL-PERP</p>
+</li>
 </ul>
 <p>___________________________<img align="center" alt="Placeholder" src="../assets/22.png" width="300" />________________________</p>
 <ul>
@@ -601,11 +606,12 @@
       <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">./bin/marketmaker --name &quot;Investin MM&quot; --market SOL-PERP --oracle-provider pyth  --existing-order-tolerance 0.0001 --pulse-interval 10 --order-type POST_ONLY --chain ratios --ratios-spread 0.006 --chain fixedpositionsize --fixedpositionsize-value 0.2  --cluster-name mainnet --cluster-url https://solana-api.projectserum.com --group-name mainnet.1 --id-file id.json --investin mainnet-investin.json</span> 
 </code></pre></div></p>
 </li>
-</ul>
-<p>./bin/marketmaker --name "Investin MM" --market SOL-PERP --oracle-provider pyth  --existing-order-tolerance 0.0001 --pulse-interval 10 --ord
-er-type POST_ONLY --chain ratios --ratios-spread 0.006 --chain fixedpositionsize --fixedpositionsize-value 0.2  --cluster-name mainnet --cluster-url <a href="https://solana-api.projectserum.com">https://solana-api.projectserum.com</a> --group-name mainnet.1 --id-file id.json --investin mainnet-investin.json </p>
-<ul>
-<li>If everything goes well you will see something like this on terminal </li>
+<li>
+<p>If the fund was created for btc-perp make sure to change the --market BTC-PERP and for sol-perp to SOL-PERP</p>
+</li>
+<li>
+<p>If everything goes well you will see something like this on terminal </p>
+</li>
 </ul>
 <p><img align="center" alt="Placeholder" src="../assets/112.png" /></p>
 <h3 id="apy">APY<a class="headerlink" href="#apy" title="Permanent link">&para;</a></h3>
