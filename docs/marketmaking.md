@@ -26,6 +26,8 @@ Steps:
 ![Placeholder](assets/11.png){: align=center }
 
 * Select market making from type of fund selection and Add minimum deposit, performance fee % i.e. `(Share of $mngo accrued which goes to the manager as performance reward)`and manager would earn the usual performance fees if the fund performance goes above the minimum return percentage.
+
+* Select the perp market, currently we have BTC-PERP & SOL-PERP
                 
   ___________________________![Placeholder](assets/22.png){: width="300" align=center }________________________
 
@@ -37,7 +39,7 @@ Steps:
 * Fund the newly created address with $sol 
 ### Basic market making bot
 * Clone repo: https://github.com/Investin-pro/mango-explorer/tree/investin_mm
-* git checkout investin_mm
+* git checkout sol-perp
 * Click open config button on dashboard page, copy it and paste in the cloned repo to the file: mainnet-investin.json
 * In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address. The private key should look something like this 
     
@@ -72,10 +74,11 @@ Steps:
 
 * To run the marketmaking bot
       ```yaml
-      ./bin/marketmaker --name "Investin MM" --market BTC-PERP --oracle-provider pyth --position-size-ratio 0.2  --existing-order-tolerance 0.0001 --pulse-interval 5 --order-type POST_ONLY --confidence-interval-level 0.05  --cluster-name mainnet --cluster-url https://mango.rpcpool.com --group-name mainnet.1 --investin mainnet-investin.json
+      ./bin/marketmaker --name "Investin MM" --market SOL-PERP --oracle-provider pyth  --existing-order-tolerance 0.0001 --pulse-interval 10 --order-type POST_ONLY --chain ratios --ratios-spread 0.006 --chain fixedpositionsize --fixedpositionsize-value 0.2  --cluster-name mainnet --cluster-url https://solana-api.projectserum.com --group-name mainnet.1 --id-file id.json --investin mainnet-investin.json 
+
       ```
 
-
+* If the fund was created for btc-perp make sure to change the --market BTC-PERP and for sol-perp to SOL-PERP
 
 
 * If everything goes well you will see something like this on terminal 

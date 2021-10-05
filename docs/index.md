@@ -35,10 +35,8 @@ Investin is built using multiple protocols and currently deployed on Solana bloc
 
 ### Future integrations: 
 
-5. Project Serum
-6. Sushiswap
-7. Uniswap
+5. Orca
+6. Project Serum
 8. Saber
 9. Synthetify 
-10. Perpetual protocol 
-11. Curve finance
+
