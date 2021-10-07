@@ -6,7 +6,7 @@ Investin is the first decentralized fund management protocol live on Solana and 
 
 The trading history, positions and Assets Under Management (AUM) of an Investin protocol Fund Manager are always transparent to Investors. Investor decision making about joining, leaving or staying with a particular fund is informed by having access to real-time and historical on-chain data. 
 
-Fund Managers can’t hide their positions, performance can’t be fudged and any deviations from a funds investment strategy are visible to investors straight away. Imagine a Fund Manger is highly leveraged beyond there advertised strategy, an investor can easily vote with their feet by exiting the fund. Fund Managers who show expected perfomance can build a community using their reputation on Investin which can increase inflows of new liquidity from investors.
+Fund Managers can’t hide their positions, performance can’t be fudged and any deviations from a funds investment strategy are visible to investors straight away. Imagine a Fund Manger is highly leveraged beyond their advertised strategy, an investor can easily vote with their feet by exiting the fund. Fund Managers who show expected perfomance can build a community using their reputation on Investin which can increase inflows of new liquidity from investors.
 
 
 ## Protocol Users
