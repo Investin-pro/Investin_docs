@@ -11,16 +11,22 @@ Highly composable funds with capabilities to integrate almost any on-chain proto
 #### Strategies 
 
 
-The strategy adapter contracts allow Investin funds to interact with multiple protocols allowing them to take part in almost all DeFi activities by tokenizing positions. These strategy contracts create positions in various protocols and issue ERC-20 tokens that represent a fund's share in respective strategies. All strategy contracts are independent of each other hence failure in one of the integrated protocols is limited to funds participating in affected strategies. We follow due deliginece while selecting protocols to integrate through our strategies but `Investin does not take any responsibility if the integrated protocols are compromised later`. 
+The strategy adapter contracts allow Investin funds to interact with multiple protocols allowing them to take part in almost all DeFi activities by tokenizing positions. These strategy contracts create positions in various protocols and issue SPL tokens that represent a fund's share in respective strategies. All strategy contracts are independent of each other hence failure in one of the integrated protocols is limited to funds participating in affected strategies. We follow due deliginece while selecting protocols to integrate through our strategies but `Investin does not take any responsibility if the integrated protocols are compromised`. 
 
 1. The farming strategies are autocompounded at the cheapest fee in the industry, at a fee of 0.1% of yield generated.
 2. Users without a fund can also take advantage of auto-compounding farms and other strategies.
 3. Custom strategies can be added that generate stable yields with no downside risk .
 4. Margin trading protocols can be integrated allowing managers to hedge positions in downside markets.
 
-### Dynamic performance 
 
-Fund managers can collect the performance fee accrued through investor withdrawals or choose to dynamically collect the impending fee on the live investments exceeding minimum returns regardless of any crystalization period or withdrawals. The dashboard displays the relevant fee collectable by the fund manager, `this amount must be available in the base token denomination of the fund`. This feature incentivizes managers to set short term profitability goals and collect performance fees on meeting the profit targets. This feature compliments investor stop-loss. 
+### Selective transfer to vault
+
+This feature allows fund managers to accept investments from whitelisted addresses allowing fund managers the option to follow KYC/AML guidelines of their country of residence. The feature is optional, fund managers have the option to accept all investments or be selective about their investors.
+
+
+<!-- ### Dynamic performance 
+
+Fund managers can collect the performance fee accrued through investor withdrawals or choose to dynamically collect the impending fee on the live investments exceeding minimum returns regardless of any crystalization period or withdrawals. The dashboard displays the relevant fee collectable by the fund manager, `this amount must be available in the base token denomination of the fund`. This feature incentivizes managers to set short term profitability goals and collect performance fees on meeting the profit targets. This feature compliments investor stop-loss.  -->
 
 
 

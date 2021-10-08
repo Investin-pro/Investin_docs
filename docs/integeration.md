@@ -16,7 +16,7 @@ Investin protocol has one of the most composable contract architecture, allowing
 
     1. Pancakeswap
     2. WaultSwap
-    2. Sushi (...soon)
+   
     
 
 
@@ -32,7 +32,7 @@ Investin protocol has one of the most composable contract architecture, allowing
 === "EVM"
     Allowing funds the ability to leverage long or short tokens to hedge against downside risks. Margin trades powered by:
 
-    1. WowSwap (..soon)
+    
 
 
 ### Lending
@@ -48,9 +48,7 @@ Investin protocol has one of the most composable contract architecture, allowing
     
     1. Alpaca Finance
     2. Belt Finance
-    3. Ellipsis (..soon)
-    4. Venus (..soon)
-    5. Fortube (..soon)
+   
     
 
 
@@ -60,8 +58,9 @@ Investin protocol has one of the most composable contract architecture, allowing
 === "Solana"
     Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: 
     
-    1. Saber (...soon)
-    2. SolFarm (...soon)
+    1. Orca (...soon)
+    2. Saber (...soon)
+    3. SolFarm (...soon)
 
 
 
