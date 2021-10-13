@@ -98,7 +98,7 @@ Investin token locked in the staking contract mints IVNx tokens which allows fun
 
 A total supply of 9,000,000 IVN tokens are minted with no further minting possible as the contract has no minting functionality. 
 
-![Placeholder](assets/IVNal.svg){: align=center }
+![Placeholder](assets/ivnalloc.svg){: align=center }
 
 
 

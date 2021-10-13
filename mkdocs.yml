@@ -23,9 +23,9 @@ theme:
     - search.suggest
     - content.tabs.link
   palette:
-    scheme: 'slate'
-    primary: 'dark purple'
-    accent: 'grey'
+    scheme: default
+    primary: indigo
+    accent: indigo
   font:
     text: Roboto
     code: Roboto Mono

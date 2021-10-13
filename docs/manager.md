@@ -97,7 +97,10 @@ The contract will keep a count of swaps done by the manager and if the fund's pe
 
 ### Performance fee
 
-As discussed earlier manager will be entitiled to collect the performance fee on meeting the criteria they reach the minimum return they set for themselves during deploying funds. This feature insures managers meet certain targets of profits before collecting any performance fee. `Manager is expected to keep the performance fee in base token of fund, they wont be able to collect the fee in case the funds are invested in other assets`
+As discussed earlier manager will be entitiled to collect the performance fee on meeting the criteria they reach the minimum return they set for themselves during deploying funds. This feature insures managers meet certain targets of profits before collecting any performance fee. 
+
+!!! info
+    Manager is expected to keep the performance fee in base token of fund, they wont be able to collect the fee in case the funds are invested in other assets
 
 
 ## Staking (revenue sharing)
