@@ -1,5 +1,5 @@
 
-Investin is built upon a highly composable architecture that integrates multiple DeFi protocols to enable a wide range of DeFi activities to be executed through the Funds such as token swaps, margin trades, lending, and liquidity mining.
+Investin is built upon a highly composable architecture that integrates multiple DeFi protocols to enable a wide range of DeFi strategies to be executed through the Funds such as token swaps, margin trades, lending, and liquidity mining.
 
 ### Swap
 === "Solana"
