@@ -56,7 +56,7 @@ Investin is built upon a highly composable architecture that integrates multiple
 
 ### Farming
 === "Solana"
-    Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: 
+    Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets at all times. Farming powered by: 
     
     1. Orca (...soon)
     2. Saber (...soon)
@@ -65,7 +65,7 @@ Investin is built upon a highly composable architecture that integrates multiple
 
 
 === "EVM"
-    Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: 
+    Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets at all times. Farming powered by: 
     
     1. WaultSwap Farms
     2. PancakeSwap Farms
