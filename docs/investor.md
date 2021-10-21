@@ -2,7 +2,7 @@
 
 ## Overview
 
-We see investors as key liquidity providers of the platform whose success and satisfaction would determine Investin's future. The protocol shall ensure both the users are well incentivized to conduct a trustless exchange of offerings, while managers are given access to almost all possible market activities with the fund assets, investors are provided with best in class UI with safety standards built-in to protect capital at all costs. 
+We see investors as key liquidity providers of the platform whose success and satisfaction will determine Investin's future. The protocol shall ensure both the users are well incentivized to conduct a trustless exchange of offerings, while managers are given access to almost all possible market activities with the fund assets. Investors are provided with best in class UI with safety standards built-in to protect capital being the main priority. 
 
 
 ## Make investment
@@ -61,7 +61,7 @@ We see investors as key liquidity providers of the platform whose success and sa
 
 ### Performance
 
-The performance on invested amount can be queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price hence the performance will be subject to an error +/-2% but upon ending investment the asset evaluation done by contracts will be final and true to the exact decimal at all times. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.
+The performance on invested amount is queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price. Hence, the performance will be subject to an error +/-2% but upon ending investment the asset evaluation done by contracts will be final and the true value of the asset. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.
 
 
 
@@ -87,16 +87,16 @@ The performance on invested amount can be queried on-chain and the smart contrac
 
 === "Solana"
 
-    This instruction can only be called by investor address and consists of multiple transactions to overcome the current limitation of 35 accounts and 200,000 compute limit per transaction. To achieve the composablilty into Investin's architecute we handle the withdrawal process in multiple steps in each step the specific updates on investor account(receipt) is handled. `There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.`
+    This instruction can only be called by investor address and consists of multiple transactions to overcome the current limitation of 35 accounts and 200,000 compute limit per transaction. In order to achieve the composability of Investin's architecture we handle the withdrawal process in multiple steps. In each step the specific transaction updates on the investor account(receipt). `There is no lockup period; investors remain in full control of funds and can deposit/withdraw at their convenience.`
 
     Example flow:
     
     A fund having position in 4 assets that are swapped from Raydium and 2 margin positions open on mango markets is handled in the following transaction flows:
     
-    1. The investor share is calculated on the total fund AUM. The assets owed by fund are accounted in this stage.
+    1. The Investor share is calculated on the total fund AUM. The assets owed by fund are accounted in this stage.
     2. The dues on fund assets are settled and sent to investor wallet address
-    3. The borrows are settled on both margin positions and according to investors' share, the positions are closed. Is is important to note here that the health of margin account remains same, only the margin amount is changed.
-    4. The dues on margin positions are settled by withdrawing from mango account and sending directly to investor address
+    3. The borrows are settled on both margin positions and according to investors' share, the positions are closed. It is important to note here that the health of margin account remains same since only the margin amount is changed.
+    4. The dues on margin positions are settled by withdrawing from the Mango account and sending directly to the Investor's address.
 
 === "Solidity"
 
@@ -125,11 +125,11 @@ The performance on invested amount can be queried on-chain and the smart contrac
 
 * Management fee
 
-    A 2% upfront management fee is deducted on each successful investment out of which 1% is given to the manager who uses the fees to manage expenses of running the fund which includes transferring tokens to fund contract and calling swap functions to trade using amm's. The management fee won't be deducted if the investor withdraws their investment before the manager moves tokens to their fund contract. 
+    A 2% upfront management fee is deducted on each successful investment out of which 1% is given to the manager who uses the fees to manage expenses of running the fund. This includes transferring tokens to fund contract and calling swap functions to trade using AMMs. The management fee will not be deducted if the investor withdraws their investment before the manager moves tokens to their fund contract. 
 
 * Performance fee
 
-    The managers can only collect their performance fee if they reach the minimum return on investment they set, this minimum ROI is range bound and can be anywhere between 5-50%. If the manager makes less than the ROI they set, the investors won't be charged any performance fee and can withdraw at any time. This system of reaching minimum ROI thereby only encourages managers to make more profits and creates a positive feedback loop.
+    The managers can only collect their performance fee if they reach the minimum return on the individual's investment. This minimum ROI is range bound and can be anywhere between 5-40%. 1/10th of the total fee collected by the Manager is allocated to the protocol. If the manager makes less than the ROI they set, the investors will not be charged any performance fee and can withdraw at any time. This system of reaching minimum ROI thereby only encourages managers to make more profits and creates a positive feedback loop.
 
 <!-- === "Solidity"
     
