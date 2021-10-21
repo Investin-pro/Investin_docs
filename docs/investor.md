@@ -10,7 +10,7 @@ We see investors as key liquidity providers of the platform whose success and sa
 
 === "Solana"
 
-    Investors are required to interact with the program and deposit in the base token of the fund, this amount is initially stored in the router vault under a PDA and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment. 
+    Investors are required to interact with the Fund program and deposit in the base denomination of the fund. This amount is initially stored in the router vault and an investor account is created to identify each investment. A unique investment receipt corresponding to each individual's investment is also created in this process.
 
     ```yaml
     FundInstruction::InvestorDeposit { amount }
