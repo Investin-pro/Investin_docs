@@ -46,11 +46,12 @@ At the initialization of a fund the manager is expected to provide certain param
 
 ## Trading
 
-Investin aims to offer multiple avenues of trading to its managers/traders and is always looking forward at making the cost of trading bare minimum to maximize trader's profits. Currently we offer trading on [pancakeswap][1] and [raydium][2] soon on [sushiswap][3]
+Investin aims to offer multiple avenues of trading to its Managers to reduce slippage and trading fees thus maximizing users' profits. Currently we offer trading on [Raydium][1], [Orca][2], [Pancake][4], and soon on [Sushi][3].
 
-[1]: https://exchange.pancakeswap.finance/#/swap
-[2]: hhttps://raydium.io/swap/
+[1]: https://raydium.io/swap/
+[2]: https://orca.so
 [3]: https://app.sushi.com/swap
+[4]: https://exchange.pancakeswap.finance/#/swap
 
 ### Swap 
 
@@ -83,7 +84,7 @@ Investin holds the discretionary power to dissolve any fund if the performance o
 
 ## Fees
 
-Manager are entitled to collect fees over the investments to insure longetivity in relations between them and investors
+Managers are entitled to collect fees over the investments to ensure longevity in the relationship between them and Investors.
 
 ### Management fee
 
@@ -91,7 +92,7 @@ A fixed 1% management fees has been set in the smart contracts which managers ca
 
 <!-- ### Swap fee
 
-The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation they will be allowed to collect the fee they spent on swapping. `Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets` -->
+The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation, they will be allowed to collect the fee they spent on swapping. `Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets` -->
 
 ### Performance fee
 
@@ -107,6 +108,6 @@ Details will be added soon..
 
 ### Miscellaneous
 
-* We expect manager's to create a discord/telegram groups for all their investors or ask them to join the relevant discord channel to explain their investment philosophy, they can also add a short thesis on investin's UI and add their socials link. 
-* To minimize end investment fee incurred on withdrawal by investors and to create a long term alliance, managers are expected to set intervals of redemption by keeping the majority of funds in base token for ease of withdrawals. 
+* We expect Manager's to create a discord/telegram groups for all their investors or ask them to join the relevant discord channel to explain their investment philosophy. They can also add a short thesis on Investin's UI and add links to their socials. 
+* To minimize end investment fee incurred on withdrawal by Investors and to create a long-term alliance, Managers are expected to set intervals of redemption by keeping the majority of funds in the base token for ease of withdrawals. 
 
