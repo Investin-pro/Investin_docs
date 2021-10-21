@@ -1,12 +1,12 @@
 # Overview
 
-Investin is the first decentralized fund management protocol live on Solana and Binance Smart Chain that facilitates trustless interactions between prospecting investors and aspiring traders, the protocol provides an open market for investors and traders to exchange their offering in a trustless and non-custodial environment i.e. investors keep custody of their assets at all times, while traders make investment decisions and manage assets with the goal of producing a return for both parties.
+Investin is the first decentralized fund management protocol live on Solana and Binance Smart Chain that facilitates trustless interactions between prospecting Investors and aspiring traders. The protocol provides an open market for investors and traders to exchange their offerings in a trustless and non-custodial environment i.e. Investors keep custody of their assets at all times, while Managers make investment decisions and manage assets with the goal of producing a return for both parties.
 
 # On-chain visibility
 
- The trading history, positions and Assets Under Management (AUM) of Investin Fund Managers are always transparent to Investors. Investor decision making about joining, leaving or staying with a particular fund is informed by having access to real-time and historical on-chain data. 
+ The trading history, positions, and Assets Under Management (AUM) of Investin Fund Managers are always transparent to Investors. Investor decision making about joining, leaving, or staying with a particular fund is informed by having access to real-time and historical on-chain data. 
 
- Fund Managers can’t hide their positions, performance can’t be fudged and any deviations from a funds investment strategy are visible to investors straight away. Imagine a Fund Manger is highly leveraged beyond their advertised strategy, an investor can easily vote with their feet by exiting the fund. Fund Managers who show expected perfomance can build a community using their reputation on Investin which can increase inflows of new liquidity from investors.
+ Fund Managers cannot hide their positions, performance can’t be faked, and any deviations from a funds investment strategy are visible to investors straight away. For example, if a Manager is highly leveraged beyond their advertised strategy, an investor is able to remove themselves from that strategy by exiting the fund. Fund Managers who show an expected perfomance can build a community using their reputation and history on Investin. This can only help in increasing inflows of new liquidity from Investors.
 ## Protocol Users
 
 * Managers/Traders:
@@ -19,8 +19,7 @@ The liquidity providers for the protocol, investors can choose from a wide selec
 
 ## Decentralized protocols integrated
 
-Investin is built using multiple protocols and currently deployed on Solana blockchain and binance smart chain soon on ethereum.
-
+Investin protocol has one of the most composable contract architecture, allowing Fund Managers to interact with almost any DeFi protocol on-chain.
 
 === "Solana"
     Integerated protocols
