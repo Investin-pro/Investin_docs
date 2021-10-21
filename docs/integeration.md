@@ -1,12 +1,12 @@
 
-Investin protocol has one of the most composable contract architecture, allowing funds to interact with almost any DeFi protocol on-chain.
+Investin is built upon a composable arcitecture that integrates multiple DeFi protocols to enable a waide range of DeFi activities to be executed through the Funds such as token swaps, margin trades, lending and liquidity mining.
 
 
 ### Swap
 === "Solana"
     Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:
 
-    1. Raydium protocol: All tokens listed on Raydium can be traded through Investin funds but to prevent malicious actors from exploiting the funds by listing and trading into fake/valueless tokens we maintain an expandable token whitelist, mandated across all our funds.
+    1. Raydium protocol: All tokens listed on Raydium can be traded through Investin funds but to prevent malicious actors from exploiting the funds by listing and trading fake/valueless tokens we maintain an expandable token whitelist, mandated across all our funds.
     2. Project Serum (...soon) 
 
 

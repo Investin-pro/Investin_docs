@@ -10,7 +10,7 @@ We see investors as key liquidity providers of the platform whose success and sa
 
 === "Solana"
 
-    Investors are required to interact with the program and deposit in the base token of the fund, this amount is initially stored in the router vault under a PDA and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment. 
+    Investors are required to interact with the Fund program and deposit in the base denomination of the fund, this amount is initially stored in the router vault and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment independently. 
 
     ```yaml
     FundInstruction::InvestorDeposit { amount }
@@ -18,8 +18,8 @@ We see investors as key liquidity providers of the platform whose success and sa
 
     The investor receipt allows Investin protocol to provide features like:
     
-    1. Investor stoploss i.e. investors can define the percentage of profit or loss at which they want to withdraw.
-    2. Enables fund PDA's to be composable since the receipt can be used as debt receipt for each investor account.
+    1. Enables investments to be composable and be used as a debt receipt for further use, including a custom performance claim by manager on investments that continue to stay active for longer periods.
+    2. Investor stoploss i.e. investors can define the percentage of profit or loss at which they wish to withdraw.
 
 === "EVM"
 
