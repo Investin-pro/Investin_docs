@@ -1,8 +1,7 @@
 # Managers/Traders
 
 ## Overview
-The future owners of protocol on whose success the experiment of running a decentralized fund management protocol can be made possible in a truly trustless and non custodial way. The protocol has been keenly designed to incentivize traders who provide their expertise on crypto markets to benefit both the users of protocol.
-
+The goal of IVN is to have the future owners of protocol be the Managers. Therefore, the success of running a decentralized fund management protocol is reliant on them. The protocol has been keenly designed to incentivize traders to become Managers by providing and using their expertise in DeFi to benefit all users of protocol.
 
 
 ## Fund creation
@@ -24,8 +23,7 @@ The future owners of protocol on whose success the experiment of running a decen
 
 
 
-As the intialization function call can be seen above the manager is expected to provide certain paramters as:
-
+At the initialization of a fund the manager is expected to provide certain parameters like:
 
 * Minimum amount
 
@@ -33,11 +31,11 @@ As the intialization function call can be seen above the manager is expected to 
 
 * Minimum return
 
-    The manager can set the minimum returns they will be targetting before collecting the performance fee on the profits made on the fund. The higher its set the better. This paramater once set cannot be changed and the contract will allow manager to collect there fee only when the minimum return criteria is met. The current range bound set is from 5-50% return on invesment
+    The manager can set the minimum returns they will be targeting before collecting the performance fee on the positive returns made on AUM. The higher it's set, the better with regards to gaining investors' confidence. This parameter once set cannot be changed and the contract will allow manager to collect their fee only when the minimum return criteria is met. The current minimum is set at a 5% return on investment.
 
 * Performance fee
 
-    The manager needs to set the performance fee they will be collecting when the minimum return set by them is met on total assets under management. The performance fee parameter is range bound and can be set in 5-50% range.
+    The manager needs to set the performance fee they will be collecting when the minimum return is met on each individual investment. The performance fee parameter is range bound to a ceiling of 40% and 1/10th of the total fee collected by the Manager is allocated towards Investin. 
 
 
 
@@ -89,7 +87,7 @@ Manager are entitled to collect fees over the investments to insure longetivity 
 
 ### Management fee
 
-A fixed 1% management fees has been set in the smart contracts which managers can collect when they move the funds from router to their fund contracts. This amount will be shown on manager dashboard interface. 
+A fixed 1% management fees has been set in the smart contracts which managers can collect when they move the funds from the initial router vault to their fund contracts. This amount is intended to compensate the Manager for the costs borne from transaction fees. This fee can be collected from the Manager Dashboard.
 
 <!-- ### Swap fee
 
@@ -97,11 +95,10 @@ The contract will keep a count of swaps done by the manager and if the fund's pe
 
 ### Performance fee
 
-As discussed earlier manager will be entitiled to collect the performance fee on meeting the criteria they reach the minimum return they set for themselves during deploying funds. This feature insures managers meet certain targets of profits before collecting any performance fee. 
+As mentioned earlier, the Manager will be able to collect the performance fee on each investment upon fulfilling the minimum return they set for their Fund during the creation process. This feature ensures Managers meet the predefined returns before collecting any performance fee. 1/10th of the total fee collected by the Manager is allocated to the protocol.
 
 !!! info
-    Manager is expected to keep the performance fee in base token of fund, they wont be able to collect the fee in case the funds are invested in other assets
-
+Manager is expected to keep the performance fee amount available in base denomination of the fund when they wish to claim it. They will not be able to collect the fee in the case that the amount is invested in other assets.
 
 ## Staking (revenue sharing)
 
