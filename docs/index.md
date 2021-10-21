@@ -11,8 +11,7 @@ Investin is the first decentralized fund management protocol live on Solana and 
 
 * Managers/Traders:
 
-The driving force and future owners of the protocol that run funds to attract as many investors to their funds to generate a stable income for both parties. 
-
+The driving force and future owners of Investin. They actively manage assets of their Funds to generate returns on the invested capital and attract future investments.
 * Investors 
 
 The liquidity providers for the protocol, investors can choose from a wide selection of funds and have the flexibility to swap their investment between funds. The protocol ensures fund security and total ownership to the investors while providing a minimum downside risk.
