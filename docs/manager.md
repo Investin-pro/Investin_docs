@@ -1,13 +1,13 @@
 # Managers/Traders
 
 ## Overview
-The goal of IVN is to have the future owners of protocol be the Managers. Therefore, the success of running a decentralized fund management protocol is reliant on them. The protocol has been keenly designed to incentivize traders to become Managers by providing and using their expertise in DeFi to benefit all users of protocol.
+Ultimately, the success of running a decentralized fund management protocol is reliant on the managers. Therefore, the goal of Investin is to have the future owners of protocol be the Managers using the protocol.  The protocol has been keenly designed to incentivize traders to become Managers by providing and using their expertise in DeFi to benefit all users of protocol.
 
 
 ## Fund creation
 
 === "Solana"
-    Managers are required to interact with the Investin Program to create funds. Unique PDAs are created for each fund that will handle custody of the assets. The cost of creating funds is around ~0.02 Sol which is primarily the rent of the Fund Account to account for the state of the Fund. Only one fund can be created per address.
+    Managers are required to interact with the Investin protocol to create their funds. Unique PDAs are created for each fund that will handle custody of the assets. The cost of creating funds is around ~0.02 Sol which is primarily the rent of the Fund Account to account for the state of the Fund. Only one fund can be created per address.
 
     ```yaml
     FundInstruction::Initialize { min_amount, min_return, performance_fee_percentage }
@@ -23,23 +23,20 @@ The goal of IVN is to have the future owners of protocol be the Managers. Theref
 
 
 
-At the initialization of a fund the manager is expected to provide certain parameters like:
+At the initialization of a fund the manager is expected to provide certain parameters such as:
 
 * Minimum amount
 
-    This refers to minimum investable amount that an investor can invest in the fund. The manager can set this according to their criteria of investment strategy to attract their niche level of investors.
+    This refers to the minimum investable amount that an investor is required to deposit in the fund. The manager can set this according to their criteria of investment strategy to attract their target audience.
 
 * Minimum return
 
-    The manager can set the minimum returns they will be targeting before collecting the performance fee on the positive returns made on AUM. The higher it's set, the better with regards to gaining investors' confidence. This parameter once set cannot be changed and the contract will allow manager to collect their fee only when the minimum return criteria is met. The current minimum is set at a 5% return on investment.
+    The manager can set the minimum returns they will be targeting before collecting the performance fee on the positive returns made on AUM. The higher it's set, the better in terms of gaining investors' confidence. This parameter once set cannot be changed and the contract will allow manager to collect their fee only when the minimum return criteria is met. The current minimum is set at a 5% return on investment.
+
 
 * Performance fee
 
-    The manager needs to set the performance fee they will be collecting when the minimum return is met on each individual investment. The performance fee parameter is range bound to a ceiling of 40% and 1/10th of the total fee collected by the Manager is allocated towards Investin. 
-
-
-
-
+    The manager needs to set the performance fee they will be collecting when the minimum return is met on each individual investment. The performance fee parameter is range bound to a ceiling of 40% and 1/10th of the total performance fee collected by the Manager is allocated towards Investin. 
 
 
 
@@ -73,12 +70,12 @@ Investin aims to offer multiple avenues of trading to its Managers to reduce sli
 
 ### Trading pairs
 
-Investin factory contract maintains a whitelist of trading pairs approved for trading through the protocol. This whitelist can be updated through community voting.
+Investin factory contract maintains a whitelist of trading pairs approved for trading through the protocol. This whitelist is updated through community voting.
 
 
 ### Drawdowns
 
-Investin holds the discretionary power to dissolve any fund if the performance of any fund is very poor and investors are being rugged. This has been included to safeguard investors and promote a healthy community around the protocol.
+Investin holds the discretionary power to dissolve any fund if the performance of the fund is particularly poor and/or investors are being exploited. This has been included to safeguard investors and promote a healthy community around the protocol. Assets are returned to the corresponding owners.
 
 
 
@@ -92,7 +89,7 @@ A fixed 1% management fees has been set in the smart contracts which managers ca
 
 <!-- ### Swap fee
 
-The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation, they will be allowed to collect the fee they spent on swapping. `Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets` -->
+The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation, they will be allowed to collect the fees they spent on swapping. `Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets` -->
 
 ### Performance fee
 
