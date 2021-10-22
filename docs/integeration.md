@@ -25,14 +25,14 @@ Investin is built upon a highly composable architecture that integrates multiple
 
 ### Margin Trade 
 === "Solana"
-    Allowing funds to long or short tokens with levarage to achieve a desired position with available capital. Margin trades powered by:
+    Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by:
 
     1. Mango Markets
 
 
 
 === "EVM"
-    Allowing funds to long or short tokens with levarage to achieve a desired position with available capital. Margin trades powered by:
+    Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by:
 
     
 
@@ -41,7 +41,7 @@ Investin is built upon a highly composable architecture that integrates multiple
 === "Solana"
     Allowing Funds to lend tokens and generate yield through the most promising lending and leverage trading/farming protocols. Lending powered by:
     
-    1. Mango Markets (..soon)
+    1. Mango Markets (...soon)
     2. Solend (...soon)
     3. Solfarm (...soon)
 
