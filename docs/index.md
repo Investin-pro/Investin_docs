@@ -28,6 +28,7 @@ Investin is built using multiple protocols and currently deployed on Solana bloc
 
     1. Raydium                 
     2. Mango markets 
+    3. Orca
       
 
 === "EVM"
@@ -40,7 +41,6 @@ Investin is built using multiple protocols and currently deployed on Solana bloc
 
 ### Future integrations: 
 
-5. Orca
 6. Project Serum
 8. Saber
 9. Synthetify 
