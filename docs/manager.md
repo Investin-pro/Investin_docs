@@ -100,7 +100,7 @@ Manager is expected to keep the performance fee amount available in base denomin
 
 ## Staking (revenue sharing)
 
-Details will be added soon..
+Details will be added soon...
 
 
 ### Miscellaneous
