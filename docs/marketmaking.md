@@ -99,7 +99,7 @@ $$
 
 
 ###Performance Fee
-The performance fee is collected on all the mango rewards accured by market making and is set by manager on fund creation. The same percentage is also used to collect performance fee if the USDC evaluation of fund goes above the minimum return percentage.
+The performance fee is collected on all the mango rewards accrued by market making and is set by manager on fund creation. The same percentage is also used to collect performance fee if the USDC evaluation of fund goes above the minimum return percentage.
 
 
 
