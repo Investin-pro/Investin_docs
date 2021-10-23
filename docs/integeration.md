@@ -1,5 +1,5 @@
 
-Investin protocol has one of the most composable contract architecture, allowing funds to interact with almost any DeFi protocol on-chain.
+Investin is built upon a composable arcitecture that integrates multiple DeFi protocols to enable a waide range of DeFi activities to be executed through the Funds such as token swaps, margin trades, lending and liquidity mining.
 
 
 ### Swap

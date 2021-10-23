@@ -601,13 +601,13 @@
 <p>We see investors as key liquidity providers of the platform whose success and satisfaction would determine Investin's future. The protocol shall ensure both the users are well incentivized to conduct a trustless exchange of offerings, while managers are given access to almost all possible market activities with the fund assets, investors are provided with best in class UI with safety standards built-in to protect capital at all costs. </p>
 <h2 id="make-investment">Make investment<a class="headerlink" href="#make-investment" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
-<p>Investors are required to interact with the program and deposit in the base token of the fund, this amount is initially stored in the router vault under a PDA and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment. </p>
+<p>Investors are required to interact with the Fund program and deposit in the base denomination of the fund, this amount is initially stored in the router vault and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment independently. </p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::InvestorDeposit { amount }</span>
 </code></pre></div>
 <p>The investor receipt allows Investin protocol to provide features like:</p>
 <ol>
-<li>Investor stoploss i.e. investors can define the percentage of profit or loss at which they want to withdraw.</li>
-<li>Enables fund PDA's to be composable since the receipt can be used as debt receipt for each investor account.</li>
+<li>Enables investments to be composable and be used as a debt receipt for further use, including a custom performance claim by manager on investments that continue to stay active for longer periods.</li>
+<li>Investor stoploss i.e. investors can define the percentage of profit or loss at which they wish to withdraw.</li>
 </ol>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">EVM</label><div class="tabbed-content">

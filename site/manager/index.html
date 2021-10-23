@@ -678,7 +678,7 @@
                 
                 <h1 id="managerstraders">Managers/Traders<a class="headerlink" href="#managerstraders" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>The future owners of protocol on whose success the experiment of running a decentralized fund management protocol can be made possible in a truly trustless and non custodial way. The protocol has been keenly designed to incentivize traders who provide their expertise on crypto markets to benefit both the users of protocol.</p>
+<p>The future owners of protocol on whose success the experiment of running a decentralized fund management protocol can be made possible in a truly trustless and non custodial way. The protocol has been keenly designed to incentivize traders who provide their expertise in DeFi to benefit both the users of protocol.</p>
 <h2 id="fund-creation">Fund creation<a class="headerlink" href="#fund-creation" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
 <p>Managers are required to interact with the Investin Program to create funds. Unique PDAs are created for each fund that will handle custody of the assets. The cost of creating funds is around ~0.02 Sol which is primarily the rent of the Fund Account to account for the state of the Fund. Only one fund can be created per address.</p>
@@ -692,19 +692,19 @@
 </code></pre></div></p>
 </div>
 </div>
-<p>As the intialization function call can be seen above the manager is expected to provide certain paramters as:</p>
+<p>As the intialization function call can be seen above the manager is expected to provide certain paramters like:</p>
 <ul>
 <li>
 <p>Minimum amount</p>
-<p>This refers to minimum investable amount that an investor can invest in the fund. The manager can set this according to their criteria of investment strategy to attract their niche level of investors.</p>
+<p>This refers to the minimum investable amount that an investor is required to deposit in the fund. The manager can set this according to their criteria of investment strategy to attract their target audience.</p>
 </li>
 <li>
 <p>Minimum return</p>
-<p>The manager can set the minimum returns they will be targetting before collecting the performance fee on the profits made on the fund. The higher its set the better. This paramater once set cannot be changed and the contract will allow manager to collect there fee only when the minimum return criteria is met. The current range bound set is from 5-50% return on invesment</p>
+<p>The manager can set the minimum returns they will be targetting before collecting the performance fee on the profitable returns made on the fund. The higher its set, the better in terms of gaining investors' confidence. This paramater once set cannot be changed and the contract will allow manager to collect their fee only when the minimum return criteria is met. The current value is set to be a minimum of 5% return on invesment.</p>
 </li>
 <li>
 <p>Performance fee</p>
-<p>The manager needs to set the performance fee they will be collecting when the minimum return set by them is met on total assets under management. The performance fee parameter is range bound and can be set in 5-50% range.</p>
+<p>The manager needs to set the performance fee they will be collecting when the minimum return set by them is met on each investment independently. The performance fee parameter is range bound to a ceiling of 40% and 1/10<sup>th</sup> of the total fee collected by the Manager is allocated to the protocol.</p>
 </li>
 </ul>
 <h2 id="trading">Trading<a class="headerlink" href="#trading" title="Permanent link">&para;</a></h2>
@@ -727,7 +727,7 @@
 <h2 id="fees">Fees<a class="headerlink" href="#fees" title="Permanent link">&para;</a></h2>
 <p>Manager are entitled to collect fees over the investments to insure longetivity in relations between them and investors</p>
 <h3 id="management-fee">Management fee<a class="headerlink" href="#management-fee" title="Permanent link">&para;</a></h3>
-<p>A fixed 1% management fees has been set in the smart contracts which managers can collect when they move the funds from router to their fund contracts. This amount will be shown on manager dashboard interface. </p>
+<p>A fixed 1% management fees has been set in the smart contracts which managers can collect when they move the funds from router to their fund contracts. This amount is intended to incentivise the Manager for the costs borne for transaction fees and can be collected from the Manager Dashboard. </p>
 <!-- ### Swap fee
 
 The contract will keep a count of swaps done by the manager and if the fund's performance is above the minimum return set during fund creation they will be allowed to collect the fee they spent on swapping. `Manager is expected to keep the swap fee in base token of the fund, they won't be able to collect the fee in case the funds are invested in other assets` -->
