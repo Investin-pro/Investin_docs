@@ -28,7 +28,7 @@ Investin protocol has one of the most composable contract architecture, allowing
     Integerated protocols
 
     1. Raydium                 
-    2. Mango markets
+    2. Mango markets 
     3. Orca
       
 
