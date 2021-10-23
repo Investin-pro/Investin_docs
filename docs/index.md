@@ -1,6 +1,6 @@
 # Overview
 
-Investin is the first Decentralized Asset Management protocol live on Solana and BSC that transforms aspiring traders into Fund Managers by providing them a turstless and non-custodial platform as a service for active management of capital. This enables investors to earn passive returns on the capital invested in the funds whilst retaining the custody of their assets all along. 
+Investin is the first Decentralized Fund Management protocol live on Solana and BSC that transforms aspiring traders into Fund Managers by providing them a turstless and non-custodial platform as a service for active management of capital. This enables investors to earn passive returns on the capital invested in the funds whilst retaining the custody of their assets all along. 
 
 # On-chain visibility
 
