@@ -33,7 +33,6 @@ At the initialization of a fund the manager is expected to provide certain param
 
     The manager can set the minimum returns they will be targeting before collecting the performance fee on the positive returns made on AUM. The higher it's set, the better in terms of gaining investors' confidence. This parameter once set cannot be changed and the contract will allow manager to collect their fee only when the minimum return criteria is met. The current minimum is set at a 5% return on investment.
 
-
 * Performance fee
 
     The manager needs to set the performance fee they will be collecting when the minimum return is met on each individual investment. The performance fee parameter is range bound to a ceiling of 40% and 1/10th of the total performance fee collected by the Manager is allocated towards Investin. 

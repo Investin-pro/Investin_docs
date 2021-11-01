@@ -1,5 +1,5 @@
-
 Investin is built upon a highly composable architecture that integrates multiple DeFi protocols. This enables Managers with a wide range of DeFi strategies to be executed through their Funds such as token swaps, margin trades, lending, and liquidity mining (farming).
+
 
 ### Swap
 === "Solana"
@@ -9,7 +9,7 @@ Investin is built upon a highly composable architecture that integrates multiple
     2. Orca protocol: All tokens listed on Orca can be traded through Investin funds. Orca whitelists their trading pairs however Investin will further investigate before allowing them to be traded through Investin Funds. 
     3. Project Serum (...soon)
     4. Saber (...soon)
- 
+
 
 
 

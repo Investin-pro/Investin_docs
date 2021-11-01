@@ -17,7 +17,7 @@ We see investors as the main users who provide capital to capable Managers. Thei
     ``` 
 
     The investor receipt allows Investin protocol to provide features like:
-    
+
     1. Enables investments to be composable and be used as a debt receipt for further use. This includes a flexible performance claim by the Manager on investments that continue to stay active for longer periods.
     2. Investor stoploss i.e. investors can define the percentage of profit or loss at which they wish to withdraw.
 
