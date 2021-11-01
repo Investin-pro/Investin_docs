@@ -1,13 +1,15 @@
-
-Investin is built upon a composable arcitecture that integrates multiple DeFi protocols to enable a waide range of DeFi activities to be executed through the Funds such as token swaps, margin trades, lending and liquidity mining.
+Investin is built upon a highly composable architecture that integrates multiple DeFi protocols. This enables Managers with a wide range of DeFi strategies to be executed through their Funds such as token swaps, margin trades, lending, and liquidity mining (farming).
 
 
 ### Swap
 === "Solana"
     Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:
+    
+    1. Raydium protocol: All tokens listed on Raydium can be traded through Investin Funds but to prevent malicious actors from exploiting the funds by listing and trading fake/valueless tokens we maintain an expandable token whitelist.
+    2. Orca protocol: All tokens listed on Orca can be traded through Investin funds. Orca whitelists their trading pairs however Investin will further investigate before allowing them to be traded through Investin Funds. 
+    3. Project Serum (...soon)
+    4. Saber (...soon)
 
-    1. Raydium protocol: All tokens listed on Raydium can be traded through Investin funds but to prevent malicious actors from exploiting the funds by listing and trading into fake/valueless tokens we maintain an expandable token whitelist, mandated across all our funds.
-    2. Orca: All tokens listed on Raydium can be traded through Investin funds but to prevent malicious actors from exploiting the funds by listing and trading into fake/valueless tokens we maintain an expandable token whitelist, mandated across all our funds.
 
 
 
@@ -21,30 +23,32 @@ Investin is built upon a composable arcitecture that integrates multiple DeFi pr
 
 
 
-### Margin trade 
+### Margin Trade 
 === "Solana"
-    Allowing funds the ability to leverage long or short tokens to hedge against downside risks. Margin trades powered by:
+    Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by:
 
     1. Mango Markets
 
 
 
 === "EVM"
-    Allowing funds the ability to leverage long or short tokens to hedge against downside risks. Margin trades powered by:
+    Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by:
 
     
 
 
 ### Lending
 === "Solana"
-    Empowering funds with the capability to lend tokens on the most promising lending and leverage trading/farming protocols out there to hedge downside risks. Lending powered by:
+    Allowing Funds to lend tokens and generate yield through the most promising lending and leverage trading/farming protocols. Lending powered by:
     
-    1. Mango Markets (..soon)
+    1. Mango Markets (...soon)
+    2. Solend (...soon)
+    3. Solfarm (...soon)
 
 
 
 === "EVM"
-    Empowering funds with the capability to lend tokens on the most promising lending and leverage trading/farming protocols out there to hedge downside risks. Lending powered by:
+   Allowing Funds to lend tokens and generate yield through the most promising lending and leverage trading/farming protocols. Lending powered by:
     
     1. Alpaca Finance
     2. Belt Finance
@@ -56,7 +60,7 @@ Investin is built upon a composable arcitecture that integrates multiple DeFi pr
 
 ### Farming
 === "Solana"
-    Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: 
+    Allowing Funds to provide liquidity and stake AMM LPs earning LP fees and farm reward tokens creating greater yield opportunities and balance for Investin Funds. Farming powered by: 
     
     1. Orca (...soon)
     2. Saber (...soon)
@@ -65,7 +69,7 @@ Investin is built upon a composable arcitecture that integrates multiple DeFi pr
 
 
 === "EVM"
-    Providing liquidity on AMMs to earn LP fees and staking the LP tokens to farm reward tokens allows our funds to have a balanced exposure to markets all the time. Farming powered by: 
+    Allowing Funds to provide liquidity and stake AMM LPs earning LP fees and farm reward tokens creating greater yield opportunities and balance for Investin Funds. Farming powered by:
     
     1. WaultSwap Farms
     2. PancakeSwap Farms

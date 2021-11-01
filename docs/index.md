@@ -1,23 +1,22 @@
 # Overview
 
-Investin is the first Decentralized Fund Management protocol live on Solana and BSC that transforms aspiring traders into Fund Managers by providing them a turstless and non-custodial platform as a service for active management of capital. This enables investors to earn passive returns on the capital invested in the funds whilst retaining the custody of their assets all along. 
+Investin is the first Decentralized Asset Management protocol live on Solana and BSC that transforms aspiring traders into Fund Managers by providing them a trustless and non-custodial platform for active management of capital. This enables investors to earn passive returns on the capital invested in the funds whilst retaining the custody of their assets.
 
 # On-chain visibility
 
- The trading history, positions, active Assets Under Management (AUM) and returns performance of Investin's Funds are always transparent. Investors are empowered to make an informed decision before investing, withdrawaing or staying invested in a particular fund by having access to real-time and historical on-chain data. 
+The trading history, positions, active Assets Under Management (AUM), and returns performance of Investin's Funds are always transparent. Investors are empowered to make an informed decision before investing, withdrawing, or staying invested in a particular fund by having access to real-time and historical on-chain data.
 
- Fund Managers who showcase consistent perfomance on Investin and outperform other managers in the market, are able to access more capital to trade with, by attracting new investments and generating higher returns, enhancing the protocol's growth and user adoption.
+Fund Managers who have consistent performance on Investin and outperform other managers in the market will be showcased weekly. This will allow them to attract new investments and continue generating higher returns further enhancing the protocol's growth and user adoption.
 
 ## Protocol Users
 
 * Managers/Traders:
 
-The driving force and future owners of Investin, who actively manage assets on their Funds to generate returns on the invested capital and attract further investments.
+The driving force and future owners of Investin. They actively manage assets of their Funds to generate returns on the invested capital and attract future investments.
 
 * Investors 
 
-The enablers of the protocol who provide capital to Funds on Investin in the form of investments. The protocol ensures security and allows investors to retain full ownership of thier investments.
-
+The main enablers of the protocol who provide capital to Funds on Investin. The protocol allows investors to retain full custody as they choose their Manager according to their personal risk tolerance aligning incentives perfectly.
 
 ## Decentralized protocols integrated
 
@@ -28,7 +27,7 @@ Investin protocol has one of the most composable contract architecture, allowing
     Integerated protocols
 
     1. Raydium                 
-    2. Mango markets 
+    2. Mango Markets
     3. Orca
       
 
@@ -42,8 +41,10 @@ Investin protocol has one of the most composable contract architecture, allowing
 
 ### Future integrations: 
 
-5. Project Serum
-6. Solend
-8. Saber
-9. Synthetify 
+1. Project Serum
+2. Solend
+3. Tulip Protocol
+4. Saber
+5. Synthetify 
+
 

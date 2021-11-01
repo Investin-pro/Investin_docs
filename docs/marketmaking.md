@@ -11,7 +11,7 @@ Basic requirements:
 
 Steps:
 
-1. Create fund and set an delegate address for sending instructions
+1. Create fund and set the delegate address for sending instructions
 2. Invest USDC in fund and have some SOL in delegate address
 2. Clone basic market making bot [repo][2]
 [2]:https://github.com/Investin-pro/mango-explorer/tree/investin_mm
@@ -99,7 +99,7 @@ $$
 
 
 ###Performance Fee
-The performance fee is collected on all the mango rewards accured by market making and is set by manager on fund creation. The same percentage is also used to collect performance fee if the USDC evaluation of fund goes above the minimum return percentage.
+The performance fee is collected on all the mango rewards accrued by market making and is set by manager on fund creation. The same percentage is also used to collect performance fee if the USDC evaluation of fund goes above the minimum return percentage.
 
 
 
@@ -107,5 +107,5 @@ The performance fee is collected on all the mango rewards accured by market maki
 
 
 
-Have any doubts or stuck at any step please join our [discord][4] for assitance
+Have any doubts or stuck at any step please join our [discord][4] for assistance
 [4]:https://discord.gg/jk9bmbwh74
