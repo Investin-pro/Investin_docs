@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://investin-pro.github.io/Investin_docs/investor/">
       
       <link rel="icon" href="../assets/investin.png">
-      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.2.0">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.fe914879.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ba0d045b.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -86,7 +86,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="Investin" class="md-header__button md-logo" aria-label="Investin" data-md-component="logo">
       
@@ -166,6 +168,7 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -173,6 +176,7 @@
       
         
           
+            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -266,6 +270,7 @@
     </ul>
   </div>
 </nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -363,6 +368,8 @@
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -511,6 +518,8 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -598,15 +607,15 @@
                 
                 <h1 id="investors">Investors<a class="headerlink" href="#investors" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>We see investors as key liquidity providers of the platform whose success and satisfaction would determine Investin's future. The protocol shall ensure both the users are well incentivized to conduct a trustless exchange of offerings, while managers are given access to almost all possible market activities with the fund assets, investors are provided with best in class UI with safety standards built-in to protect capital at all costs. </p>
+<p>We see investors as the main users who provide capital to capable Managers. Their success and satisfaction will determine Investin's future. The protocol shall ensure both types of users are well incentivized to conduct a trustless business relationship and that managers are given access to almost all possible DeFi strategies with the fund assets. Investors are provided with a best-in-class UI with built-in safety standards. Protecting Investor capital is the main priority. </p>
 <h2 id="make-investment">Make investment<a class="headerlink" href="#make-investment" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
-<p>Investors are required to interact with the Fund program and deposit in the base denomination of the fund, this amount is initially stored in the router vault and an investor account is created to identify each investment, essentially making unique investment receipts to handle each investment independently. </p>
+<p>Investors are required to interact with the Fund program and deposit in the base denomination of the fund. This amount is initially stored in the router vault and an investor account is created to identify each investment. A unique investment receipt corresponding to each individual's investment is also created in this process.</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::InvestorDeposit { amount }</span>
 </code></pre></div>
 <p>The investor receipt allows Investin protocol to provide features like:</p>
 <ol>
-<li>Enables investments to be composable and be used as a debt receipt for further use, including a custom performance claim by manager on investments that continue to stay active for longer periods.</li>
+<li>Enables investments to be composable and be used as a debt receipt for further use. This includes a flexible performance claim by the Manager on investments that continue to stay active for longer periods.</li>
 <li>Investor stoploss i.e. investors can define the percentage of profit or loss at which they wish to withdraw.</li>
 </ol>
 </div>
@@ -616,11 +625,11 @@ We use a different approach at solving the fund management system by using the E
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">function makeInvestment(uint amount) external returns(uint256)</span>
 </code></pre></div>
 <h3 id="ivny-token">IVNy token<a class="headerlink" href="#ivny-token" title="Permanent link">&para;</a></h3>
-<p>IVNy is a non-fungible token based on OpenZeppelin's ERC 721 standard, this token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund.<code>Beware the loss of access to the address holding IVNy token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.</code></p>
-<p>Advantages of using nft: </p>
+<p>IVNy is a non-fungible token based on OpenZeppelin's ERC 721 standard. This token is used as a confirmation receipt that all investors shall receive on a successful investment transaction. The token holds no value and is merely used to identify investors of a particular fund. <code>Beware the loss of access to the address holding IVNy token can result to loss of investment as contracts are hardcoded and only recognize investors through these non-fungible tokens.</code></p>
+<p>Advantages of using an NFT: </p>
 <ol>
 <li>Once minted investor can use the same token in the wallet to interact with the protocol at almost 40% less gas expense since the protocol will know details about the investor, token acts as a marker.</li>
-<li><mark>We plan to integrate lending feature for IVNy nft holders i.e. investors can borrow by staking their IVNy token as collateral.</mark></li>
+<li><mark>We plan to integrate lending feature for IVNy NFT holders i.e. investors can borrow by staking their IVNy token as collateral.</mark></li>
 <li>Assets can be added to existing allocation in any fund and partial assets can be withdrawn as well</li>
 </ol>
 </div>
@@ -637,7 +646,7 @@ We use a different approach at solving the fund management system by using the E
     ``` -->
 
 <h3 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h3>
-<p>The performance on invested amount can be queried on-chain and the smart contracts use on-chain amm pool reserves to calculate asset price hence the performance will be subject to an error &plusmn;2% but upon ending investment the asset evaluation done by contracts will be final and true to the exact decimal at all times. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.</p>
+<p>The performance on an invested amount is queried on-chain and the smart contracts use on-chain AMM liquidty pool reserves to calculate asset price. Hence, the performance will be subject to an error(&plusmn;2%) but upon ending the investment the price at execution determines the final performance. Blockchain is open by design and any investor can query the fund address to keep tabs on performance.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solana</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">the fund is a program derived address(PDA)</span> 
 </code></pre></div>
@@ -653,20 +662,20 @@ We use a different approach at solving the fund management system by using the E
 </div>
 <h2 id="end-investment">End Investment<a class="headerlink" href="#end-investment" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Solana</label><div class="tabbed-content">
-<p>This instruction can only be called by investor address and consists of multiple transactions to overcome the current limitation of 35 accounts and 200,000 compute limit per transaction. To achieve the composablilty into Investin's architecute we handle the withdrawal process in multiple steps in each step the specific updates on investor account(receipt) is handled. <code>There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.</code></p>
+<p>This instruction can only be called by an Investor's address. In order to achieve the composability of Investin's architecture we handle the withdrawal process in multiple steps. This is to overcome the current limitation of 35 accounts and 200,000 compute limit per transaction.  In each step the specific transaction updates on the investor account(receipt). <code>There is no lockup period; Investors remain in full control of funds and can deposit/withdraw at their convenience.</code></p>
 <p>Example flow:</p>
-<p>A fund having position in 4 assets that are swapped from Raydium and 2 margin positions open on mango markets is handled in the following transaction flows:</p>
+<p>A Fund having positions in 4 assets that originated from Raydium and 2 margin positions open on Mango markets is handled in the following transactions:</p>
 <ol>
-<li>The investor share is calculated on the total fund AUM. The assets owed by fund are accounted in this stage.</li>
-<li>The dues on fund assets are settled and sent to investor wallet address</li>
-<li>The borrows are settled on both margin positions and according to investors' share, the positions are closed. Is is important to note here that the health of margin account remains same, only the margin amount is changed.</li>
-<li>The dues on margin positions are settled by withdrawing from mango account and sending directly to investor address</li>
+<li>The Investor share is calculated on the total fund AUM. The assets owed by fund are accounted in this stage.</li>
+<li>The necessary outstanding spot positions in the Fund are settled and sent to the Investor's wallet address</li>
+<li>The borrows are settled on both margin positions and according to Investors' share, the positions are closed. It is important to note here that the health of margin account remains same since only the margin amount is changed.</li>
+<li>The Investor's share of the margin positions are settled by withdrawing from the Mango account and sending directly to the Investor's address.</li>
 </ol>
 </div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Solidity</label><div class="tabbed-content">
-<p>This function can only be called by investor's holding IVNy token and consists of two sub-functions which gives investor's the option to either collect 100% of their investment or make a partial withdrawal to book profits on invested amount.</p>
-<p>The investors have the option to recieve their investment according to fund allocation which is the cheapest option to withdraw or they can provide the token in which they would like to get their investment withdrawn from fund.
-<code>There is no lockup period investors remain in full control of funds and can deposit/withdraw at their convenience.</code></p>
+<p>This function can only be called by Investors holding IVNy token and consists of two sub-functions which gives Investors the option to either collect 100% of their investment or make a partial withdrawal to book profits on invested amount.</p>
+<p>The investors have the option to receive their investment according to fund allocation which is the cheapest option to withdraw or they can provide the token in which they would like to get their investment withdrawn from fund.
+<code>There is no lockup period; Investors remain in full control of funds and can deposit/withdraw at their convenience.</code></p>
 </div>
 </div>
 <!-- === "Solidity"
@@ -684,11 +693,11 @@ We use a different approach at solving the fund management system by using the E
 <ul>
 <li>
 <p>Management fee</p>
-<p>A 2% upfront management fee is deducted on each successful investment out of which 1% is given to the manager who uses the fees to manage expenses of running the fund which includes transferring tokens to fund contract and calling swap functions to trade using amm's. The management fee won't be deducted if the investor withdraws their investment before the manager moves tokens to their fund contract. </p>
+<p>A 2% upfront management fee is deducted on each successful investment out of which 1% is given to the manager who uses the fees to manage expenses of running the fund. This includes transferring tokens to fund contract and transaction cost of trading with AMM LPs. The management fee will not be deducted if the Investor withdraws their investment before the Manager moves tokens from the router vault to their fund contract. </p>
 </li>
 <li>
 <p>Performance fee</p>
-<p>The managers can only collect their performance fee if they reach the minimum return on investment they set, this minimum ROI is range bound and can be anywhere between 5-50%. If the manager makes less than the ROI they set, the investors won't be charged any performance fee and can withdraw at any time. This system of reaching minimum ROI thereby only encourages managers to make more profits and creates a positive feedback loop.</p>
+<p>The managers can only collect their performance fee if they reach the minimum return on the individual's investment. This minimum ROI is range bound and can be anywhere between 5-40%. 1/10<sup>th</sup> of the total fee collected by the Manager is allocated to the protocol. If the manager makes less than the ROI they set, the investors will not be charged any performance fee and can withdraw at any time. This system of reaching a minimum ROI for each investor before being able to collect fees only encourages Managers to continue making strong investment decisions for his Investors.</p>
 </li>
 </ul>
 <!-- === "Solidity"
@@ -709,8 +718,7 @@ We use a different approach at solving the fund management system by using the E
 
 <h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Investors can withdraw funds from the router without incurring any fee if the withdrawal is done before the manager moves tokens to fund contract</li>
-<li>There is a possibility investment made to a fund hasnt been moved to fund contract which means the investment will be in an inactive state and no performance made by the relevant fund will be reflected on such investment. The state of investment can be checked through state function or on the investor dashboard. </li>
+<li>There is a possibility that an investment made to a fund has not been moved to fund contract by the Manager for an extended period of time. This means the investment will be in an inactive state and no performance made by the relevant fund will be reflected on such investment. The state of investment can be checked through state function or on the Investor dashboard. </li>
 </ul>
                 
               
@@ -776,10 +784,12 @@ We use a different approach at solving the fund management system by using the E
             Copyright &copy; 2020 - 2021 Investin
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -827,7 +837,7 @@ We use a different approach at solving the fund management system by using the E
         
       
       <a href="https://discord.com/invite/Yf54h9B" target="_blank" rel="noopener" title="discord.com" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541zM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241z"/></svg>
       </a>
     
   </div>
@@ -840,10 +850,10 @@ We use a different approach at solving the fund management system by using the E
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "search.suggest", "content.tabs.link"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "search.suggest", "content.tabs.link"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.716f8af4.min.js"></script>
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       
