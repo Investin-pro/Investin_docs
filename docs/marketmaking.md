@@ -4,6 +4,8 @@
 
 Here, we provide a step-by-step guide to create a market making fund and connect it to a bot running locally or on the cloud.
 
+And if reading docs is not your thing checkout the demo video here: https://youtu.be/qLGCvsSx__U
+
 Basic requirements:
 
 * Python v3.8
