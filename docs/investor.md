@@ -129,7 +129,7 @@ The performance on an invested amount is queried on-chain and the smart contract
 
 * Performance fee
 
-    The managers can only collect their performance fee if they reach the minimum return on the individual's investment. This minimum ROI is range bound and can be anywhere between 5-40%. 1/10th of the total fee collected by the Manager is allocated to the protocol. If the manager makes less than the ROI they set, the investors will not be charged any performance fee and can withdraw at any time. This system of reaching a minimum ROI for each investor before being able to collect fees only encourages Managers to continue making strong investment decisions for his Investors.
+    The managers can only collect their performance fee if they reach the minimum return on the individual's investment. This minimum ROI is range bound and can be anywhere between 5-40%. 1/10th of the total fee collected by the Manager is allocated to the protocol. If the manager makes less than the ROI they set, the investors will not be charged any performance fee and can withdraw at any time. This system of reaching a minimum ROI for each investor before being able to collect fees only encourages Managers to continue making strong investment decisions for their Investors.
 
 <!-- === "Solidity"
     

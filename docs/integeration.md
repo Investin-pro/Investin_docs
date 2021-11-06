@@ -47,12 +47,11 @@ Investin is built upon a highly composable architecture that integrates multiple
 
 
 
-=== "EVM"
+<!-- === "EVM"
    Allowing Funds to lend tokens and generate yield through the most promising lending and leverage trading/farming protocols. Lending powered by:
     
     1. Alpaca Finance
-    2. Belt Finance
-   
+    2. Belt Finance -->
     
 
 

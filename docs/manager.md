@@ -42,7 +42,7 @@ At the initialization of a fund the manager is expected to provide certain param
 
 ## Trading
 
-Investin aims to offer multiple avenues of trading to its Managers to reduce slippage and trading fees thus maximizing users' profits. Currently we offer trading on [Raydium][1], [Orca][2], [Pancake][4], and soon on [Sushi][3].
+Investin aims to offer multiple avenues of trading to its Managers to reduce slippage and trading fees thus maximizing users' profits. Currently we offer trading on [Raydium][1] and [Orca][2]
 
 [1]: https://raydium.io/swap/
 [2]: https://orca.so
