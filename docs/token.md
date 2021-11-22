@@ -38,7 +38,7 @@ Managers that top the leaderboards are rewarded through a performance mining pro
 
 
 $$
-Score(fund) = (\frac{Perf_{fund}}{Perf_{max}}W_{perf}) + (\frac{AUM_{fund}}{AUM_{max}}W_{aum}) + (\frac{Nol_{fund}}{Nol_{fund}}W_{nol})
+Score(fund) = (\frac{Perf_{fund}}{Perf_{max}}W_{perf}) + (\frac{AUM_{fund}}{AUM_{max}}W_{aum}) + (\frac{Nol_{fund}}{Nol_{max}}W_{nol})
 $$ 
 
 <!-- * Perf~max~ : Highest fund performance relative to last epoch    -->

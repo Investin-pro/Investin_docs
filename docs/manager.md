@@ -69,8 +69,11 @@ Investin aims to offer multiple avenues of trading to its Managers to reduce sli
 
 ### Trading pairs
 
-Investin factory contract maintains a whitelist of trading pairs approved for trading through the protocol. This whitelist is updated through community voting.
+Investin factory contract maintains a [whitelist][5] of trading pairs approved for trading through the protocol. This [whitelist][5] is updated through community voting.
 
+You can find the whitelist [here][6] and [here][5]
+[5]: https://www.coingecko.com/en/portfolios/public/investintradable
+[6]: https://sol.beta.investin.pro/token-price
 
 ### Drawdowns
 

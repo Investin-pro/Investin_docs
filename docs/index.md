@@ -4,7 +4,7 @@ Investin is the first Decentralized Asset Management protocol live on Solana and
 
 # On-chain visibility
 
-The trading history, positions, active Assets Under Management (AUM), and returns performance of Investin's Funds are always transparent. Investors are empowered to make an informed decision before investing, withdrawing, or staying invested in a particular fund by having access to real-time and historical on-chain data.
+The trading history, positions, Assets Under Management (AUM), and returns performance of Investin's Funds are always transparent. Investors are empowered to make an informed decision before investing, withdrawing, or staying invested in a particular fund by having access to real-time and historical on-chain data.
 
 Fund Managers who have consistent performance on Investin and outperform other managers in the market will be showcased weekly. This will allow them to attract new investments and continue generating higher returns further enhancing the protocol's growth and user adoption.
 
