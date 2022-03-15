@@ -29,6 +29,7 @@ Investin protocol has one of the most composable contract architecture, allowing
     1. Raydium                 
     2. Mango Markets
     3. Orca
+    4. Jupiter Aggregator
       
 
 === "EVM"
@@ -46,5 +47,6 @@ Investin protocol has one of the most composable contract architecture, allowing
 3. Tulip Protocol
 4. Saber
 5. Synthetify 
+6. Friktion
 
 
