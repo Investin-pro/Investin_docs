@@ -415,6 +415,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#optionsdovs" class="md-nav__link">
+    Options/DOVs
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -519,6 +526,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#optionsdovs" class="md-nav__link">
+    Options/DOVs
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -538,41 +552,40 @@
                 
                   <h1>Integrations</h1>
                 
-                <p>Investin is built upon a highly composable architecture that integrates multiple DeFi protocols. This enables Managers with a wide range of DeFi strategies to be executed through their Funds such as token swaps, margin trades, lending, and liquidity mining (farming).</p>
+                <p>Investin is built upon a highly composable architecture that integrates multiple DeFi protocols. This enables Managers with a wide range of DeFi strategies to be executed through their Funds such as token swaps, margin trades, options, lending, and liquidity mining (farming).</p>
 <h3 id="swap">Swap<a class="headerlink" href="#swap" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
 <p>Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:</p>
 <ol>
 <li>Raydium protocol: All tokens listed on Raydium can be traded through Investin Funds but to prevent malicious actors from exploiting the funds by listing and trading fake/valueless tokens we maintain an expandable token whitelist.</li>
 <li>Orca protocol: All tokens listed on Orca can be traded through Investin funds. Orca whitelists their trading pairs however Investin will further investigate before allowing them to be traded through Investin Funds. </li>
+<li>Jupiter Aggregator: The leading liquidity aggregator on Solana powering Investin's swap engine to give best prices on every swap.</li>
 <li>Project Serum (...soon)</li>
-<li>Saber (...soon)</li>
-</ol>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">EVM</label><div class="tabbed-content">
-<p>Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:</p>
-<ol>
-<li>Pancakeswap</li>
-<li>WaultSwap</li>
 </ol>
 </div>
 </div>
+<!-- === "EVM"
+    Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:
+
+    1. Pancakeswap
+    2. WaultSwap -->
+
 <h3 id="margin-trade">Margin Trade<a class="headerlink" href="#margin-trade" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solana</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solana</label><div class="tabbed-content">
 <p>Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by:</p>
 <ol>
 <li>Mango Markets</li>
 </ol>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">EVM</label><div class="tabbed-content">
-<p>Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by:</p>
 </div>
-</div>
+<!-- === "EVM"
+    Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by: -->
+
 <h3 id="lending">Lending<a class="headerlink" href="#lending" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Solana</label><div class="tabbed-content">
 <p>Allowing Funds to lend tokens and generate yield through the most promising lending and leverage trading/farming protocols. Lending powered by:</p>
 <ol>
-<li>Mango Markets (...soon)</li>
+<li>Mango Markets</li>
 <li>Solend (...soon)</li>
 <li>Solfarm (...soon)</li>
 </ol>
@@ -585,7 +598,7 @@
     2. Belt Finance -->
 
 <h3 id="farming">Farming<a class="headerlink" href="#farming" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Solana</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Solana</label><div class="tabbed-content">
 <p>Allowing Funds to provide liquidity and stake AMM LPs earning LP fees and farm reward tokens creating greater yield opportunities and balance for Investin Funds. Farming powered by: </p>
 <ol>
 <li>Orca (...soon)</li>
@@ -593,11 +606,19 @@
 <li>SolFarm (...soon)</li>
 </ol>
 </div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">EVM</label><div class="tabbed-content">
-<p>Allowing Funds to provide liquidity and stake AMM LPs earning LP fees and farm reward tokens creating greater yield opportunities and balance for Investin Funds. Farming powered by:</p>
+</div>
+<!-- === "EVM"
+    Allowing Funds to provide liquidity and stake AMM LPs earning LP fees and farm reward tokens creating greater yield opportunities and balance for Investin Funds. Farming powered by:
+
+    1. WaultSwap Farms
+    2. PancakeSwap Farms -->
+
+<h3 id="optionsdovs">Options/DOVs<a class="headerlink" href="#optionsdovs" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Solana</label><div class="tabbed-content">
+<p>Allowing Funds to access options and hedge against volatility of different crypto assets or generate yeilds through covered call overwitiing selling, Cash secured put strategies and much more. </p>
 <ol>
-<li>WaultSwap Farms</li>
-<li>PancakeSwap Farms</li>
+<li>Zeta markets (...soon)</li>
+<li>Friktion (...soon)</li>
 </ol>
 </div>
 </div>
