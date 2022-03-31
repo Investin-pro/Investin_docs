@@ -32,13 +32,13 @@ Investin protocol has one of the most composable contract architecture, allowing
     4. Jupiter Aggregator
       
 
-=== "EVM"
+<!-- === "EVM"
     Integerated protocols
 
     1. Pancakeswap
     2. Waultswap
     3. Alpaca Finance
-    4. Belt Finance
+    4. Belt Finance -->
 
 ### Future integrations: 
 
