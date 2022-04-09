@@ -682,7 +682,7 @@
 <h2 id="fund-creation">Fund creation<a class="headerlink" href="#fund-creation" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
 <p>Managers are required to interact with the Investin protocol to create their funds. Unique PDAs are created for each fund that will handle custody of the assets. The cost of creating funds is around ~0.02 Sol which is primarily the rent of the Fund Account to account for the state of the Fund. Only one fund can be created per address.</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::Initialize { min_amount, min_return, performance_fee_percentage }</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">FundInstruction::Initialize { min_amount, performance_fee_percentage }</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">EVM</label><div class="tabbed-content">
@@ -698,10 +698,12 @@
 <p>Minimum amount</p>
 <p>This refers to the minimum investable amount that an investor is required to deposit in the fund. The manager can set this according to their criteria of investment strategy to attract their target audience.</p>
 </li>
-<li>
-<p>Minimum return</p>
-<p>The manager can set the minimum returns they will be targeting before collecting the performance fee on the positive returns made on AUM. The higher it's set, the better in terms of gaining investors' confidence. This parameter once set cannot be changed and the contract will allow manager to collect their fee only when the minimum return criteria is met. The current minimum is set at a 5% return on investment.</p>
-</li>
+</ul>
+<!-- * Minimum return
+
+    The manager can set the minimum returns they will be targeting before collecting the performance fee on the positive returns made on AUM. The higher it's set, the better in terms of gaining investors' confidence. This parameter once set cannot be changed and the contract will allow manager to collect their fee only when the minimum return criteria is met. The current minimum is set at a 5% return on investment. -->
+
+<ul>
 <li>
 <p>Performance fee</p>
 <p>The manager needs to set the performance fee they will be collecting when the minimum return is met on each individual investment. The performance fee parameter is range bound to a ceiling of 40% and 1/10<sup>th</sup> of the total performance fee collected by the Manager is allocated towards Investin. </p>

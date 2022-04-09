@@ -10,7 +10,7 @@ Ultimately, the success of running a decentralized fund management protocol is r
     Managers are required to interact with the Investin protocol to create their funds. Unique PDAs are created for each fund that will handle custody of the assets. The cost of creating funds is around ~0.02 Sol which is primarily the rent of the Fund Account to account for the state of the Fund. Only one fund can be created per address.
 
     ```yaml
-    FundInstruction::Initialize { min_amount, min_return, performance_fee_percentage }
+    FundInstruction::Initialize { min_amount, performance_fee_percentage }
     ```
 
 
@@ -29,9 +29,9 @@ At the initialization of a fund the manager is expected to provide certain param
 
     This refers to the minimum investable amount that an investor is required to deposit in the fund. The manager can set this according to their criteria of investment strategy to attract their target audience.
 
-* Minimum return
+<!-- * Minimum return
 
-    The manager can set the minimum returns they will be targeting before collecting the performance fee on the positive returns made on AUM. The higher it's set, the better in terms of gaining investors' confidence. This parameter once set cannot be changed and the contract will allow manager to collect their fee only when the minimum return criteria is met. The current minimum is set at a 5% return on investment.
+    The manager can set the minimum returns they will be targeting before collecting the performance fee on the positive returns made on AUM. The higher it's set, the better in terms of gaining investors' confidence. This parameter once set cannot be changed and the contract will allow manager to collect their fee only when the minimum return criteria is met. The current minimum is set at a 5% return on investment. -->
 
 * Performance fee
 

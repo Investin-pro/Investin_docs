@@ -42,11 +42,11 @@ Investin protocol has one of the most composable contract architecture, allowing
 
 ### Future integrations: 
 
-1. Project Serum
-2. Solend
-3. Tulip Protocol
+1. Friktion 
+2. Synthetify 
+3. Zeta markets
 4. Saber
-5. Synthetify 
-6. Friktion
+5. Tulip Protocol 
+6. Solend
 
 
