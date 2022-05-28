@@ -30,6 +30,7 @@ Investin protocol has one of the most composable contract architecture, allowing
     2. Mango Markets
     3. Orca
     4. Jupiter Aggregator
+    5. Friktion
       
 
 <!-- === "EVM"
@@ -41,12 +42,11 @@ Investin protocol has one of the most composable contract architecture, allowing
     4. Belt Finance -->
 
 ### Future integrations: 
-
-1. Friktion 
-2. Synthetify 
-3. Zeta markets
-4. Saber
-5. Tulip Protocol 
-6. Solend
+ 
+1. Synthetify 
+2. Zeta markets
+3. Orca Whirlpools
+4. Tulip Protocol 
+5. Solend
 
 

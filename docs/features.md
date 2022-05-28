@@ -8,7 +8,7 @@ Lightweight funds capable of swapping tokens through AMMs with deep liquidity. T
 Highly composable funds with capabilities to integrate almost any on-chain protocol. This allows them generate stable yields irrespective of market conditions. Investin's unique architecture integrates custom strategy contracts that utilize multiple on-chain protocols to capture the best possible yields. 
 
 
-#### Strategies 
+<!-- #### Strategies 
 
 
 The strategy adapter contracts give Investin funds the ability to interact with multiple protocols allowing them to take part in almost all DeFi activities by tokenizing positions. These strategy contracts create positions in various protocols and issue SPL tokens that represent a Fund's share in the respective strategies. All strategy contracts are independent of each other hence failure in one of the integrated protocols is limited to funds participating in affected strategies. We conduct due diligence while selecting protocols to integrate in our strategies, but `Investin does not take any responsibility if the integrated protocols are compromised.` 
@@ -16,14 +16,16 @@ The strategy adapter contracts give Investin funds the ability to interact with 
 1. The farming strategies are auto-compounded at the cheapest fee in the industry. The fee is 0.1% on yield generated.
 2. Users without a fund can also take advantage of auto-compounding farms and other strategies.
 3. Custom strategies can be added that generate stable yields with little to no directional downside risk.
-4. Margin trading protocols can be integrated allowing Managers to hedge positions in downward markets.
+4. Margin trading protocols can be integrated allowing Managers to hedge positions in downward markets. -->
 
 
 ### Selective transfer from router vault
 
-This feature enables fund Managers to accept investments from personally whitelisted addresses. This gives Fund Managers the option to follow the KYC/AML guidelines of their country of residence. Fund Managers have the option to accept all investments or be selective about their Investors.
+This feature enables fund Managers to accept investments from wallets of their choice. This gives Fund Managers the option to follow the KYC/AML guidelines of their country of residence. Fund Managers have the option to accept all investments or be selective about their Investors.
 
 
+### Referral fee on Mango markets and limit orders
+All trades routed through Investin funds get a 4% fee discount thanks to Mango's referral program integrated into Investin and limit orders get fee rebate as well. 
 <!-- ### Dynamic performance 
 
 Fund managers can collect the performance fee accrued through investor withdrawals or choose to dynamically collect the impending fee on the live investments exceeding minimum returns regardless of any crystalization period or withdrawals. The dashboard displays the relevant fee collectable by the fund manager. `This amount must be available in the base token denomination of the fund.` This feature incentivizes managers to set short term profitability goals and collect performance fees on meeting the profit targets. This feature compliments investor stop-loss.  -->

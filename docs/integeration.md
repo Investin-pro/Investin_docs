@@ -28,7 +28,7 @@ Investin is built upon a highly composable architecture that integrates multiple
 === "Solana"
     Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by:
 
-    1. Mango Markets
+    1. Mango Markets: Defi hedge funds can take advantage of Solana's leading perp protocol to access leverage upto 10x on BTC, ETH, SOL and AVAX perps listed on mango.markets
 
 
 
@@ -64,7 +64,7 @@ Investin is built upon a highly composable architecture that integrates multiple
     
     1. Orca (...soon)
     2. Saber (...soon)
-    3. SolFarm (...soon)
+   
 
 
 
@@ -79,8 +79,9 @@ Investin is built upon a highly composable architecture that integrates multiple
 
 ### Options/DOVs
 === "Solana"
-    Allowing Funds to access options and hedge against volatility of different crypto assets or generate yeilds through covered call overwitiing selling, Cash secured put strategies and much more. 
+    Allowing Funds to access options and hedge against volatility in different crypto assets or generate yeilds through covered calls, cash secured put strategies and much more. 
     
+
+    1. Friktion : All vaults deployed on Friktion are available to deposit through defi hedge funds and access yeilds that are generated through diverse market conditions 
     2. Zeta markets (...soon)
-    1. Friktion (...soon)
     

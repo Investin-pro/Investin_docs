@@ -107,7 +107,7 @@ A total supply of 9,000,000 IVN tokens are minted with no further minting possib
 
 Initial Liquidity for IVN tokens was sourced from the IDO ([Wault IDO][4]) and we have remained the major liquidity provider for IVN pools ever since.
 
-* The project was bootstrapped by the founders; hence the seed tokens remain unallocated. 
+* The project was bootstrapped by the founders; recently seed tokens were sold to raise funding for continued development more info [here][7] . 
 * Tokens allocated to the core team are vested linearly for 3 years with a quarterly release schedule. [contract address][6]
 * Half of the tokens allocated for Liquidity Mining were used to incentivize the native IVN LP Farming and the rest will be utilized in future LP farming programs. 
 * The advisory tokens are unallocated at the moment and once advisors are onboarded the tokens will be vested for period of 1 year.
@@ -118,6 +118,7 @@ In rare cases when a [white-listed][2] token pool gets manipulated and fund perf
 [3]: https://bscscan.com/tx/0xb7ef325b3c544a7c31ca18409dfdcccf00647d482959aa11876ede2667196f80
 [4]: https://medium.com/waultfinance/announcing-another-launchpad-presale-investin-pro-42cef4bfac24
 [6]: https://solscan.io/account/6y4AFVa8aaZGirYi16ex5hwDjgdHsg9GfdUwUQ93Q6sr
+[7]: https://medium.com/investin-pro/announcing-investins-1-2m-funding-round-890027136e5f
 
 ### Fund Usage 
 
