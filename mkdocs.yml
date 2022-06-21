@@ -103,9 +103,10 @@ nav:
   - Features: 'features.md'
   - Market Making: 'marketmaking.md'
   - Tokeneconomics: 'token.md'
+  - Bug Bounty: 'bugb.md'
   
 
-copyright: Copyright &copy; 2020 - 2021 Investin
+copyright: Copyright &copy; 2021 - 2022 Investin
 extra_javascript:
     - javascripts/config.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6

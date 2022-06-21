@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="https://investin-pro.github.io/Investin_docs/integeration/">
+        <link rel="canonical" href="https://investin-pro.github.io/Investin_docs/bugbb/">
       
       <link rel="icon" href="../assets/investin.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.2.0">
     
     
       
-        <title>Integrations - Investin</title>
+        <title>Bug Bounty - Investin</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#swap" class="md-skip">
+        <a href="#bug-bounty" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Integrations
+              Bug Bounty
             
           </span>
         </div>
@@ -216,12 +216,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../integeration/" class="md-tabs__link">
       Integrations
     </a>
   </li>
@@ -369,75 +367,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Integrations
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../integeration/" class="md-nav__link">
         Integrations
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#swap" class="md-nav__link">
-    Swap
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#margin-trade" class="md-nav__link">
-    Margin Trade
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lending" class="md-nav__link">
-    Lending
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#farming" class="md-nav__link">
-    Farming
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optionsdovs" class="md-nav__link">
-    Options/DOVs
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -518,6 +452,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -526,36 +462,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#swap" class="md-nav__link">
-    Swap
+  <a href="#program-overview" class="md-nav__link">
+    Program Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#margin-trade" class="md-nav__link">
-    Margin Trade
+  <a href="#bug-bounty-payment" class="md-nav__link">
+    Bug Bounty Payment
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#lending" class="md-nav__link">
-    Lending
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#farming" class="md-nav__link">
-    Farming
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optionsdovs" class="md-nav__link">
-    Options/DOVs
+  <a href="#invalid-bug-bounties" class="md-nav__link">
+    Invalid Bug Bounties
   </a>
   
 </li>
@@ -572,82 +494,56 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Investin-pro/Investin_docs/edit/master/docs/integeration.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Investin-pro/Investin_docs/edit/master/docs/bugbb.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Integrations</h1>
-                
-                <p>Investin is built upon a highly composable architecture that integrates multiple DeFi protocols. This enables Managers with a wide range of DeFi strategies to be executed through their Funds such as token swaps, margin trades, options, lending, and liquidity mining (farming).</p>
-<h3 id="swap">Swap<a class="headerlink" href="#swap" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Solana</label><div class="tabbed-content">
-<p>Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:</p>
-<ol>
-<li>Raydium protocol: All tokens listed on Raydium can be traded through Investin Funds but to prevent malicious actors from exploiting the funds by listing and trading fake/valueless tokens we maintain an expandable token whitelist.</li>
-<li>Orca protocol: All tokens listed on Orca can be traded through Investin funds. Orca whitelists their trading pairs however Investin will further investigate before allowing them to be traded through Investin Funds. </li>
-<li>Jupiter Aggregator: The leading liquidity aggregator on Solana powering Investin's swap engine to give best prices on every swap.</li>
-<li>Project Serum (...soon)</li>
-</ol>
-</div>
-</div>
-<!-- === "EVM"
-    Enabling funds to trade in multiple tokens and fetch prices dynamically on-chain for accurate performance computation. Token swaps powered by:
-
-    1. Pancakeswap
-    2. WaultSwap -->
-
-<h3 id="margin-trade">Margin Trade<a class="headerlink" href="#margin-trade" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Solana</label><div class="tabbed-content">
-<p>Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by:</p>
-<ol>
-<li>Mango Markets: Defi hedge funds can take advantage of Solana's leading perp protocol to access leverage upto 10x on BTC, ETH, SOL and AVAX perps listed on mango.markets</li>
-</ol>
-</div>
-</div>
-<!-- === "EVM"
-    Allowing funds to long or short tokens with leverage to achieve a desired position with available capital. Margin trades powered by: -->
-
-<h3 id="lending">Lending<a class="headerlink" href="#lending" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Solana</label><div class="tabbed-content">
-<p>Allowing Funds to lend tokens and generate yield through the most promising lending and leverage trading/farming protocols. Lending powered by:</p>
-<ol>
-<li>Mango Markets</li>
-<li>Solend (...soon)</li>
-<li>Solfarm (...soon)</li>
-</ol>
-</div>
-</div>
-<!-- === "EVM"
-   Allowing Funds to lend tokens and generate yield through the most promising lending and leverage trading/farming protocols. Lending powered by:
-
-    1. Alpaca Finance
-    2. Belt Finance -->
-
-<h3 id="farming">Farming<a class="headerlink" href="#farming" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Solana</label><div class="tabbed-content">
-<p>Allowing Funds to provide liquidity and stake AMM LPs earning LP fees and farm reward tokens creating greater yield opportunities and balance for Investin Funds. Farming powered by: </p>
-<ol>
-<li>Orca (...soon)</li>
-<li>Saber (...soon)</li>
-</ol>
-</div>
-</div>
-<!-- === "EVM"
-    Allowing Funds to provide liquidity and stake AMM LPs earning LP fees and farm reward tokens creating greater yield opportunities and balance for Investin Funds. Farming powered by:
-
-    1. WaultSwap Farms
-    2. PancakeSwap Farms -->
-
-<h3 id="optionsdovs">Options/DOVs<a class="headerlink" href="#optionsdovs" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Solana</label><div class="tabbed-content">
-<p>Allowing Funds to access options and hedge against volatility in different crypto assets or generate yeilds through covered calls, cash secured put strategies and much more. </p>
-<ol>
-<li>Friktion : All vaults deployed on Friktion are available to deposit through defi hedge funds and access yeilds that are generated through diverse market conditions </li>
-<li>Zeta markets (...soon)</li>
-</ol>
-</div>
-</div>
+                <h1 id="bug-bounty">Bug Bounty<a class="headerlink" href="#bug-bounty" title="Permanent link">&para;</a></h1>
+<h2 id="program-overview">Program Overview<a class="headerlink" href="#program-overview" title="Permanent link">&para;</a></h2>
+<p>This bug bounty is specifically for Investin's on-chain program code, UI only bugs are omitted.</p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Description</th>
+<th>Bug Bounty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical</td>
+<td>Bugs that freeze user funds or drain the contract's holdings or involve theft of funds without user signatures.</td>
+<td>10% of the value of the hack up to $50,000.</td>
+</tr>
+<tr>
+<td>High</td>
+<td>Bugs that could temporarily freeze user funds or incorrectly assign value to user funds.</td>
+<td>$2,000 to $10,000 per bug, assessed on a case by case basis</td>
+</tr>
+<tr>
+<td>Medium/Low</td>
+<td>Bugs that don't threaten user funds</td>
+<td>$500 to $2,000 per bug, assessed on a case by case basis</td>
+</tr>
+</tbody>
+</table>
+<p>The severity guidelines are based on <a href="https://immunefi.com/severity-updated/">Immunefi's classification system</a>.</p>
+<p>Note that these are simply guidelines for the severity of the bugs. Each bug bounty submission will be evaluated on a case-by-case basis</p>
+<h2 id="bug-bounty-payment">Bug Bounty Payment<a class="headerlink" href="#bug-bounty-payment" title="Permanent link">&para;</a></h2>
+<p>Bug bounties will be paid in USDC or IVN (in rare cases). Investin team has never refused a bug bounty so far.</p>
+<h2 id="invalid-bug-bounties">Invalid Bug Bounties<a class="headerlink" href="#invalid-bug-bounties" title="Permanent link">&para;</a></h2>
+<p>The following are out of scope for the bug bounty:</p>
+<ul>
+<li>Attacks that the reporter has already exploite themselves, leading to damage.</li>
+<li>Attacks requiring access to leaked keys/credentials.</li>
+<li>Attacks requiring access to privileged addresses (admin).</li>
+<li>Incorrect data supplied by third party oracles (this does not exclude oracle manipulation/flash loan attacks).</li>
+<li>Lack of liquidity.</li>
+<li>Third party, off-chain bot errors (for instance bugs with an arbitrage bot running on the smart contracts).</li>
+<li>Best practice critiques.</li>
+<li>Sybil attacks.</li>
+</ul>
                 
               
               
@@ -668,41 +564,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../investor/" class="md-footer__link md-footer__link--prev" aria-label="Previous: For investors" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              For investors
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../features/" class="md-footer__link md-footer__link--next" aria-label="Next: Features" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Features
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
