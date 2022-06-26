@@ -1,103 +1,36 @@
-# Market making funds
+# 🥭 Mango based funds
 
-
-
-Here, we provide a step-by-step guide to create a market making fund and connect it to a bot running locally or on the cloud.
-
-And if reading docs is not your thing checkout the demo video here: https://youtu.be/qLGCvsSx__U
-
-Basic requirements:
-
-* Python v3.8
-* pip v20 
-
-Steps:
-
-1. Create fund and set the delegate address for sending instructions
-2. Invest USDC in fund and have some SOL in delegate address
-2. Clone basic market making bot [repo][2]
-[2]:https://github.com/Investin-pro/mango-explorer/tree/investin_mm
-3. Set the bot on cloud and add in delegate address private keys
-4. Check the positions through manager dashboard and claim performance fee i.e $MNGO tokens 
+Mango based funds allow pooling of investments that can be traded through an delegate address on [Mango.markets][1]. Fund managers can manage the investments by interacting with Mango UI or program and experience full fledged margin/perp trading with all bells & whistles on Mango using the pooled funds. Accounting is handled by Investin contracts which allow timely withdrawals in two way i.e soft withdrawals and hard withdrawals.  
 
 
 ### Create fund 
-* Visit [Investin][1] dashboard and click on start fund
-[1]:https://qa.sol.investin.pro/user/dashboard
+* Visit [Investin][5] to start fund and make sure to select Mango based fund from type of fund selection
+[1]:https://trade.mango.markets/?name=SOL-PERP
+[5]: https://sol.beta.investin.pro/myFund
 
-![Placeholder](assets/11.png){: align=center }
 
-* Select market making from type of fund selection and Add minimum deposit, performance fee % i.e. `(Share of $mngo accrued which goes to the manager as performance reward)`and manager would earn the usual performance fees if the fund performance goes above the minimum return percentage.
 
-* Select the perp market, currently we have BTC-PERP & SOL-PERP
-                
-  ___________________________![Placeholder](assets/22.png){: width="300" align=center }________________________
+![Placeholder](assets/111.png){: align=center }
 
+* Enter minimum deposit and performance fee %
 
 
 
 
-* After the fund is created, create a new wallet and set it as the delegate address using the manager dashboard (you can also use manager address with which fund was created)
-* Fund the newly created address with $sol 
-### Basic market making bot
-* Clone repo: https://github.com/Investin-pro/mango-explorer/tree/investin_mm
-* git checkout sol-perp
-* Click open config button on dashboard page, copy it and paste in the cloned repo to the file: mainnet-investin.json
-* In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address. The private key should look something like this 
-    
-    ```yaml
-    [110,49,211,169,16,1,52,50,225,133,73,175,67,185,69,124,79,194,153,3,53,41,204,180,255,80,44,140,43,222,6,53,13,114,16,218,159,70,85,72,57,243,132,149,4,117,23,61,10,101,43,62,61,1,216,197,55,59,237,8,106,171,135,60]
-    ```
-    
-    
-    
-    ```yaml
-    touch id.json
-    cat > id.json 
-    enter "your private key"   
-    press ctrl+D
 
 
+* Intially the delegate address is set to fund manager's address and can be changed to the desired address
+* After the fund is created and funded, fund manager's can visit [mango.markets][1] and connect their wallet to start managing assets invested through Investin (its that easy!)
+## Accounting Mechanism
 
-    ```
+Having pioneered accounting system for handling non-custodial withdrawals with our flagship product defi hedge funds we reworked on withdrawal systems to allow full fledged trading on Mango and to make this possible we built two ways to handle withdrawals which are described in detail below: 
 
-* Setup the marketmaking bot in a python virtualenv:
+### 1. Soft withdrawals 
 
-    ```yaml
-    pip install virtualenv
-    virtualenv venv
-    virtualenv -p /usr/bin/python3 venv
-    source venv/bin/activate 
-    pip install -r requirements.txt
-    make sure to check python location by using (which python) and put that in place of /usr/bin/python3
-    sudo ln -s /usr/bin/python3 /usr/bin/pyston3
-    ```
-    
+Soft withdrawals is a system where fund managers work with Investors to complete withdrawals as soon as possible. Firstly when an Investor wants to withdraw from a fund they can put a request for withdrawal using the Investments tab on Investin and this request will be made visible to fund manager and if they wish to settle it right away for the investor to exit from the fund they can do so by honoring the withdrawal request through Investin's UI . 
 
-* To run the marketmaking bot
-      ```yaml
-      ./bin/marketmaker --name "Investin MM" --market SOL-PERP --oracle-provider pyth  --existing-order-tolerance 0.0001 --pulse-interval 10 --order-type POST_ONLY --chain ratios --ratios-spread 0.006 --chain fixedpositionsize --fixedpositionsize-value 0.2  --cluster-name mainnet --cluster-url https://solana-api.projectserum.com --group-name mainnet.1 --id-file id.json --investin mainnet-investin.json 
+![Placeholder](assets/133.png){: align=center }
 
-      ```
-
-* If the fund was created for btc-perp make sure to change the --market BTC-PERP and for sol-perp to SOL-PERP
-
-
-* If everything goes well you will see something like this on terminal 
-
-![Placeholder](assets/112.png){: align=center }
-
-
-
-
-###APY 
-To estimate the APY for mango rewards earned by market making fund over a time period we use the following formula:
-
-$$
-(mngoPerShare[T] - mngoPerShare[T-12])*mngoPrice*100*2*365
-$$ 
-
-* T = time period
 
 
 ###Performance Fee
