@@ -10,7 +10,11 @@ Mango based funds allow pooling of investments that can be traded through an del
 
 
 
-![Placeholder](assets/111.png){: align=center }
+<figure markdown>
+  ![Image title](assets/111.png){ width="600" }
+  <figcaption>Create fund model</figcaption>
+</figure>
+
 
 * Enter minimum deposit and performance fee %
 
@@ -27,10 +31,16 @@ Having pioneered accounting system for handling non-custodial withdrawals with o
 
 ### 1. Soft withdrawals 
 
-Soft withdrawals is a system where fund managers work with Investors to complete withdrawals as soon as possible. Firstly when an Investor wants to withdraw from a fund they can put a request for withdrawal using the Investments tab on Investin and this request will be made visible to fund manager and if they wish to settle it right away for the investor to exit from the fund they can do so by honoring the withdrawal request through Investin's UI . 
+Soft withdrawals is a system where fund managers work with Investors to complete withdrawals as soon as possible. Firstly when an Investor wants to withdraw from a fund they can put a request for withdrawal using the Investments tab on Investin and this request will be made visible to fund manager and if they wish to settle it right away for the investor to exit from the fund they can do so by honoring the withdrawal request through Investin's UI.
 
-![Placeholder](assets/133.png){: align=center }
+<figure markdown>
+  ![Image title](assets/133.png){ width="300" }
+  <figcaption>Withdrawal request tab for fund managers</figcaption>
+</figure>
 
+### 2. Hard withdrawals
+
+Hard withdrawals happens every Friday 01:00 UTC in this process all pending withdrawal requests on fund will be processed by Investin without effecting health of margin account and all open orders will be closed and spot assets will be sold on market according to the pro rata share of all pending withdrawal requests. We expect fund managers to settle withdrawals using soft withdrawal method since this process will incur slippage and effect the perfromance of fund. 
 
 
 ###Performance Fee
