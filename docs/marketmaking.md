@@ -43,9 +43,6 @@ Soft withdrawals is a system where fund managers work with Investors to complete
 Hard withdrawals happens every Friday 01:00 UTC in this process all pending withdrawal requests on fund will be processed by Investin without effecting health of margin account and all open orders will be closed and spot assets will be sold on market according to the pro rata share of all pending withdrawal requests. We expect fund managers to settle withdrawals using soft withdrawal method since this process will incur slippage and effect the perfromance of fund. 
 
 
-###Performance Fee
-The performance fee is collected on all the mango rewards accrued by market making and is set by manager on fund creation. The same percentage is also used to collect performance fee if the USDC evaluation of fund goes above the minimum return percentage.
-
 
 
 
