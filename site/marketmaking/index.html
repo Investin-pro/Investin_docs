@@ -441,23 +441,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-market-making-bot" class="md-nav__link">
-    Basic market making bot
+  <a href="#accounting-mechanism" class="md-nav__link">
+    Accounting Mechanism
+  </a>
+  
+    <nav class="md-nav" aria-label="Accounting Mechanism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-soft-withdrawals" class="md-nav__link">
+    1. Soft withdrawals
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#apy" class="md-nav__link">
-    APY
+        
+          <li class="md-nav__item">
+  <a href="#2-hard-withdrawals" class="md-nav__link">
+    2. Hard withdrawals
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#performance-fee" class="md-nav__link">
-    Performance Fee
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -532,23 +538,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-market-making-bot" class="md-nav__link">
-    Basic market making bot
+  <a href="#accounting-mechanism" class="md-nav__link">
+    Accounting Mechanism
+  </a>
+  
+    <nav class="md-nav" aria-label="Accounting Mechanism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-soft-withdrawals" class="md-nav__link">
+    1. Soft withdrawals
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#apy" class="md-nav__link">
-    APY
+        
+          <li class="md-nav__item">
+  <a href="#2-hard-withdrawals" class="md-nav__link">
+    2. Hard withdrawals
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#performance-fee" class="md-nav__link">
-    Performance Fee
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -573,71 +585,43 @@
 <p>Mango based funds allow pooling of investments that can be traded through an delegate address on <a href="https://trade.mango.markets/?name=SOL-PERP">Mango.markets</a>. Fund managers can manage the investments by interacting with Mango UI or program and experience full fledged margin/perp trading with all bells &amp; whistles on Mango using the pooled funds. Accounting is handled by Investin contracts which allow timely withdrawals in two way i.e soft withdrawals and hard withdrawals.  </p>
 <h3 id="create-fund">Create fund<a class="headerlink" href="#create-fund" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Visit <a href="https://sol.beta.investin.pro/myFund">Investin</a> dashboard and click on start fund</li>
+<li>Visit <a href="https://sol.beta.investin.pro/myFund">Investin</a> to start fund and make sure to select Mango based fund from type of fund selection</li>
 </ul>
-<p><img align="center" alt="Placeholder" src="../assets/111.png" /></p>
+<figure>
+<p><img alt="Image title" src="../assets/111.png" width="600" />
+  </p>
+<figcaption>Create fund model</figcaption>
+</figure>
 <ul>
 <li>
-<p>Select market making from type of fund selection and Add minimum deposit, performance fee % i.e. <code>(Share of $mngo accrued which goes to the manager as performance reward)</code>and manager would earn the usual performance fees if the fund performance goes above the minimum return percentage.</p>
+<p>Enter minimum deposit and performance fee %</p>
 </li>
 <li>
-<p>Select the perp market, currently we have BTC-PERP &amp; SOL-PERP</p>
+<p>Intially the delegate address is set to fund manager's address and can be changed to the desired address</p>
 </li>
+<li>After the fund is created and funded, fund manager's can visit <a href="https://trade.mango.markets/?name=SOL-PERP">mango.markets</a> and connect their wallet to start managing assets invested through Investin (its that easy!)</li>
+<li>You can always set a new address as an delegate to access the mango account using <a href="https://trade.mango.markets/?name=SOL-PERP">mango.markets</a></li>
 </ul>
-<p>___________________________<img align="center" alt="Placeholder" src="../assets/22.png" width="300" />________________________</p>
-<ul>
-<li>After the fund is created, create a new wallet and set it as the delegate address using the manager dashboard (you can also use manager address with which fund was created)</li>
-<li>Fund the newly created address with $sol </li>
-</ul>
-<h3 id="basic-market-making-bot">Basic market making bot<a class="headerlink" href="#basic-market-making-bot" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Clone repo: <a href="https://github.com/Investin-pro/mango-explorer/tree/investin_mm">https://github.com/Investin-pro/mango-explorer/tree/investin_mm</a></li>
-<li>git checkout sol-perp</li>
-<li>Click open config button on dashboard page, copy it and paste in the cloned repo to the file: mainnet-investin.json</li>
-<li>
-<p>In the cloned repo terminal run the following commands and paste the private keys of delegate address or manager address. The private key should look something like this </p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">[</span><span class="nv">110</span><span class="p p-Indicator">,</span><span class="nv">49</span><span class="p p-Indicator">,</span><span class="nv">211</span><span class="p p-Indicator">,</span><span class="nv">169</span><span class="p p-Indicator">,</span><span class="nv">16</span><span class="p p-Indicator">,</span><span class="nv">1</span><span class="p p-Indicator">,</span><span class="nv">52</span><span class="p p-Indicator">,</span><span class="nv">50</span><span class="p p-Indicator">,</span><span class="nv">225</span><span class="p p-Indicator">,</span><span class="nv">133</span><span class="p p-Indicator">,</span><span class="nv">73</span><span class="p p-Indicator">,</span><span class="nv">175</span><span class="p p-Indicator">,</span><span class="nv">67</span><span class="p p-Indicator">,</span><span class="nv">185</span><span class="p p-Indicator">,</span><span class="nv">69</span><span class="p p-Indicator">,</span><span class="nv">124</span><span class="p p-Indicator">,</span><span class="nv">79</span><span class="p p-Indicator">,</span><span class="nv">194</span><span class="p p-Indicator">,</span><span class="nv">153</span><span class="p p-Indicator">,</span><span class="nv">3</span><span class="p p-Indicator">,</span><span class="nv">53</span><span class="p p-Indicator">,</span><span class="nv">41</span><span class="p p-Indicator">,</span><span class="nv">204</span><span class="p p-Indicator">,</span><span class="nv">180</span><span class="p p-Indicator">,</span><span class="nv">255</span><span class="p p-Indicator">,</span><span class="nv">80</span><span class="p p-Indicator">,</span><span class="nv">44</span><span class="p p-Indicator">,</span><span class="nv">140</span><span class="p p-Indicator">,</span><span class="nv">43</span><span class="p p-Indicator">,</span><span class="nv">222</span><span class="p p-Indicator">,</span><span class="nv">6</span><span class="p p-Indicator">,</span><span class="nv">53</span><span class="p p-Indicator">,</span><span class="nv">13</span><span class="p p-Indicator">,</span><span class="nv">114</span><span class="p p-Indicator">,</span><span class="nv">16</span><span class="p p-Indicator">,</span><span class="nv">218</span><span class="p p-Indicator">,</span><span class="nv">159</span><span class="p p-Indicator">,</span><span class="nv">70</span><span class="p p-Indicator">,</span><span class="nv">85</span><span class="p p-Indicator">,</span><span class="nv">72</span><span class="p p-Indicator">,</span><span class="nv">57</span><span class="p p-Indicator">,</span><span class="nv">243</span><span class="p p-Indicator">,</span><span class="nv">132</span><span class="p p-Indicator">,</span><span class="nv">149</span><span class="p p-Indicator">,</span><span class="nv">4</span><span class="p p-Indicator">,</span><span class="nv">117</span><span class="p p-Indicator">,</span><span class="nv">23</span><span class="p p-Indicator">,</span><span class="nv">61</span><span class="p p-Indicator">,</span><span class="nv">10</span><span class="p p-Indicator">,</span><span class="nv">101</span><span class="p p-Indicator">,</span><span class="nv">43</span><span class="p p-Indicator">,</span><span class="nv">62</span><span class="p p-Indicator">,</span><span class="nv">61</span><span class="p p-Indicator">,</span><span class="nv">1</span><span class="p p-Indicator">,</span><span class="nv">216</span><span class="p p-Indicator">,</span><span class="nv">197</span><span class="p p-Indicator">,</span><span class="nv">55</span><span class="p p-Indicator">,</span><span class="nv">59</span><span class="p p-Indicator">,</span><span class="nv">237</span><span class="p p-Indicator">,</span><span class="nv">8</span><span class="p p-Indicator">,</span><span class="nv">106</span><span class="p p-Indicator">,</span><span class="nv">171</span><span class="p p-Indicator">,</span><span class="nv">135</span><span class="p p-Indicator">,</span><span class="nv">60</span><span class="p p-Indicator">]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">touch id.json</span>
-<span class="l l-Scalar l-Scalar-Plain">cat &gt; id.json</span> 
-<span class="l l-Scalar l-Scalar-Plain">enter &quot;your private key&quot;</span>   
-<span class="l l-Scalar l-Scalar-Plain">press ctrl+D</span>
-</code></pre></div>
-</li>
-<li>
-<p>Setup the marketmaking bot in a python virtualenv:</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">pip install virtualenv</span>
-<span class="l l-Scalar l-Scalar-Plain">virtualenv venv</span>
-<span class="l l-Scalar l-Scalar-Plain">virtualenv -p /usr/bin/python3 venv</span>
-<span class="l l-Scalar l-Scalar-Plain">source venv/bin/activate</span> 
-<span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span>
-<span class="l l-Scalar l-Scalar-Plain">make sure to check python location by using (which python) and put that in place of /usr/bin/python3</span>
-<span class="l l-Scalar l-Scalar-Plain">sudo ln -s /usr/bin/python3 /usr/bin/pyston3</span>
-</code></pre></div>
-</li>
-<li>
-<p>To run the marketmaking bot
-      <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">./bin/marketmaker --name &quot;Investin MM&quot; --market SOL-PERP --oracle-provider pyth  --existing-order-tolerance 0.0001 --pulse-interval 10 --order-type POST_ONLY --chain ratios --ratios-spread 0.006 --chain fixedpositionsize --fixedpositionsize-value 0.2  --cluster-name mainnet --cluster-url https://solana-api.projectserum.com --group-name mainnet.1 --id-file id.json --investin mainnet-investin.json</span> 
-</code></pre></div></p>
-</li>
-<li>
-<p>If the fund was created for btc-perp make sure to change the --market BTC-PERP and for sol-perp to SOL-PERP</p>
-</li>
-<li>
-<p>If everything goes well you will see something like this on terminal </p>
-</li>
-</ul>
-<p><img align="center" alt="Placeholder" src="../assets/112.png" /></p>
-<h3 id="apy">APY<a class="headerlink" href="#apy" title="Permanent link">&para;</a></h3>
-<p>To estimate the APY for mango rewards earned by market making fund over a time period we use the following formula:</p>
-<div class="arithmatex">\[
-(mngoPerShare[T] - mngoPerShare[T-12])*mngoPrice*100*2*365
-\]</div>
-<ul>
-<li>T = time period</li>
-</ul>
-<h3 id="performance-fee">Performance Fee<a class="headerlink" href="#performance-fee" title="Permanent link">&para;</a></h3>
-<p>The performance fee is collected on all the mango rewards accrued by market making and is set by manager on fund creation. The same percentage is also used to collect performance fee if the USDC evaluation of fund goes above the minimum return percentage.</p>
+<figure>
+<p><img alt="Image title" src="../assets/66.png" width="300" />
+  </p>
+<figcaption>Set delegate model</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>Do not deposit into the fund using Mango's UI only use Investin to deposit into fund.</p>
+<h2 id="accounting-mechanism">Accounting Mechanism<a class="headerlink" href="#accounting-mechanism" title="Permanent link">&para;</a></h2>
+<p>Having pioneered accounting system for handling non-custodial withdrawals with our flagship product defi hedge funds we reworked on withdrawal systems to allow full fledged trading on Mango and to make this possible we built two ways to handle withdrawals which are described in detail below: </p>
+<h3 id="1-soft-withdrawals">1. Soft withdrawals<a class="headerlink" href="#1-soft-withdrawals" title="Permanent link">&para;</a></h3>
+<p>Soft withdrawals is a system where fund managers work with Investors to complete withdrawals as soon as possible. Firstly when an Investor wants to withdraw from a fund they can put a request for withdrawal using the Investments tab on Investin and this request will be made visible to fund manager and if they wish to settle it right away for the investor to exit from the fund they can do so by honoring the withdrawal request through Investin's UI.</p>
+<figure>
+<p><img alt="Image title" src="../assets/133.png" width="300" />
+  </p>
+<figcaption>Withdrawal request tab for fund managers</figcaption>
+</figure>
+<h3 id="2-hard-withdrawals">2. Hard withdrawals<a class="headerlink" href="#2-hard-withdrawals" title="Permanent link">&para;</a></h3>
+<p>Hard withdrawals happens every Friday 01:00 UTC in this process all pending withdrawal requests on fund will be processed by Investin without effecting health of margin account and all open orders will be closed and spot assets will be sold on market according to the pro rata share of all pending withdrawal requests. We expect fund managers to settle withdrawals using soft withdrawal method since this process will incur slippage and effect the perfromance of fund. </p>
 <p>Have any doubts or stuck at any step please join our <a href="https://discord.gg/jk9bmbwh74">discord</a> for assistance</p>
                 
               

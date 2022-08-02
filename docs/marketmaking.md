@@ -25,6 +25,15 @@ Mango based funds allow pooling of investments that can be traded through an del
 
 * Intially the delegate address is set to fund manager's address and can be changed to the desired address
 * After the fund is created and funded, fund manager's can visit [mango.markets][1] and connect their wallet to start managing assets invested through Investin (its that easy!)
+* You can always set a new address as an delegate to access the mango account using [mango.markets][1]
+<figure markdown>
+  ![Image title](assets/66.png){ width="300" }
+  <figcaption>Set delegate model</figcaption>
+</figure>
+
+
+!!! WARNING
+Do not deposit into the fund using Mango's UI only use Investin to deposit into fund.
 ## Accounting Mechanism
 
 Having pioneered accounting system for handling non-custodial withdrawals with our flagship product defi hedge funds we reworked on withdrawal systems to allow full fledged trading on Mango and to make this possible we built two ways to handle withdrawals which are described in detail below: 
