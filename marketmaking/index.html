@@ -450,14 +450,14 @@
         
           <li class="md-nav__item">
   <a href="#1-soft-withdrawals" class="md-nav__link">
-    1. Soft withdrawals
+    1. Soft Withdrawals
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#2-hard-withdrawals" class="md-nav__link">
-    2. Hard withdrawals
+    2. Hard Withdrawals
   </a>
   
 </li>
@@ -547,14 +547,14 @@
         
           <li class="md-nav__item">
   <a href="#1-soft-withdrawals" class="md-nav__link">
-    1. Soft withdrawals
+    1. Soft Withdrawals
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#2-hard-withdrawals" class="md-nav__link">
-    2. Hard withdrawals
+    2. Hard Withdrawals
   </a>
   
 </li>
@@ -582,10 +582,10 @@
                 
                 
                 <h1 id="mango-based-funds">🥭 Mango based funds<a class="headerlink" href="#mango-based-funds" title="Permanent link">&para;</a></h1>
-<p>Mango based funds allow pooling of investments that can be traded through an delegate address on <a href="https://trade.mango.markets/?name=SOL-PERP">Mango.markets</a>. Fund managers can manage the investments by interacting with Mango UI or program and experience full fledged margin/perp trading with all bells &amp; whistles on Mango using the pooled funds. Accounting is handled by Investin contracts which allow timely withdrawals in two way i.e soft withdrawals and hard withdrawals.  </p>
+<p>Mango based funds allow pooling of investments that can be traded through a delegate address on <a href="https://trade.mango.markets/?name=SOL-PERP">Mango.markets</a>. Fund managers can manage the investments by interacting with the Mango UI or program and experience full-fledged margin/perp trading with all the bells &amp; whistles on Mango using the pooled funds. Accounting is handled by Investin contracts which allow timely withdrawals in two ways(soft withdrawals and hard withdrawals).  </p>
 <h3 id="create-fund">Create fund<a class="headerlink" href="#create-fund" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Visit <a href="https://sol.beta.investin.pro/myFund">Investin</a> to start fund and make sure to select Mango based fund from type of fund selection</li>
+<li>Visit <a href="https://sol.beta.investin.pro/myFund">Investin</a> to start fund and make sure to select Mango based fund from type of fund selection.</li>
 </ul>
 <figure>
 <p><img alt="Image title" src="../assets/111.png" width="600" />
@@ -597,9 +597,9 @@
 <p>Enter minimum deposit and performance fee %</p>
 </li>
 <li>
-<p>Intially the delegate address is set to fund manager's address and can be changed to the desired address</p>
+<p>Initially the delegate address is set to fund manager's address but can be changed to another desired address.</p>
 </li>
-<li>After the fund is created and funded, fund manager's can visit <a href="https://trade.mango.markets/?name=SOL-PERP">mango.markets</a> and connect their wallet to start managing assets invested through Investin (its that easy!)</li>
+<li>After the fund is created and funded, Fund Managers can visit <a href="https://trade.mango.markets/?name=SOL-PERP">mango.markets</a> and connect their wallet to start managing assets invested through Investin. It’s that easy!</li>
 <li>You can always set a new address as an delegate to access the mango account using <a href="https://trade.mango.markets/?name=SOL-PERP">mango.markets</a></li>
 </ul>
 <figure>
@@ -610,19 +610,19 @@
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 </div>
-<p>Do not deposit into the fund using Mango's UI only use Investin to deposit into fund.</p>
+<p>Do not deposit into the fund using Mango's UI. Only use Investin to deposit into a fund.</p>
 <h2 id="accounting-mechanism">Accounting Mechanism<a class="headerlink" href="#accounting-mechanism" title="Permanent link">&para;</a></h2>
-<p>Having pioneered accounting system for handling non-custodial withdrawals with our flagship product defi hedge funds we reworked on withdrawal systems to allow full fledged trading on Mango and to make this possible we built two ways to handle withdrawals which are described in detail below: </p>
-<h3 id="1-soft-withdrawals">1. Soft withdrawals<a class="headerlink" href="#1-soft-withdrawals" title="Permanent link">&para;</a></h3>
-<p>Soft withdrawals is a system where fund managers work with Investors to complete withdrawals as soon as possible. Firstly when an Investor wants to withdraw from a fund they can put a request for withdrawal using the Investments tab on Investin and this request will be made visible to fund manager and if they wish to settle it right away for the investor to exit from the fund they can do so by honoring the withdrawal request through Investin's UI.</p>
+<p>We have pioneered an accounting system for handling non-custodial withdrawals with our flagship product DeFi Hedge Funds. We reworked on the withdrawal systems to allow full-fledged trading on Mango. To make this possible we built two ways to handle withdrawals which are described in detail below: </p>
+<h3 id="1-soft-withdrawals">1. Soft Withdrawals<a class="headerlink" href="#1-soft-withdrawals" title="Permanent link">&para;</a></h3>
+<p>A Soft Withdrawal is a process where Fund Managers work with Investors to complete withdrawals as soon as possible. When an Investor wants to withdraw from a fund, they can put a request for withdrawal using the Investments tab on Investin. This request will be made visible to the Fund Manager and if they wish to settle it right away for the investor to exit from the fund, they can do so by honoring the withdrawal request through Investin's UI.</p>
 <figure>
 <p><img alt="Image title" src="../assets/133.png" width="300" />
   </p>
 <figcaption>Withdrawal request tab for fund managers</figcaption>
 </figure>
-<h3 id="2-hard-withdrawals">2. Hard withdrawals<a class="headerlink" href="#2-hard-withdrawals" title="Permanent link">&para;</a></h3>
-<p>Hard withdrawals happens every Friday 01:00 UTC in this process all pending withdrawal requests on fund will be processed by Investin without effecting health of margin account and all open orders will be closed and spot assets will be sold on market according to the pro rata share of all pending withdrawal requests. We expect fund managers to settle withdrawals using soft withdrawal method since this process will incur slippage and effect the perfromance of fund. </p>
-<p>Have any doubts or stuck at any step please join our <a href="https://discord.gg/jk9bmbwh74">discord</a> for assistance</p>
+<h3 id="2-hard-withdrawals">2. Hard Withdrawals<a class="headerlink" href="#2-hard-withdrawals" title="Permanent link">&para;</a></h3>
+<p>If a Fund Manager does not process the withdrawal request through the Soft Withdrawal process, then the Hard Withdrawal process will kick in. Hard Withdrawals happens every Friday 01:00 UTC. In this process all pending withdrawal requests on fund will be processed by Investin without affecting health of margin account. All open orders will be cancelled, then the adequeate perp positions will be market closed, and if needed spot assets will be market sold according to the pro rata share of all pending withdrawal requests while maintaining the same health factor across the fund. We expect Fund Managers to settle withdrawals using soft withdrawal method since this process will incur slippage and affect the performance of fund. </p>
+<p>If you have any doubts or are stuck at any step please join our <a href="https://discord.gg/jk9bmbwh74">discord</a> for assistance.</p>
                 
               
               
