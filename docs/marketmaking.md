@@ -49,7 +49,7 @@ A Soft Withdrawal is a process where Fund Managers work with Investors to comple
 
 ### 2. Hard Withdrawals
 
-If a Fund Manager does not process the withdrawal request through the Soft Withdrawal process, then the Hard Withdrawal process will kick in. Hard Withdrawals happens every Friday 01:00 UTC. In this process all pending withdrawal requests on fund will be processed by Investin without effecting health of margin account. All open perp positions will be closed, and spot assets will be sold on market according to the pro rata share of all pending withdrawal requests. We expect Fund Managers to settle withdrawals using soft withdrawal method since this process will incur slippage and affect the performance of fund. 
+If a Fund Manager does not process the withdrawal request through the Soft Withdrawal process, then the Hard Withdrawal process will kick in. Hard Withdrawals happens every Friday 01:00 UTC. In this process all pending withdrawal requests on fund will be processed by Investin without affecting health of margin account. All open orders will be cancelled, then the adequeate perp positions will be market closed, and if needed spot assets will be market sold according to the pro rata share of all pending withdrawal requests while maintaining the same health factor across the fund. We expect Fund Managers to settle withdrawals using soft withdrawal method since this process will incur slippage and affect the performance of fund. 
 
 
 
