@@ -25,8 +25,9 @@ Mango based funds allow pooling of investments that can be traded through a dele
 
 * Initially the delegate address is set to fund manager's address but can be changed to another desired address.
 * After the fund is created and funded, Fund Managers can visit [mango.markets][1] and connect their wallet to start managing assets invested through Investin. It’s that easy!
-* You can always set a new address as an delegate to access the mango account using [mango.markets][1]
 * There is a $50 Manager Lock-up amount each manager must deposit when initiating their fund. This is to handle any rounding errors that may occur (fractions of cents) during normal deposits and withdrawals. This $50 will be returned if the Fund is ever closed. 
+* You can always set a new address as an delegate to access the mango account using [mango.markets][1]
+
 <figure markdown>
   ![Image title](assets/66.png){ width="300" }
   <figcaption>Set delegate model</figcaption>
