@@ -30,6 +30,7 @@ Mango based funds allow pooling of investments that can be traded through a dele
   ![Image title](assets/66.png){ width="300" }
   <figcaption>Set delegate model</figcaption>
 </figure>
+* There is a $50 Manager Lock-up amount each manager must deposit when initiating their fund. This is to handle any rounding errors that may occur (fractions of cents) during normal deposits and withdrawals. This $50 will be returned if the Fund is ever closed. 
 
 
 !!! WARNING
