@@ -1,13 +1,15 @@
 ## Types of Funds
  
-### Investment Funds
-Lightweight funds capable of swapping tokens through AMMs with deep liquidity. These funds were coded with an utmost focus on efficiency and the costs to deposit/withdraw and trade are the lowest in the industry. These funds are purpose built for individual traders with good experience in markets who aspire to start a public fund by themselves by showcasing the track record of their performance. They can also be used by DAOs with managing their treasury in a non-custodial manner or by communities to manage funds collectively.
+<!-- ### Investment Funds
+Lightweight funds capable of swapping tokens through AMMs with deep liquidity. These funds were coded with an utmost focus on efficiency and the costs to deposit/withdraw and trade are the lowest in the industry. These funds are purpose built for individual traders with good experience in markets who aspire to start a public fund by themselves by showcasing the track record of their performance. They can also be used by DAOs with managing their treasury in a non-custodial manner or by communities to manage funds collectively. -->
 
 
 ### Defi Hedge Funds
 Highly composable funds with capabilities to integrate almost any on-chain protocol. This allows them generate stable yields irrespective of market conditions. Investin's unique architecture integrates custom strategy contracts that utilize multiple on-chain protocols to capture the best possible yields. 
 
 
+### Mango based Funds
+Mango based funds allow pooling of investments that can be traded through a delegate address on Mango.markets. Fund managers can manage the investments by interacting with the Mango UI or program and experience full-fledged margin/perp trading with all the bells & whistles on Mango using the pooled funds. Accounting is handled by Investin contracts which allow timely withdrawals in two ways(soft withdrawals and hard withdrawals).  
 <!-- #### Strategies 
 
 
