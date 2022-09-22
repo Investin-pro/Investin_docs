@@ -434,9 +434,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#initial-setup" class="md-nav__link">
+    Initial Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Initial Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#create-fund" class="md-nav__link">
     Create fund
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -531,9 +544,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#initial-setup" class="md-nav__link">
+    Initial Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Initial Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#create-fund" class="md-nav__link">
     Create fund
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -583,31 +609,47 @@
                 
                 <h1 id="mango-based-funds">🥭 Mango based funds<a class="headerlink" href="#mango-based-funds" title="Permanent link">&para;</a></h1>
 <p>Mango based funds allow pooling of investments that can be traded through a delegate address on <a href="https://trade.mango.markets/?name=SOL-PERP">Mango.markets</a>. Fund managers can manage the investments by interacting with the Mango UI or program and experience full-fledged margin/perp trading with all the bells &amp; whistles on Mango using the pooled funds. Accounting is handled by Investin contracts which allow timely withdrawals in two ways(soft withdrawals and hard withdrawals).  </p>
+<h2 id="initial-setup">Initial Setup<a class="headerlink" href="#initial-setup" title="Permanent link">&para;</a></h2>
+<p>Learn about creating a mango based fund and get started with trading, accepting investments and withdrawal mechanism </p>
 <h3 id="create-fund">Create fund<a class="headerlink" href="#create-fund" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Visit <a href="https://sol.beta.investin.pro/myFund">Investin</a> to start fund and make sure to select Mango based fund from type of fund selection.</li>
 </ul>
 <figure>
-<p><img alt="Image title" src="../assets/111.png" width="600" />
+<p><img alt="Image title" src="../assets/gg.png" width="600" />
   </p>
 <figcaption>Create fund model</figcaption>
 </figure>
 <ul>
+<li>Enter minimum deposit and performance fee %</li>
 <li>
-<p>Enter minimum deposit and performance fee %</p>
+<p>To make the fund public Managers need to Lock-up a minimum amount of 50 USDC. This is to handle any rounding errors that may occur (fractions of cents) during normal deposits and withdrawals. This $50 will be returned if the Fund is ever closed.</p>
 </li>
+<li>
+<p>Alternatively fund managers can Lock-In the amount after the fund is created using the Lock-In tab on overview tab</p>
+</li>
+</ul>
+<figure>
+<p><img alt="Image title" src="../assets/qq.png" width="300" />
+  </p>
+<figcaption>Lock-In manage tab</figcaption>
+</figure>
+<ul>
 <li>
 <p>Initially the delegate address is set to fund manager's address but can be changed to another desired address.</p>
 </li>
-<li>After the fund is created and funded, Fund Managers can visit <a href="https://trade.mango.markets/?name=SOL-PERP">mango.markets</a> and connect their wallet to start managing assets invested through Investin. It’s that easy!</li>
-<li>There is a $50 Manager Lock-up amount each manager must deposit when initiating their fund. This is to handle any rounding errors that may occur (fractions of cents) during normal deposits and withdrawals. This $50 will be returned if the Fund is ever closed.</li>
-<li>You can always set a new address as an delegate to access the mango account using <a href="https://trade.mango.markets/?name=SOL-PERP">mango.markets</a></li>
+<li>
+<p>You can always set a new address as an delegate to access the mango account using <a href="https://trade.mango.markets/?name=SOL-PERP">mango.markets</a></p>
+</li>
 </ul>
 <figure>
 <p><img alt="Image title" src="../assets/66.png" width="300" />
   </p>
 <figcaption>Set delegate model</figcaption>
 </figure>
+<ul>
+<li>After the fund is created and funded, Fund Managers can visit <a href="https://trade.mango.markets/?name=SOL-PERP">mango.markets</a> and connect their wallet which was delegated and start managing assets invested through Investin. It’s that easy!</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 </div>
